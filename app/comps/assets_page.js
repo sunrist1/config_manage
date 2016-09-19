@@ -14,33 +14,71 @@ import '../static/style/assets_page.css'
 export default class AssetsPage extends React.Component{
 	constructor(props){
 		super()
+
+		this.state={
+			sum:0
+		}
+
+		this.getAssetType = this.getAssetType.bind(this)
+		this.makeDom = this.makeDom.bind(this)
 	}
 
 	getAssetType(){
 		// 计算得分，判断类型
 		var sum = 0;
-		var arr = this.props.params.result_arr;
+		// console.log(this.props.params.result_arr)
+		var arr = this.props.params.result_arr.split(",");
 		arr.forEach(function(item){
-			sum += item
+			sum += item*1
 		})
 
-		console.log(sum)
+		sum = sum / 6;
 
-		/*
-		*   这里要做判断，return该展示的dom
-		*/
-
-		return 
+		this.setState({
+			sum:sum
+		})
 	}
 
-	render(){
-		return(
-			<div className="select_box">
+	makeDom(){
+		let sum = this.state.sum;
+
+		if(0<=sum && sum<4){
+			return(
 				<div className="top_box">
 					<h2 className="title_1">防守型配置策略</h2>
 					<h3 className="title_2">推荐投资低风险等级产品</h3>
+					<img className="type_img" src={ImgBaoshou} />
+				</div>
+			)
+		}else if(4<=sum && sum<7){
+			return(
+				<div className="top_box">
+					<h2 className="title_1">稳健性配置策略</h2>
+					<h3 className="title_2">适合投资中、低风险等级产品</h3>
+					<img className="type_img" src={ImgWenjian} />
+				</div>
+			)
+		}else{
+			return(
+				<div className="top_box">
+					<h2 className="title_1">积极性配置策略</h2>
+					<h3 className="title_2">适合投资高、中、低风险等级产品</h3>
 					<img className="type_img" src={ImgJiji} />
-				</div>				
+				</div>
+			)
+		}
+	}
+
+	componentWillMount(){
+		this.getAssetType()
+	}
+
+	render(){
+
+
+		return(
+			<div className="select_box">
+				{this.makeDom()}				
 				
 				<div className="selectAssetBox">
 					<h3>请选择您可投资资产：</h3>

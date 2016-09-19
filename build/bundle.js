@@ -28452,7 +28452,15 @@
 		function AssetsPage(props) {
 			_classCallCheck(this, AssetsPage);
 
-			return _possibleConstructorReturn(this, (AssetsPage.__proto__ || Object.getPrototypeOf(AssetsPage)).call(this));
+			var _this = _possibleConstructorReturn(this, (AssetsPage.__proto__ || Object.getPrototypeOf(AssetsPage)).call(this));
+
+			_this.state = {
+				sum: 0
+			};
+
+			_this.getAssetType = _this.getAssetType.bind(_this);
+			_this.makeDom = _this.makeDom.bind(_this);
+			return _this;
 		}
 
 		_createClass(AssetsPage, [{
@@ -28460,26 +28468,25 @@
 			value: function getAssetType() {
 				// 计算得分，判断类型
 				var sum = 0;
-				var arr = this.props.params.result_arr;
+				// console.log(this.props.params.result_arr)
+				var arr = this.props.params.result_arr.split(",");
 				arr.forEach(function (item) {
-					sum += item;
+					sum += item * 1;
 				});
 
-				console.log(sum);
+				sum = sum / 6;
 
-				/*
-	   *   这里要做判断，return该展示的dom
-	   */
-
-				return;
+				this.setState({
+					sum: sum
+				});
 			}
 		}, {
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'div',
-					{ className: 'select_box' },
-					_react2.default.createElement(
+			key: 'makeDom',
+			value: function makeDom() {
+				var sum = this.state.sum;
+
+				if (0 <= sum && sum < 4) {
+					return _react2.default.createElement(
 						'div',
 						{ className: 'top_box' },
 						_react2.default.createElement(
@@ -28492,8 +28499,55 @@
 							{ className: 'title_2' },
 							'推荐投资低风险等级产品'
 						),
+						_react2.default.createElement('img', { className: 'type_img', src: _type_baoshou2.default })
+					);
+				} else if (4 <= sum && sum < 7) {
+					return _react2.default.createElement(
+						'div',
+						{ className: 'top_box' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'title_1' },
+							'稳健性配置策略'
+						),
+						_react2.default.createElement(
+							'h3',
+							{ className: 'title_2' },
+							'适合投资中、低风险等级产品'
+						),
+						_react2.default.createElement('img', { className: 'type_img', src: _type_wenjian2.default })
+					);
+				} else {
+					return _react2.default.createElement(
+						'div',
+						{ className: 'top_box' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'title_1' },
+							'积极性配置策略'
+						),
+						_react2.default.createElement(
+							'h3',
+							{ className: 'title_2' },
+							'适合投资高、中、低风险等级产品'
+						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_jiji2.default })
-					),
+					);
+				}
+			}
+		}, {
+			key: 'componentWillMount',
+			value: function componentWillMount() {
+				this.getAssetType();
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+
+				return _react2.default.createElement(
+					'div',
+					{ className: 'select_box' },
+					this.makeDom(),
 					_react2.default.createElement(
 						'div',
 						{ className: 'selectAssetBox' },
