@@ -14,14 +14,14 @@
 .question_item p{
 	line-height: 20px;
 	padding:5px 2px;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .question_item p input{
 	width:18px;
 	height: 18px;
 	display: inline-block;
-	margin-right: 3%;
+	margin-right: 2%;
 	vertical-align: top;
 }
 

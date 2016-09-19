@@ -6,6 +6,7 @@ import {Router,Route,hashHistory} from 'react-router'
 import NoticePage from './comps/notice_page.js';   //提示页面
 import QuestionsPage from './comps/questions_page.js';  // 问题列表页面
 import AssetsPage from './comps/assets_page.js';  // 可投资资产选择
+import ResultPage from './comps/result_page.js';  // 得出结果页面
 
 /*class App extends React.Component{
 	render(){
@@ -23,6 +24,7 @@ render(
 			<Route path="/" component={NoticePage} />
 			<Route path="/questions" component={QuestionsPage} />
 			<Route path="/assets_select/:result_arr" component={AssetsPage} />
+			<Route path="/result/:asset" component={ResultPage} />
 		</Router>
 	),
 	document.getElementById('content')

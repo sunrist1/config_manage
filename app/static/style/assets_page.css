@@ -1,0 +1,87 @@
+.select_box{
+	background-color: #fff;
+	height: 100%;
+	display: block;
+}
+.top_box{
+	width:100%;
+	height: auto;
+	text-align: center;
+	padding-top:20px;
+}
+
+.title_1{
+	font-size: 20px;
+	width:100%;
+}
+
+.title_2{
+	font-size: 16px;
+	width:100%;
+	margin-top:10px;
+	color:#d4902f;
+}
+
+.type_img{
+	width: 50%;
+	display: inline-block;
+	margin:15px auto;
+}
+
+.selectAssetBox{
+	padding:10px;
+	width:98%;
+	margin:10px 1%;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background-color: #f0f0f0;
+}
+
+.selectAssetBox h3{
+	line-height: 30px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+.selectAssetBox .item_group{
+	display: inline-block;
+	width:50%;
+	font-size:0px;
+}
+.selectAssetBox .item_group input{
+	width:18px;
+	height: 18px;
+	vertical-align: middle;
+	margin-right: 5px;
+	display: none;
+}
+
+.selectAssetBox .item_group label:nth-of-type(1){
+	width:20px;
+	height: 20px;
+	display: inline-block;
+	background-color: #aaa;
+	vertical-align: middle;
+	border-radius: 3px;
+	margin-right: 3px;
+}
+.selectAssetBox .item_group input:checked+label:nth-of-type(1){
+	background: url(../images/gou.png) 0px 0px no-repeat;
+	background-size:100% 100%;
+}
+.selectAssetBox .item_group label:nth-of-type(2){
+	font-size: 16px;
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.nextStepBtn{
+	width:90%;
+	display: block;
+	margin:20px auto;
+	height: 36px;
+	border:none;
+	border-radius: 8px;
+	background-color: #d4902f;
+}

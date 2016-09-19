@@ -62,13 +62,17 @@
 
 	var _questions_page2 = _interopRequireDefault(_questions_page);
 
-	var _assets_page = __webpack_require__(244);
+	var _assets_page = __webpack_require__(248);
 
 	var _assets_page2 = _interopRequireDefault(_assets_page);
 
+	var _result_page = __webpack_require__(252);
+
+	var _result_page2 = _interopRequireDefault(_result_page);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// 可投资资产选择
+	// 得出结果页面
 
 	/*class App extends React.Component{
 		render(){
@@ -80,17 +84,19 @@
 		}
 	}*/
 
-	//提示页面
+	// 问题列表页面
+
+
+	// import components
 	(0, _reactDom.render)(_react2.default.createElement(
 		_reactRouter.Router,
 		{ history: _reactRouter.hashHistory },
 		_react2.default.createElement(_reactRouter.Route, { path: '/', component: _notice_page2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: '/questions', component: _questions_page2.default }),
-		_react2.default.createElement(_reactRouter.Route, { path: '/assets_select/:result_arr', component: _assets_page2.default })
-	), document.getElementById('content')); // 问题列表页面
-
-
-	// import components
+		_react2.default.createElement(_reactRouter.Route, { path: '/assets_select/:result_arr', component: _assets_page2.default }),
+		_react2.default.createElement(_reactRouter.Route, { path: '/result/:asset', component: _result_page2.default })
+	), document.getElementById('content')); // 可投资资产选择
+	//提示页面
 
 /***/ },
 /* 1 */
@@ -27246,7 +27252,7 @@
 
 
 	// module
-	exports.push([module.id, "*{\r\n\tpadding:0px;\r\n\tmargin:0px;\r\n}\r\n\r\n.notice_content{\r\n\tpadding:10px;\r\n\tfont-size: 16px;\r\n\theight: 100%;\r\n\tbackground-color: #fff;\r\n}\r\n\r\n.notice_content p{\r\n  line-height: 20px;\r\n  margin-top: 15px;\r\n  text-indent: 1em;\r\n}\r\n.notice_content button{\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\twidth:70%;\r\n\theight: 36px;\r\n\tbackground-color: #d4902f;\r\n\tcolor:#fff!important;\r\n\tborder:none;\r\n\tborder-radius: 10px;\r\n}\r\n\r\n.linkBtn{\r\n\tcolor:#fff;\r\n\tdisplay: inline-block;\r\n\twidth:100%;\r\n\theight: 36px;\r\n\tline-height: 36px;\r\n\ttext-decoration:none;\r\n\tfont-size: 16px;\r\n}", ""]);
+	exports.push([module.id, "*{\r\n\tpadding:0px;\r\n\tmargin:0px;\r\n}\r\n\r\n.notice_content{\r\n\tpadding:10px;\r\n\tfont-size: 16px;\r\n\tmin-height: 100%;\r\n\tbackground-color: #fff;\r\n}\r\n\r\n.notice_content p{\r\n  line-height: 20px;\r\n  margin-top: 15px;\r\n  text-indent: 1em;\r\n}\r\n.notice_content button{\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\twidth:70%;\r\n\theight: 36px;\r\n\tbackground-color: #d4902f;\r\n\tcolor:#fff!important;\r\n\tborder:none;\r\n\tborder-radius: 10px;\r\n}\r\n\r\n.linkBtn{\r\n\tcolor:#fff;\r\n\tdisplay: inline-block;\r\n\twidth:100%;\r\n\theight: 36px;\r\n\tline-height: 36px;\r\n\ttext-decoration:none;\r\n\tfont-size: 16px;\r\n}", ""]);
 
 	// exports
 
@@ -27583,15 +27589,15 @@
 
 	var _question_item_radio2 = _interopRequireDefault(_question_item_radio);
 
-	var _question_item_checkbox = __webpack_require__(242);
+	var _question_item_checkbox = __webpack_require__(244);
 
 	var _question_item_checkbox2 = _interopRequireDefault(_question_item_checkbox);
 
-	var _questions = __webpack_require__(243);
+	var _questions = __webpack_require__(245);
 
 	var _questions2 = _interopRequireDefault(_questions);
 
-	__webpack_require__(250);
+	__webpack_require__(246);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27749,7 +27755,7 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	__webpack_require__(248);
+	__webpack_require__(242);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27829,6 +27835,46 @@
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(243);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./question_item.css", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./question_item.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".question_item{\r\n\tmargin:15px 0px 0px;\r\n\tbackground-color: #fff;\r\n\tpadding:10px;\r\n}\r\n\r\n.question_item h3{\r\n\tfont-size: 16px;\r\n\tcolor:#333;\r\n\tborder-bottom:1px solid #ccc;\r\n  line-height: 30px;\r\n}\r\n\r\n.question_item p{\r\n\tline-height: 20px;\r\n\tpadding:5px 2px;\r\n\tfont-size: 15px;\r\n}\r\n\r\n.question_item p input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: 2%;\r\n\tvertical-align: top;\r\n}\r\n\r\n.question_item p label{\r\n\tvertical-align: top;\r\n\tdisplay: inline-block;\r\n\twidth:90%;\r\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -27845,7 +27891,7 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	__webpack_require__(248);
+	__webpack_require__(242);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27932,7 +27978,7 @@
 	exports.default = QuestionCheckbox;
 
 /***/ },
-/* 243 */
+/* 245 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -28312,145 +28358,13 @@
 	};
 
 /***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(34);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _type_jiji = __webpack_require__(245);
-
-	var _type_jiji2 = _interopRequireDefault(_type_jiji);
-
-	var _type_wenjian = __webpack_require__(246);
-
-	var _type_wenjian2 = _interopRequireDefault(_type_wenjian);
-
-	var _type_baoshou = __webpack_require__(247);
-
-	var _type_baoshou2 = _interopRequireDefault(_type_baoshou);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// 引入图片文件
-
-
-	var AssetsPage = function (_React$Component) {
-		_inherits(AssetsPage, _React$Component);
-
-		function AssetsPage(props) {
-			_classCallCheck(this, AssetsPage);
-
-			return _possibleConstructorReturn(this, (AssetsPage.__proto__ || Object.getPrototypeOf(AssetsPage)).call(this));
-		}
-
-		_createClass(AssetsPage, [{
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'div',
-					null,
-					'money',
-					_react2.default.createElement(
-						'p',
-						null,
-						this.props.params.result_arr
-					),
-					_react2.default.createElement('img', { src: _type_jiji2.default })
-				);
-			}
-		}]);
-
-		return AssetsPage;
-	}(_react2.default.Component);
-
-	exports.default = AssetsPage;
-
-/***/ },
-/* 245 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "1ef5e54fe319bf535fa29c5cac9946c7.png";
-
-/***/ },
 /* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "12a703a8b51f62442016cac69da8a42d.png";
-
-/***/ },
-/* 247 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "61f3325750da119cb00b87c763bd9b93.png";
-
-/***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(249);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(239)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./question_item.css", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./question_item.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 249 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(238)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".question_item{\r\n\tmargin:15px 0px 0px;\r\n\tbackground-color: #fff;\r\n\tpadding:10px;\r\n}\r\n\r\n.question_item h3{\r\n\tfont-size: 16px;\r\n\tcolor:#333;\r\n\tborder-bottom:1px solid #ccc;\r\n  line-height: 30px;\r\n}\r\n\r\n.question_item p{\r\n\tline-height: 20px;\r\n\tpadding:5px 2px;\r\n\tfont-size: 14px;\r\n}\r\n\r\n.question_item p input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: 3%;\r\n\tvertical-align: top;\r\n}\r\n\r\n.question_item p label{\r\n\tvertical-align: top;\r\n\tdisplay: inline-block;\r\n\twidth:90%;\r\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(251);
+	var content = __webpack_require__(247);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(239)(content, {});
@@ -28470,7 +28384,7 @@
 	}
 
 /***/ },
-/* 251 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -28482,6 +28396,268 @@
 
 	// exports
 
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _type_jiji = __webpack_require__(249);
+
+	var _type_jiji2 = _interopRequireDefault(_type_jiji);
+
+	var _type_wenjian = __webpack_require__(250);
+
+	var _type_wenjian2 = _interopRequireDefault(_type_wenjian);
+
+	var _type_baoshou = __webpack_require__(251);
+
+	var _type_baoshou2 = _interopRequireDefault(_type_baoshou);
+
+	__webpack_require__(253);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// 引入图片文件
+
+
+	// css
+
+
+	// 答题结果得出类型（积极，稳健，保守）
+	var AssetsPage = function (_React$Component) {
+		_inherits(AssetsPage, _React$Component);
+
+		function AssetsPage(props) {
+			_classCallCheck(this, AssetsPage);
+
+			return _possibleConstructorReturn(this, (AssetsPage.__proto__ || Object.getPrototypeOf(AssetsPage)).call(this));
+		}
+
+		_createClass(AssetsPage, [{
+			key: 'getAssetType',
+			value: function getAssetType() {
+				// 计算得分，判断类型
+				var sum = 0;
+				var arr = this.props.params.result_arr;
+				arr.forEach(function (item) {
+					sum += item;
+				});
+
+				console.log(sum);
+
+				/*
+	   *   这里要做判断，return该展示的dom
+	   */
+
+				return;
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'select_box' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'top_box' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'title_1' },
+							'防守型配置策略'
+						),
+						_react2.default.createElement(
+							'h3',
+							{ className: 'title_2' },
+							'推荐投资低风险等级产品'
+						),
+						_react2.default.createElement('img', { className: 'type_img', src: _type_jiji2.default })
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'selectAssetBox' },
+						_react2.default.createElement(
+							'h3',
+							null,
+							'请选择您可投资资产：'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'item_group' },
+							_react2.default.createElement('input', { id: 'value1', name: 'assets_value', type: 'radio', value: '1' }),
+							_react2.default.createElement('label', { className: 'icon_label' }),
+							_react2.default.createElement(
+								'label',
+								{ htmlFor: 'value1' },
+								'100万—1000万'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'item_group' },
+							_react2.default.createElement('input', { id: 'value2', name: 'assets_value', type: 'radio', value: '2' }),
+							_react2.default.createElement('label', { className: 'icon_label' }),
+							_react2.default.createElement(
+								'label',
+								{ htmlFor: 'value2' },
+								'1000万以上'
+							)
+						)
+					),
+					_react2.default.createElement(
+						'button',
+						{ className: 'nextStepBtn' },
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ className: 'linkBtn', to: '/result/aa' },
+							'下一步'
+						)
+					)
+				);
+			}
+		}]);
+
+		return AssetsPage;
+	}(_react2.default.Component);
+
+	exports.default = AssetsPage;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "1ef5e54fe319bf535fa29c5cac9946c7.png";
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "12a703a8b51f62442016cac69da8a42d.png";
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "61f3325750da119cb00b87c763bd9b93.png";
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// 答题结果得出类型（积极，稳健，保守）
+	var ResultPage = function (_React$Component) {
+		_inherits(ResultPage, _React$Component);
+
+		function ResultPage(props) {
+			_classCallCheck(this, ResultPage);
+
+			return _possibleConstructorReturn(this, (ResultPage.__proto__ || Object.getPrototypeOf(ResultPage)).call(this));
+		}
+
+		_createClass(ResultPage, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					null,
+					'result'
+				);
+			}
+		}]);
+
+		return ResultPage;
+	}(_react2.default.Component);
+
+	exports.default = ResultPage;
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(254);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./assets_page.css", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./assets_page.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".select_box{\r\n\tbackground-color: #fff;\r\n\theight: 100%;\r\n\tdisplay: block;\r\n}\r\n.top_box{\r\n\twidth:100%;\r\n\theight: auto;\r\n\ttext-align: center;\r\n\tpadding-top:20px;\r\n}\r\n\r\n.title_1{\r\n\tfont-size: 20px;\r\n\twidth:100%;\r\n}\r\n\r\n.title_2{\r\n\tfont-size: 16px;\r\n\twidth:100%;\r\n\tmargin-top:10px;\r\n\tcolor:#d4902f;\r\n}\r\n\r\n.type_img{\r\n\twidth: 50%;\r\n\tdisplay: inline-block;\r\n\tmargin:15px auto;\r\n}\r\n\r\n.selectAssetBox{\r\n\tpadding:10px;\r\n\twidth:98%;\r\n\tmargin:10px 1%;\r\n\tborder-radius: 8px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: #f0f0f0;\r\n}\r\n\r\n.selectAssetBox h3{\r\n\tline-height: 30px;\r\n\tfont-size: 16px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.selectAssetBox .item_group{\r\n\tdisplay: inline-block;\r\n\twidth:50%;\r\n\tfont-size:0px;\r\n}\r\n.selectAssetBox .item_group input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tvertical-align: middle;\r\n\tmargin-right: 5px;\r\n\tdisplay: none;\r\n}\r\n\r\n.selectAssetBox .item_group label:nth-of-type(1){\r\n\twidth:20px;\r\n\theight: 20px;\r\n\tdisplay: inline-block;\r\n\tbackground-color: #aaa;\r\n\tvertical-align: middle;\r\n\tborder-radius: 3px;\r\n\tmargin-right: 3px;\r\n}\r\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\r\n\tbackground: url(" + __webpack_require__(255) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n}\r\n.selectAssetBox .item_group label:nth-of-type(2){\r\n\tfont-size: 16px;\r\n\tvertical-align: middle;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.nextStepBtn{\r\n\twidth:90%;\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\theight: 36px;\r\n\tborder:none;\r\n\tborder-radius: 8px;\r\n\tbackground-color: #d4902f;\r\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "11cd196e6257367150527dccd245b031.png";
 
 /***/ }
 /******/ ]);
