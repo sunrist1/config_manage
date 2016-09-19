@@ -2,10 +2,13 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Link} from 'react-router';
 
+// css
+import '../static/style/notice_page.css'
+
 export default class NoticePage extends React.Component{
 	render(){
 		return(
-			<div>
+			<div className="notice_content">
 				<h2>重要提示：</h2>
 				<p>
 					1、请投资者认真阅读问卷内容，了解评分规则，并确认所填写内容表达真实。
@@ -29,7 +32,7 @@ export default class NoticePage extends React.Component{
 				</p>
 				<p>5、 本问卷共设计了 13 道问题。</p>
 				<button>
-					<Link to="/questions">同意</Link>
+					<Link className="linkBtn" to="/questions">同意</Link>
 				</button>
 			</div>
 		)

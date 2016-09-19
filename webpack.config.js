@@ -18,7 +18,7 @@ module.exports = {
 			},
 			{
 				test:/\.(png|jpg|gif)$/,
-				loader:'url-loader?limit=8192'
+				loader:'url-loader?limit=1024'
 			},
 			{
 				test:/\.css$/,
@@ -27,7 +27,7 @@ module.exports = {
 			{
 				test:/\.json$/,
 				loader:'json'
-			},
+			}
 		]
 	}
 }

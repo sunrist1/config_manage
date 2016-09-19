@@ -1,0 +1,23 @@
+body{
+	background-color: #f0f0f0;
+}
+
+.submit_btn{
+	height: 80px;
+	line-height: 80px;
+	background-color: #fff;
+	margin-top:15px;
+	text-align: center;
+}
+
+.submit_btn button{
+	display: inline-block;
+	border:none;
+	height: 36px;
+	line-height: 36px;
+	width:70%;
+	border-radius: 10px;
+	font-size: 16px;
+	background-color: #d4902f;
+	color:#fff;
+}

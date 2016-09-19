@@ -9,14 +9,19 @@ import QuestionCheckbox from './question_item_checkbox.js'
 // 引入资源
 import ListData from '../questions.json'
 
+// css
+import '../static/style/question_page.css'
+
 export default class QuestionsPage extends React.Component{
 	constructor(props){
 		super();
 
 		this.getSelect = this.getSelect.bind(this)
-		this.subAnwser = this.subAnwser.bind(this)
+		// this.subAnwser = this.subAnwser.bind(this)
 		this.state ={
-			anwserList:new Array(13)
+			anwserList:new Array(13),
+			resultArr:new Array(6),
+			selectAll:false
 		}
 	}
 
@@ -29,22 +34,52 @@ export default class QuestionsPage extends React.Component{
 			anwserList:arr
 		})
 
-		console.log(this.state.anwserList)
+		// console.log(this.state.anwserList)
+		let anwserList = this.state.anwserList;
+		let resultArr = this.state.resultArr;
+		resultArr[0]=((anwserList[0]+anwserList[1]+anwserList[2])/3).toFixed(2)
+		resultArr[1]=anwserList[3]
+		resultArr[2]=(anwserList[4]+anwserList[5])/2
+		resultArr[3]=(anwserList[6]+anwserList[7])/2
+		resultArr[4]=(anwserList[8]+anwserList[9])/2
+		resultArr[5]=((anwserList[10]+anwserList[11]+anwserList[12])/3).toFixed(2)
+
+		this.setState({
+			resultArr:resultArr
+		})
+
+// 判断是否已经选择全部题目
+		if(0<=resultArr.indexOf("NaN")){
+			this.setState({
+				selectAll:false
+			})
+		}else{
+			this.setState({
+				selectAll:true
+			})
+		}
 	}
 
-	subAnwser(){
+/*	subAnwser(){
 		let list = this.state.anwserList;
 		for(let i=0;i<list.length;i++){
 			if(undefined==list[i]){
-				alert("aa");
+				alert("请选择所有题目。");
 				return;
 			}
 		}
-		console.log(list)
-	}
+	}*/
 
 	render(){
 		let _this = this;
+		let btnContent =null; 
+
+		if(this.state.selectAll){
+			btnContent = <Link className="linkBtn" to={"/assets_select/"+this.state.resultArr}>提交答案</Link>;
+		}else{
+			btnContent = "请选择所有题目";
+		}
+
 		return(
 			<div>
 				{
@@ -71,8 +106,10 @@ export default class QuestionsPage extends React.Component{
 					})
 				}
 
-				<div>
-					<button onClick={this.subAnwser}>提交答案</button>
+				<div className="submit_btn">
+					<button>
+						{btnContent}
+					</button>
 				</div>
 			</div>
 		)

@@ -2,6 +2,9 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Link} from 'react-router';
 
+// css
+import '../static/style/question_item.css'
+
 export default class QuestionRadio extends React.Component{
 	constructor(props){
 		super(props);
@@ -33,7 +36,7 @@ export default class QuestionRadio extends React.Component{
 							</p>)
 		})
 		return(
-			<div>
+			<div className="question_item">
 				<h3>{this.props.rank}、{this.props.question.title}</h3>
 				{newArr}
 			</div>
