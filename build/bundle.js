@@ -66,7 +66,7 @@
 
 	var _assets_page2 = _interopRequireDefault(_assets_page);
 
-	var _result_page = __webpack_require__(252);
+	var _result_page = __webpack_require__(255);
 
 	var _result_page2 = _interopRequireDefault(_result_page);
 
@@ -28429,7 +28429,7 @@
 
 	var _type_baoshou2 = _interopRequireDefault(_type_baoshou);
 
-	__webpack_require__(253);
+	__webpack_require__(252);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28565,6 +28565,52 @@
 /* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(253);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./assets_page.css", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./assets_page.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".select_box{\r\n\tbackground-color: #fff;\r\n\theight: 100%;\r\n\tdisplay: block;\r\n}\r\n.top_box{\r\n\twidth:100%;\r\n\theight: auto;\r\n\ttext-align: center;\r\n\tpadding-top:20px;\r\n}\r\n\r\n.title_1{\r\n\tfont-size: 20px;\r\n\twidth:100%;\r\n}\r\n\r\n.title_2{\r\n\tfont-size: 16px;\r\n\twidth:100%;\r\n\tmargin-top:10px;\r\n\tcolor:#d4902f;\r\n}\r\n\r\n.type_img{\r\n\twidth: 50%;\r\n\tdisplay: inline-block;\r\n\tmargin:15px auto;\r\n}\r\n\r\n.selectAssetBox{\r\n\tpadding:10px;\r\n\twidth:98%;\r\n\tmargin:10px 1%;\r\n\tborder-radius: 8px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: #f0f0f0;\r\n}\r\n\r\n.selectAssetBox h3{\r\n\tline-height: 30px;\r\n\tfont-size: 16px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.selectAssetBox .item_group{\r\n\tdisplay: inline-block;\r\n\twidth:50%;\r\n\tfont-size:0px;\r\n  text-align: center;\r\n}\r\n.selectAssetBox .item_group input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tvertical-align: middle;\r\n\tmargin-right: 5px;\r\n\tdisplay: none;\r\n}\r\n\r\n.selectAssetBox .item_group label:nth-of-type(1){\r\n\twidth:20px;\r\n\theight: 20px;\r\n\tdisplay: inline-block;\r\n\tbackground-color: #aaa;\r\n\tvertical-align: middle;\r\n\tborder-radius: 3px;\r\n\tmargin-right: 3px;\r\n}\r\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\r\n\tbackground: url(" + __webpack_require__(254) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n}\r\n.selectAssetBox .item_group label:nth-of-type(2){\r\n\tfont-size: 16px;\r\n\tvertical-align: middle;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.nextStepBtn{\r\n\twidth:90%;\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\theight: 36px;\r\n\tborder:none;\r\n\tborder-radius: 8px;\r\n\tbackground-color: #d4902f;\r\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "11cd196e6257367150527dccd245b031.png";
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -28612,52 +28658,6 @@
 	}(_react2.default.Component);
 
 	exports.default = ResultPage;
-
-/***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(254);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(239)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./assets_page.css", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./assets_page.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(238)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".select_box{\r\n\tbackground-color: #fff;\r\n\theight: 100%;\r\n\tdisplay: block;\r\n}\r\n.top_box{\r\n\twidth:100%;\r\n\theight: auto;\r\n\ttext-align: center;\r\n\tpadding-top:20px;\r\n}\r\n\r\n.title_1{\r\n\tfont-size: 20px;\r\n\twidth:100%;\r\n}\r\n\r\n.title_2{\r\n\tfont-size: 16px;\r\n\twidth:100%;\r\n\tmargin-top:10px;\r\n\tcolor:#d4902f;\r\n}\r\n\r\n.type_img{\r\n\twidth: 50%;\r\n\tdisplay: inline-block;\r\n\tmargin:15px auto;\r\n}\r\n\r\n.selectAssetBox{\r\n\tpadding:10px;\r\n\twidth:98%;\r\n\tmargin:10px 1%;\r\n\tborder-radius: 8px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: #f0f0f0;\r\n}\r\n\r\n.selectAssetBox h3{\r\n\tline-height: 30px;\r\n\tfont-size: 16px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.selectAssetBox .item_group{\r\n\tdisplay: inline-block;\r\n\twidth:50%;\r\n\tfont-size:0px;\r\n}\r\n.selectAssetBox .item_group input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tvertical-align: middle;\r\n\tmargin-right: 5px;\r\n\tdisplay: none;\r\n}\r\n\r\n.selectAssetBox .item_group label:nth-of-type(1){\r\n\twidth:20px;\r\n\theight: 20px;\r\n\tdisplay: inline-block;\r\n\tbackground-color: #aaa;\r\n\tvertical-align: middle;\r\n\tborder-radius: 3px;\r\n\tmargin-right: 3px;\r\n}\r\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\r\n\tbackground: url(" + __webpack_require__(255) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n}\r\n.selectAssetBox .item_group label:nth-of-type(2){\r\n\tfont-size: 16px;\r\n\tvertical-align: middle;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.nextStepBtn{\r\n\twidth:90%;\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\theight: 36px;\r\n\tborder:none;\r\n\tborder-radius: 8px;\r\n\tbackground-color: #d4902f;\r\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 255 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "11cd196e6257367150527dccd245b031.png";
 
 /***/ }
 /******/ ]);
