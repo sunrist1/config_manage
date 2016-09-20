@@ -75,7 +75,7 @@ export default class QuestionsPage extends React.Component{
 		let btnContent =null; 
 
 		if(this.state.selectAll){
-			btnContent = <Link className="linkBtn" to={"/assets_select/"+this.state.resultArr}>提交答案</Link>;
+			btnContent = <Link className="linkBtn" to={"/echarts_page/"+this.state.resultArr}>提交答案</Link>;
 		}else{
 			btnContent = "请选择所有题目";
 		}
