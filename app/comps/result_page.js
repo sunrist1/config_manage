@@ -14,8 +14,8 @@ export default class ResultPage extends React.Component{
 	render(){
 		return(
 			<div>
-				{this.props.params.type}/{this.props.params.asset}
-				<HightItemTitle />
+				<HightItemTitle per="50" title="固定收益类"/>
+				<FundItem />
 				<FundItem />
 			</div>
 		)

@@ -45,7 +45,7 @@ export default class QuestionCheckbox extends React.Component{
 		})
 		return(
 			<div className="question_item">
-				<h3>{this.props.rank}、{this.props.question.title}</h3>
+				<h3>{this.props.rank}、(多选){this.props.question.title}</h3>
 				{newArr}
 			</div>
 		)
