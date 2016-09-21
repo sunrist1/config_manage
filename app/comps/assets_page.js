@@ -16,11 +16,15 @@ export default class AssetsPage extends React.Component{
 		super()
 
 		this.state={
-			sum:0
+			sum:0,
+			selectedValue:1,  // 已选择资金类型  100-1000万：1     1000万以上：2
+			selected1:true,
+			selected2:false,
 		}
 
 		this.getAssetType = this.getAssetType.bind(this)
 		this.makeDom = this.makeDom.bind(this)
+		this.selectHandle = this.selectHandle.bind(this)
 	}
 
 	getAssetType(){
@@ -32,7 +36,7 @@ export default class AssetsPage extends React.Component{
 			sum += item*1
 		})
 
-		sum = sum / 6;
+		sum = (sum / 6).toFixed(2);
 
 		this.setState({
 			sum:sum
@@ -69,13 +73,29 @@ export default class AssetsPage extends React.Component{
 		}
 	}
 
+	selectHandle(e){
+		var sel = e.target.value
+		this.setState({
+			selectedValue:sel
+		})
+		if(1==sel){
+			this.setState({
+				selected1:true,
+				selected2:false
+			})
+		}else{
+			this.setState({
+				selected1:false,
+				selected2:true
+			})
+		}
+	}
+
 	componentWillMount(){
 		this.getAssetType()
 	}
 
 	render(){
-
-
 		return(
 			<div className="select_box">
 				{this.makeDom()}				
@@ -83,19 +103,19 @@ export default class AssetsPage extends React.Component{
 				<div className="selectAssetBox">
 					<h3>请选择您可投资资产：</h3>
 					<div className="item_group">
-						<input id="value1" name="assets_value" type="radio" value="1"/>
+						<input id="value1" name="assets_value" checked={this.state.selected1} onChange={this.selectHandle} type="radio" value="1"/>
 						<label className="icon_label"></label>
 						<label htmlFor="value1">100万—1000万</label>
 					</div>
 					<div className="item_group">
-						<input id="value2" name="assets_value" type="radio" value="2"/>
+						<input id="value2" name="assets_value" checked={this.state.selected2} onChange={this.selectHandle} type="radio" value="2"/>
 						<label className="icon_label"></label>
 						<label htmlFor="value2">1000万以上</label>
 					</div>
 				</div>
 
 				<button className="nextStepBtn">
-					<Link className="linkBtn" to="/result/aa">下一步</Link>
+					<Link className="linkBtn" to={"/result/"+this.state.selectedValue+"/"+this.state.sum}>下一步</Link>
 				</button>
 			</div>
 		)

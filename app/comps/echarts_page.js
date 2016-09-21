@@ -52,7 +52,19 @@ export default class EchartsPage extends React.Component{
 	        data : [
 	            {
 	                value : _this.state.resultArr,
-	                name : '资产配置类型判断'
+	                name : '资产配置类型判断',
+	                label:{
+	                	normal:{
+	                		show:true,
+	                		position:'insideTop',
+	                		textStyle:{
+	                			color:"#ff6800"
+	                		},
+	                		formatter:function(params){
+	                			return params.value
+	                		}
+	                	}
+	                }
 	            }
 	        ]
 		    }]

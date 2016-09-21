@@ -78,15 +78,6 @@
 
 	// 得出结果页面
 
-	/*class App extends React.Component{
-		render(){
-			return(
-				<div>
-					App box
-				</div>
-			)
-		}
-	}*/
 
 	// 选择结果额 echarts展示页
 	//提示页面
@@ -97,7 +88,7 @@
 		_react2.default.createElement(_reactRouter.Route, { path: '/questions', component: _questions_page2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: '/echarts_page/:result_arr', component: _echarts_page2.default }),
 		_react2.default.createElement(_reactRouter.Route, { path: '/assets_select/:result_arr', component: _assets_page2.default }),
-		_react2.default.createElement(_reactRouter.Route, { path: '/result/:asset', component: _result_page2.default })
+		_react2.default.createElement(_reactRouter.Route, { path: '/result/:asset/:type', component: _result_page2.default })
 	), document.getElementById('content')); // 可投资资产选择
 	// 问题列表页面
 
@@ -28485,7 +28476,19 @@
 						// areaStyle: {normal: {}},
 						data: [{
 							value: _this.state.resultArr,
-							name: '资产配置类型判断'
+							name: '资产配置类型判断',
+							label: {
+								normal: {
+									show: true,
+									position: 'insideTop',
+									textStyle: {
+										color: "#ff6800"
+									},
+									formatter: function formatter(params) {
+										return params.value;
+									}
+								}
+							}
 						}]
 					}]
 				};
@@ -92381,11 +92384,15 @@
 			var _this = _possibleConstructorReturn(this, (AssetsPage.__proto__ || Object.getPrototypeOf(AssetsPage)).call(this));
 
 			_this.state = {
-				sum: 0
+				sum: 0,
+				selectedValue: 1, // 已选择资金类型  100-1000万：1     1000万以上：2
+				selected1: true,
+				selected2: false
 			};
 
 			_this.getAssetType = _this.getAssetType.bind(_this);
 			_this.makeDom = _this.makeDom.bind(_this);
+			_this.selectHandle = _this.selectHandle.bind(_this);
 			return _this;
 		}
 
@@ -92400,7 +92407,7 @@
 					sum += item * 1;
 				});
 
-				sum = sum / 6;
+				sum = (sum / 6).toFixed(2);
 
 				this.setState({
 					sum: sum
@@ -92462,6 +92469,25 @@
 				}
 			}
 		}, {
+			key: 'selectHandle',
+			value: function selectHandle(e) {
+				var sel = e.target.value;
+				this.setState({
+					selectedValue: sel
+				});
+				if (1 == sel) {
+					this.setState({
+						selected1: true,
+						selected2: false
+					});
+				} else {
+					this.setState({
+						selected1: false,
+						selected2: true
+					});
+				}
+			}
+		}, {
 			key: 'componentWillMount',
 			value: function componentWillMount() {
 				this.getAssetType();
@@ -92469,7 +92495,6 @@
 		}, {
 			key: 'render',
 			value: function render() {
-
 				return _react2.default.createElement(
 					'div',
 					{ className: 'select_box' },
@@ -92485,7 +92510,7 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'item_group' },
-							_react2.default.createElement('input', { id: 'value1', name: 'assets_value', type: 'radio', value: '1' }),
+							_react2.default.createElement('input', { id: 'value1', name: 'assets_value', checked: this.state.selected1, onChange: this.selectHandle, type: 'radio', value: '1' }),
 							_react2.default.createElement('label', { className: 'icon_label' }),
 							_react2.default.createElement(
 								'label',
@@ -92496,7 +92521,7 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'item_group' },
-							_react2.default.createElement('input', { id: 'value2', name: 'assets_value', type: 'radio', value: '2' }),
+							_react2.default.createElement('input', { id: 'value2', name: 'assets_value', checked: this.state.selected2, onChange: this.selectHandle, type: 'radio', value: '2' }),
 							_react2.default.createElement('label', { className: 'icon_label' }),
 							_react2.default.createElement(
 								'label',
@@ -92510,7 +92535,7 @@
 						{ className: 'nextStepBtn' },
 						_react2.default.createElement(
 							_reactRouter.Link,
-							{ className: 'linkBtn', to: '/result/aa' },
+							{ className: 'linkBtn', to: "/result/" + this.state.selectedValue + "/" + this.state.sum },
 							'下一步'
 						)
 					)
@@ -92605,6 +92630,14 @@
 
 	var _reactDom = __webpack_require__(34);
 
+	var _hight_item_title = __webpack_require__(643);
+
+	var _hight_item_title2 = _interopRequireDefault(_hight_item_title);
+
+	var _fund_item = __webpack_require__(646);
+
+	var _fund_item2 = _interopRequireDefault(_fund_item);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -92612,6 +92645,9 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// 引入组件
+
 
 	// 答题结果得出类型（积极，稳健，保守）
 	var ResultPage = function (_React$Component) {
@@ -92629,7 +92665,11 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					'result'
+					this.props.params.type,
+					'/',
+					this.props.params.asset,
+					_react2.default.createElement(_hight_item_title2.default, null),
+					_react2.default.createElement(_fund_item2.default, null)
 				);
 			}
 		}]);
@@ -92638,6 +92678,283 @@
 	}(_react2.default.Component);
 
 	exports.default = ResultPage;
+
+/***/ },
+/* 643 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	__webpack_require__(644);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/*
+	* 1000万以上的配置结果，列表的title
+	*/
+
+	var HightItemTitle = function (_React$Component) {
+		_inherits(HightItemTitle, _React$Component);
+
+		function HightItemTitle() {
+			_classCallCheck(this, HightItemTitle);
+
+			return _possibleConstructorReturn(this, (HightItemTitle.__proto__ || Object.getPrototypeOf(HightItemTitle)).apply(this, arguments));
+		}
+
+		_createClass(HightItemTitle, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'hight_title_box' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'per_num' },
+						'50%'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'title_name' },
+						'固定收益类'
+					)
+				);
+			}
+		}]);
+
+		return HightItemTitle;
+	}(_react2.default.Component);
+
+	exports.default = HightItemTitle;
+
+/***/ },
+/* 644 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(645);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./hight_item_title.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./hight_item_title.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 645 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".hight_title_box{\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\twidth: 100%;\r\n\tbackground-color: #fff;\r\n}\r\n\r\n.hight_title_box >div{\r\n\tdisplay: inline-block;\r\n} \r\n\r\n.hight_title_box .per_num{\r\n\tpadding:3px 10px;\r\n\tbackground-color: #e20000;\r\n\tcolor:#fff;\r\n\tfont-weight: bold;\r\n\tborder-radius: 8px;\r\n\tfont-size: 18px;\r\n\tmargin:0px 15px;\r\n}\r\n\r\n.hight_title_box .title_name{\r\n\tcolor:#e20000;\r\n\tfont-size: 18px;\r\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 646 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	__webpack_require__(647);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var FundItem = function (_React$Component) {
+		_inherits(FundItem, _React$Component);
+
+		function FundItem(props) {
+			_classCallCheck(this, FundItem);
+
+			return _possibleConstructorReturn(this, (FundItem.__proto__ || Object.getPrototypeOf(FundItem)).call(this));
+		}
+
+		_createClass(FundItem, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'fund_item_box' },
+					_react2.default.createElement(
+						'h3',
+						{ className: 'item_title' },
+						'财富家-凯歌3号文化影视基金'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'data_content' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'data_item' },
+							'预期收益:浮动'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'data_item' },
+							'前端佣金:',
+							_react2.default.createElement(
+								'span',
+								{ className: 'red_word' },
+								'待定'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'data_item' },
+							'后端佣金:',
+							_react2.default.createElement(
+								'span',
+								{ className: 'red_word' },
+								'无'
+							)
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'data_content' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'data_item' },
+							'起投:100万'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'data_item' },
+							'封闭期:12个月'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'data_item' },
+							'本期募集:5000万'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'bottom_bar' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'collect_count' },
+							'1'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'read_count' },
+							'2588'
+						)
+					)
+				);
+			}
+		}]);
+
+		return FundItem;
+	}(_react2.default.Component);
+
+	exports.default = FundItem;
+
+/***/ },
+/* 647 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(648);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./fund_item.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./fund_item.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 648 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".fund_item_box{\r\n\twidth:96%;\r\n\tmargin:10px 2%;\r\n\tborder-radius: 5px;\r\n\tbackground-color: #fff;\r\n\tpadding:5px;\r\n\tbox-sizing: border-box;\r\n}\r\n\r\n.item_title{\r\n\tfont-size: 18px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n\r\n.data_content{\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\tline-height: 30px;\r\n\theight: 30px;\r\n}\r\n.data_content .data_item{\r\n\tmin-width:20%;\r\n\ttext-align: left;\r\n\tfont-size: 14px;\r\n}\r\n\r\n.red_word{\r\n\tcolor:#e20000;\r\n}\r\n\r\n.fund_item_box .bottom_bar{\r\n\tdisplay: flex;\r\n\tjustify-content: flex-end;\r\n}\r\n.fund_item_box .bottom_bar > div{\r\n\tdisplay: inline-block;\r\n\tmargin-right: 10px;\r\n\tvertical-align: middle;\r\n\tcolor:#777;\r\n}\r\n\r\n.fund_item_box .bottom_bar .collect_count:before{\r\n\tcontent:\"\";\r\n\twidth:16px;\r\n\theight:16px;\r\n\tdisplay: inline-block;\r\n\tbackground:url(" + __webpack_require__(649) + ") 2px 2px no-repeat;\r\n\tbackground-size: 90% 90%;\r\n  vertical-align: top;\r\n  margin-right: 3px;\r\n}\r\n\r\n.fund_item_box .bottom_bar .read_count:before{\r\n\tcontent:\"\";\r\n\twidth:22px;\r\n\theight:16px;\r\n\tdisplay: inline-block;\r\n\tbackground:url(" + __webpack_require__(650) + ") 2px 2px no-repeat;\r\n\tbackground-size: 90% 90%;\r\n  vertical-align: top;\r\n  margin-right: 3px;\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 649 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d021dda228adb1251cd2d092a1e34f37.png";
+
+/***/ },
+/* 650 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "909f74c883587cde532be047bd291a67.png";
 
 /***/ }
 /******/ ]);

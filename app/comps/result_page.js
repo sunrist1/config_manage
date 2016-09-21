@@ -1,6 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+// 引入组件
+import HightItemTitle from './result_comps/hight_item_title.js'
+import FundItem from './result_comps/fund_item.js'
+
 // 答题结果得出类型（积极，稳健，保守）
 export default class ResultPage extends React.Component{
 	constructor(props){
@@ -9,7 +13,11 @@ export default class ResultPage extends React.Component{
 
 	render(){
 		return(
-			<div>result</div>
+			<div>
+				{this.props.params.type}/{this.props.params.asset}
+				<HightItemTitle />
+				<FundItem />
+			</div>
 		)
 	}
 } 

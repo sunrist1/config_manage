@@ -9,15 +9,6 @@ import EchartPage from './comps/echarts_page.js';  // 选择结果额 echarts展
 import AssetsPage from './comps/assets_page.js';  // 可投资资产选择
 import ResultPage from './comps/result_page.js';  // 得出结果页面
 
-/*class App extends React.Component{
-	render(){
-		return(
-			<div>
-				App box
-			</div>
-		)
-	}
-}*/
 
 render(
 	(
@@ -26,7 +17,7 @@ render(
 			<Route path="/questions" component={QuestionsPage} />
 			<Route path="/echarts_page/:result_arr" component={EchartPage} />
 			<Route path="/assets_select/:result_arr" component={AssetsPage} />
-			<Route path="/result/:asset" component={ResultPage} />
+			<Route path="/result/:asset/:type" component={ResultPage} />
 		</Router>
 	),
 	document.getElementById('content')

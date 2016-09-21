@@ -1,0 +1,25 @@
+.hight_title_box{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.hight_title_box >div{
+	display: inline-block;
+} 
+
+.hight_title_box .per_num{
+	padding:3px 10px;
+	background-color: #e20000;
+	color:#fff;
+	font-weight: bold;
+	border-radius: 8px;
+	font-size: 18px;
+	margin:0px 15px;
+}
+
+.hight_title_box .title_name{
+	color:#e20000;
+	font-size: 18px;
+}
