@@ -1,0 +1,18 @@
+.steady_title_box{
+	height: 40px;
+	background-color: #fff;
+	line-height: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.steady_title_box .nav_item{
+	width:45%;
+	color:#333;
+		text-align: center;
+}
+
+.steady_title_box .active_item{
+	color:#d4902f;
+	border-bottom: 1px solid #d4902f;
+}

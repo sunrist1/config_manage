@@ -1,0 +1,12 @@
+.low_title_box{
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	width:100%;
+}
+
+.low_title_box .title_name{
+	color:#d4902f;
+	font-size: 18px;
+	margin-left: 10px;
+}

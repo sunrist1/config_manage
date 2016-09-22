@@ -92629,6 +92629,14 @@
 
 	var _hight_item_title2 = _interopRequireDefault(_hight_item_title);
 
+	var _low_item_title = __webpack_require__(651);
+
+	var _low_item_title2 = _interopRequireDefault(_low_item_title);
+
+	var _steady_title = __webpack_require__(654);
+
+	var _steady_title2 = _interopRequireDefault(_steady_title);
+
 	var _fund_item = __webpack_require__(646);
 
 	var _fund_item2 = _interopRequireDefault(_fund_item);
@@ -92651,18 +92659,39 @@
 		function ResultPage(props) {
 			_classCallCheck(this, ResultPage);
 
-			return _possibleConstructorReturn(this, (ResultPage.__proto__ || Object.getPrototypeOf(ResultPage)).call(this));
+			var _this = _possibleConstructorReturn(this, (ResultPage.__proto__ || Object.getPrototypeOf(ResultPage)).call(this));
+
+			_this.state = {
+				showType: 'aa'
+			};
+
+			_this.changeShow = _this.changeShow.bind(_this);
+			return _this;
 		}
 
+		// 改变要展示的推荐基金列表，只用于100w－1000w的稳健型下
+
+
 		_createClass(ResultPage, [{
+			key: 'changeShow',
+			value: function changeShow(val) {
+				this.setState({
+					showType: val
+				});
+
+				console.log(this.state.showType);
+			}
+		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
 					null,
+					_react2.default.createElement(_steady_title2.default, { handle: this.changeShow }),
 					_react2.default.createElement(_hight_item_title2.default, { per: '50', title: '固定收益类' }),
 					_react2.default.createElement(_fund_item2.default, null),
-					_react2.default.createElement(_fund_item2.default, null)
+					_react2.default.createElement(_fund_item2.default, null),
+					_react2.default.createElement(_low_item_title2.default, { title: '固定收益' })
 				);
 			}
 		}]);
@@ -92949,6 +92978,229 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "909f74c883587cde532be047bd291a67.png";
+
+/***/ },
+/* 651 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	__webpack_require__(652);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/*
+	* 1000万以上的配置结果，列表的title
+	*/
+
+	var LowItemTitle = function (_React$Component) {
+		_inherits(LowItemTitle, _React$Component);
+
+		function LowItemTitle() {
+			_classCallCheck(this, LowItemTitle);
+
+			return _possibleConstructorReturn(this, (LowItemTitle.__proto__ || Object.getPrototypeOf(LowItemTitle)).apply(this, arguments));
+		}
+
+		_createClass(LowItemTitle, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'low_title_box' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'title_name' },
+						this.props.title
+					)
+				);
+			}
+		}]);
+
+		return LowItemTitle;
+	}(_react2.default.Component);
+
+	exports.default = LowItemTitle;
+
+/***/ },
+/* 652 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(653);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./low_item_title.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./low_item_title.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 653 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".low_title_box{\n\theight: 40px;\n\tline-height: 40px;\n\tbackground-color: #fff;\n\twidth:100%;\n}\n\n.low_title_box .title_name{\n\tcolor:#d4902f;\n\tfont-size: 18px;\n\tmargin-left: 10px;\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 654 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	__webpack_require__(655);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/*
+	* 100万到1000万的稳健型
+	*/
+
+	var steadyTitle = function (_React$Component) {
+		_inherits(steadyTitle, _React$Component);
+
+		function steadyTitle(props) {
+			_classCallCheck(this, steadyTitle);
+
+			var _this = _possibleConstructorReturn(this, (steadyTitle.__proto__ || Object.getPrototypeOf(steadyTitle)).call(this, props));
+
+			_this.state = {};
+
+			_this.navClick = _this.navClick.bind(_this);
+			return _this;
+		}
+
+		_createClass(steadyTitle, [{
+			key: 'navClick',
+			value: function navClick(e) {
+
+				document.getElementsByClassName('active_item')[0].className = "nav_item";
+
+				e.target.className = "nav_item active_item";
+
+				var value = e.target.getAttribute('value');
+				this.props.handle(value);
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'steady_title_box' },
+					_react2.default.createElement(
+						'div',
+						{ onClick: this.navClick, value: 'movies', className: 'nav_item active_item' },
+						'影视创新'
+					),
+					_react2.default.createElement(
+						'div',
+						{ onClick: this.navClick, value: 'fundation', className: 'nav_item' },
+						'证券投资'
+					)
+				);
+			}
+		}]);
+
+		return steadyTitle;
+	}(_react2.default.Component);
+
+	exports.default = steadyTitle;
+
+/***/ },
+/* 655 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(656);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(239)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./steady_title.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./steady_title.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 656 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(238)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".steady_title_box{\n\theight: 40px;\n\tbackground-color: #fff;\n\tline-height: 40px;\n\tdisplay: flex;\n\tjustify-content: space-around;\n}\n\n.steady_title_box .nav_item{\n\twidth:45%;\n\tcolor:#333;\n\t\ttext-align: center;\n}\n\n.steady_title_box .active_item{\n\tcolor:#d4902f;\n\tborder-bottom: 1px solid #d4902f;\n}", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);
