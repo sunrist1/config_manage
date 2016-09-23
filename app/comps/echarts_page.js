@@ -14,15 +14,19 @@ export default class EchartsPage extends React.Component{
 	  super(props);
 	
 	  this.state = {
-	  	resultArr:[]
+	  	resultArr:[],
+	  	resultSum:0
 	  };
 
 	  this.getOption = this.getOption.bind(this)
 	}
-	componentWillMount(){
-		let arr = this.props.params.result_arr.split(",")
+	componentDidMount(){
+		let arr = this.props.params.result_arr.split(","),
+				sum = (arr[0] * 3 + arr[1] * 1 + arr[2] * 2 + arr[3] * 2 + arr[4] * 2 + arr[5] * 3).toFixed(2);
+
 		this.setState({
-			resultArr:arr
+			resultArr:arr,
+			resultSum:sum
 		})
 	}
 
@@ -84,7 +88,7 @@ export default class EchartsPage extends React.Component{
 
 				<div className="submit_btn">
 					<button>
-						<Link className="linkBtn" to={"/assets_select/"+this.state.resultArr}>下一步</Link>
+						<Link className="linkBtn" to={"/assets_select/"+this.state.resultSum}>下一步</Link>
 					</button>
 				</div>
 			</div>

@@ -16,8 +16,8 @@ render(
 			<Route path="/" component={NoticePage} />
 			<Route path="/questions" component={QuestionsPage} />
 			<Route path="/echarts_page/:result_arr" component={EchartPage} />
-			<Route path="/assets_select/:result_arr" component={AssetsPage} />
-			<Route path="/result/:asset/:type" component={ResultPage} />
+			<Route path="/assets_select/:asset" component={AssetsPage} />
+			<Route path="/result/:asset/:result_sum" component={ResultPage} />
 		</Router>
 	),
 	document.getElementById('content')

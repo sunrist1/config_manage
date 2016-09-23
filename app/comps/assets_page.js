@@ -30,13 +30,8 @@ export default class AssetsPage extends React.Component{
 	getAssetType(){
 		// 计算得分，判断类型
 		var sum = 0;
-		// console.log(this.props.params.result_arr)
-		var arr = this.props.params.result_arr.split(",");
-		arr.forEach(function(item){
-			sum += item*1
-		})
 
-		sum = (sum / 6).toFixed(2);
+		sum = this.props.params.asset;
 
 		this.setState({
 			sum:sum
@@ -46,7 +41,7 @@ export default class AssetsPage extends React.Component{
 	makeDom(){
 		let sum = this.state.sum;
 
-		if(0<=sum && sum<4){
+		if(1<=sum && sum<50){
 			return(
 				<div className="top_box">
 					<h2 className="title_1">防守型配置策略</h2>
@@ -54,7 +49,7 @@ export default class AssetsPage extends React.Component{
 					<img className="type_img" src={ImgBaoshou} />
 				</div>
 			)
-		}else if(4<=sum && sum<7){
+		}else if(51<=sum && sum<90){
 			return(
 				<div className="top_box">
 					<h2 className="title_1">稳健性配置策略</h2>
@@ -62,7 +57,7 @@ export default class AssetsPage extends React.Component{
 					<img className="type_img" src={ImgWenjian} />
 				</div>
 			)
-		}else{
+		}else if(91<=sum && sum<=130){
 			return(
 				<div className="top_box">
 					<h2 className="title_1">积极性配置策略</h2>
@@ -91,7 +86,7 @@ export default class AssetsPage extends React.Component{
 		}
 	}
 
-	componentWillMount(){
+	componentDidMount(){
 		this.getAssetType()
 	}
 

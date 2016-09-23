@@ -6,6 +6,12 @@ import '../../static/style/result_comps/fund_item.css'
 export default class FundItem extends React.Component{
 	constructor(props){
 		super()
+
+		this.gotoFund = this.gotoFund.bind(this)
+	}
+
+	gotoFund(link){
+		location.href=link
 	}
 
 	render(){
