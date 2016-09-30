@@ -18,6 +18,7 @@ export default class QuestionRadio extends React.Component{
 
 	render(){
 		let _this=this,
+				title = null,
 				newArr = [];
 
 		this.props.question.options.forEach(function(item,index){
@@ -35,9 +36,11 @@ export default class QuestionRadio extends React.Component{
 								<label htmlFor={"q"+item.nameFor+"-"+item.value}>{item.name}</label>
 							</p>)
 		})
+
 		return(
 			<div className="question_item">
-				<h3>{this.props.rank}、{this.props.question.title}</h3>
+				<h2>{this.props.title}</h2>
+				<h3>{this.props.rank}、{this.props.question.question}</h3>
 				{newArr}
 			</div>
 		)

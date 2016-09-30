@@ -12,7 +12,7 @@
 }
 
 .notice_content .title{
-	width:30%;
+	width:35%;
 	display: block;
 	margin:0px auto 20px;
 }
@@ -34,7 +34,7 @@
 	background:url(../images/go_test_btn.png) 0px 0px no-repeat;
 	background-size:100% 100%;
 	width:120px;
-	height: 40px;
+	height: 42px;
 	border:none;
 	display: block;
 	margin:10px auto;

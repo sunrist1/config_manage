@@ -17,15 +17,11 @@ export default class QuestionsPage extends React.Component{
 		super();
 
 		this.getSelect = this.getSelect.bind(this)
-		this.nextStep = this.nextStep.bind(this)
 		// this.subAnwser = this.subAnwser.bind(this)
 		this.state ={
 			anwserList:new Array(13),
 			resultArr:new Array(6),
-			selectAll:false,
-			listData:[],               //  问题总数组
-			showQuestionsList:[],      // 显示的问题列表
-			count:1                    // 当前该显示的问题part
+			selectAll:false
 		}
 	}
 
@@ -64,54 +60,26 @@ export default class QuestionsPage extends React.Component{
 		}
 	}
 
-	// 下一步
-	nextStep(){
-		this.setState({
-			count:this.state.count+1
-		})
-	}
 
 	render(){
 		let _this = this;
 		let btnContent =null; 
 
-		if(4==this.state.count){
-			btnContent = <Link className="linkBtn" to={"/echarts_page/"+this.state.resultArr}>下一步</Link>;
+		if(this.state.selectAll){
+			btnContent = <Link className="linkBtn" to={"/echarts_page/"+this.state.resultArr}>提交答案</Link>;
 		}else{
-			btnContent = <span onClick={this.nextStep}>下一步</span>;
-		}
-
-		let list = [],
-				count = this.state.count;
-		if(1==count){
-			list.push(ListData.questions[0])
-			list.push(ListData.questions[1])
-			list.push(ListData.questions[2])
-		}else if(2==count){
-			list.push(ListData.questions[3])
-			list.push(ListData.questions[4])
-			list.push(ListData.questions[5])
-		}else if(3==count){
-			list.push(ListData.questions[6])
-			list.push(ListData.questions[7])
-			list.push(ListData.questions[8])
-			list.push(ListData.questions[9])
-		}else{
-			list.push(ListData.questions[10])
-			list.push(ListData.questions[11])
-			list.push(ListData.questions[12])
+			btnContent = "请选择所有题目";
 		}
 
 		return(
 			<div>
 				{
-					list.map(function(item,index){
+					(ListData.questions).map(function(item,index){
 						if(0==item.multi){
 							return(
 								<QuestionRadio 
 									key={item.id} 
 									question={item} 
-									title={item.title}
 									rank={index+1}
 									handle={_this.getSelect}
 								/>
@@ -121,7 +89,6 @@ export default class QuestionsPage extends React.Component{
 								<QuestionCheckbox 
 									key={item.id} 
 									question={item} 
-									title={item.title}
 									rank={index+1}
 									handle={_this.getSelect}
 								/>

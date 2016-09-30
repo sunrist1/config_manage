@@ -27250,7 +27250,7 @@
 
 
 	// module
-	exports.push([module.id, "*{\r\n\tpadding:0px;\r\n\tmargin:0px;\r\n}\r\n\r\n.notice_content{\r\n\tfont-size: 16px;\r\n\tmin-height: 100%;\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\tpadding:20px 10px 100px;\r\n}\r\n\r\n.notice_content .title{\r\n\twidth:30%;\r\n\tdisplay: block;\r\n\tmargin:0px auto 20px;\r\n}\r\n\r\n.notice_content .notice_box{\r\n\tpadding:10px;\r\n\tborder:1px dashed #fff;\r\n\tborder-radius: 12px;\r\n}\r\n\r\n.notice_content .notice_box > p{\r\n\tcolor:#fff;\r\n\tline-height:18px;\r\n\tmargin-bottom: 15px;\r\n\tfont-size: 12px;\r\n}\r\n\r\n.startBtn{\r\n\tbackground:url(" + __webpack_require__(240) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\twidth:120px;\r\n\theight: 40px;\r\n\tborder:none;\r\n\tdisplay: block;\r\n\tmargin:10px auto;\r\n}\r\n\r\n.linkBtn{\r\n\tdisplay: inline-block;\r\n\twidth:100px;\r\n\theight: 100%;\r\n}", ""]);
+	exports.push([module.id, "*{\r\n\tpadding:0px;\r\n\tmargin:0px;\r\n}\r\n\r\n.notice_content{\r\n\tfont-size: 16px;\r\n\tmin-height: 100%;\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\tpadding:20px 10px 100px;\r\n}\r\n\r\n.notice_content .title{\r\n\twidth:35%;\r\n\tdisplay: block;\r\n\tmargin:0px auto 20px;\r\n}\r\n\r\n.notice_content .notice_box{\r\n\tpadding:10px;\r\n\tborder:1px dashed #fff;\r\n\tborder-radius: 12px;\r\n}\r\n\r\n.notice_content .notice_box > p{\r\n\tcolor:#fff;\r\n\tline-height:18px;\r\n\tmargin-bottom: 15px;\r\n\tfont-size: 12px;\r\n}\r\n\r\n.startBtn{\r\n\tbackground:url(" + __webpack_require__(240) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\twidth:120px;\r\n\theight: 42px;\r\n\tborder:none;\r\n\tdisplay: block;\r\n\tmargin:10px auto;\r\n}\r\n\r\n.linkBtn{\r\n\tdisplay: inline-block;\r\n\twidth:100px;\r\n\theight: 100%;\r\n}", ""]);
 
 	// exports
 
@@ -27641,11 +27641,15 @@
 			var _this2 = _possibleConstructorReturn(this, (QuestionsPage.__proto__ || Object.getPrototypeOf(QuestionsPage)).call(this));
 
 			_this2.getSelect = _this2.getSelect.bind(_this2);
+			_this2.nextStep = _this2.nextStep.bind(_this2);
 			// this.subAnwser = this.subAnwser.bind(this)
 			_this2.state = {
 				anwserList: new Array(13),
 				resultArr: new Array(6),
-				selectAll: false
+				selectAll: false,
+				listData: [], //  问题总数组
+				showQuestionsList: [], // 显示的问题列表
+				count: 1 // 当前该显示的问题part
 			};
 			return _this2;
 		}
@@ -27687,40 +27691,65 @@
 				}
 			}
 
-			/*	subAnwser(){
-	  		let list = this.state.anwserList;
-	  		for(let i=0;i<list.length;i++){
-	  			if(undefined==list[i]){
-	  				alert("请选择所有题目。");
-	  				return;
-	  			}
-	  		}
-	  	}*/
+			// 下一步
 
+		}, {
+			key: 'nextStep',
+			value: function nextStep() {
+				this.setState({
+					count: this.state.count + 1
+				});
+			}
 		}, {
 			key: 'render',
 			value: function render() {
 				var _this = this;
 				var btnContent = null;
 
-				if (this.state.selectAll) {
+				if (4 == this.state.count) {
 					btnContent = _react2.default.createElement(
 						_reactRouter.Link,
 						{ className: 'linkBtn', to: "/echarts_page/" + this.state.resultArr },
-						'提交答案'
+						'下一步'
 					);
 				} else {
-					btnContent = "请选择所有题目";
+					btnContent = _react2.default.createElement(
+						'span',
+						{ onClick: this.nextStep },
+						'下一步'
+					);
+				}
+
+				var list = [],
+				    count = this.state.count;
+				if (1 == count) {
+					list.push(_questions2.default.questions[0]);
+					list.push(_questions2.default.questions[1]);
+					list.push(_questions2.default.questions[2]);
+				} else if (2 == count) {
+					list.push(_questions2.default.questions[3]);
+					list.push(_questions2.default.questions[4]);
+					list.push(_questions2.default.questions[5]);
+				} else if (3 == count) {
+					list.push(_questions2.default.questions[6]);
+					list.push(_questions2.default.questions[7]);
+					list.push(_questions2.default.questions[8]);
+					list.push(_questions2.default.questions[9]);
+				} else {
+					list.push(_questions2.default.questions[10]);
+					list.push(_questions2.default.questions[11]);
+					list.push(_questions2.default.questions[12]);
 				}
 
 				return _react2.default.createElement(
 					'div',
 					null,
-					_questions2.default.questions.map(function (item, index) {
+					list.map(function (item, index) {
 						if (0 == item.multi) {
 							return _react2.default.createElement(_question_item_radio2.default, {
 								key: item.id,
 								question: item,
+								title: item.title,
 								rank: index + 1,
 								handle: _this.getSelect
 							});
@@ -27728,6 +27757,7 @@
 							return _react2.default.createElement(_question_item_checkbox2.default, {
 								key: item.id,
 								question: item,
+								title: item.title,
 								rank: index + 1,
 								handle: _this.getSelect
 							});
@@ -27805,6 +27835,7 @@
 			key: 'render',
 			value: function render() {
 				var _this = this,
+				    title = null,
 				    newArr = [];
 
 				this.props.question.options.forEach(function (item, index) {
@@ -27827,15 +27858,21 @@
 						)
 					));
 				});
+
 				return _react2.default.createElement(
 					'div',
 					{ className: 'question_item' },
+					_react2.default.createElement(
+						'h2',
+						null,
+						this.props.title
+					),
 					_react2.default.createElement(
 						'h3',
 						null,
 						this.props.rank,
 						'、',
-						this.props.question.title
+						this.props.question.question
 					),
 					newArr
 				);
@@ -27977,11 +28014,16 @@
 					'div',
 					{ className: 'question_item' },
 					_react2.default.createElement(
+						'h2',
+						null,
+						this.props.title
+					),
+					_react2.default.createElement(
 						'h3',
 						null,
 						this.props.rank,
 						'、(多选)',
-						this.props.question.title
+						this.props.question.question
 					),
 					newArr
 				);
@@ -28000,8 +28042,9 @@
 	module.exports = {
 		"questions": [
 			{
+				"title": "一、财务状况",
 				"id": "1",
-				"title": "最近您家庭预计进行证券投资的资金占家庭现有总资产(不含自住、自用房产及汽车等固定资产)的比例是：",
+				"question": "最近您家庭预计进行证券投资的资金占家庭现有总资产(不含自住、自用房产及汽车等固定资产)的比例是：",
 				"multi": 0,
 				"options": [
 					{
@@ -28033,7 +28076,7 @@
 			},
 			{
 				"id": "2",
-				"title": "您是否有尚未清偿的数额较大的债务,如有,其性质是：",
+				"question": "您是否有尚未清偿的数额较大的债务,如有,其性质是：",
 				"multi": 0,
 				"options": [
 					{
@@ -28060,7 +28103,7 @@
 			},
 			{
 				"id": "3",
-				"title": "您可用于投资的资产数额(包括金融资产和不动产)为:",
+				"question": "您可用于投资的资产数额(包括金融资产和不动产)为:",
 				"multi": 0,
 				"options": [
 					{
@@ -28086,8 +28129,9 @@
 				]
 			},
 			{
+				"title": "二、投资知识",
 				"id": "4",
-				"title": "以下描述中何种符合您的实际情况:",
+				"question": "以下描述中何种符合您的实际情况:",
 				"multi": 0,
 				"options": [
 					{
@@ -28113,8 +28157,9 @@
 				]
 			},
 			{
+				"title": "三、投资经验",
 				"id": "5",
-				"title": "有一位投资者一个月内做了15笔交易(同一品种买卖各一次算一笔),您认为这样的交易频率:",
+				"question": "有一位投资者一个月内做了15笔交易(同一品种买卖各一次算一笔),您认为这样的交易频率:",
 				"multi": 0,
 				"options": [
 					{
@@ -28141,7 +28186,7 @@
 			},
 			{
 				"id": "6",
-				"title": "以下金融产品，您投资经验在两年以上的有:",
+				"question": "以下金融产品，您投资经验在两年以上的有:",
 				"multi": 1,
 				"options": [
 					{
@@ -28172,8 +28217,9 @@
 				]
 			},
 			{
+				"title": "四、投资目标",
 				"id": "7",
-				"title": "您用于证券投资的大部分资金不会用作其它用途的时间段为:",
+				"question": "您用于证券投资的大部分资金不会用作其它用途的时间段为:",
 				"multi": 0,
 				"options": [
 					{
@@ -28195,7 +28241,7 @@
 			},
 			{
 				"id": "8",
-				"title": "您打算重点投资于哪些种类的投资品种？",
+				"question": "您打算重点投资于哪些种类的投资品种？",
 				"multi": 1,
 				"options": [
 					{
@@ -28226,8 +28272,9 @@
 				]
 			},
 			{
+				"title": "五、风险偏好",
 				"id": "9",
-				"title": "当您进行投资时，您的首要目标是:",
+				"question": "当您进行投资时，您的首要目标是:",
 				"multi": 0,
 				"options": [
 					{
@@ -28254,7 +28301,7 @@
 			},
 			{
 				"id": "10",
-				"title": "您认为自己能承受的最大投资损失是多少？:",
+				"question": "您认为自己能承受的最大投资损失是多少？:",
 				"multi": 0,
 				"options": [
 					{
@@ -28280,8 +28327,9 @@
 				]
 			},
 			{
+				"title": "六、其他信息",
 				"id": "11",
-				"title": "您的年龄是:",
+				"question": "您的年龄是:",
 				"multi": 0,
 				"options": [
 					{
@@ -28313,7 +28361,7 @@
 			},
 			{
 				"id": "12",
-				"title": "您的最高学历是:",
+				"question": "您的最高学历是:",
 				"multi": 0,
 				"options": [
 					{
@@ -28340,7 +28388,7 @@
 			},
 			{
 				"id": "13",
-				"title": "您的就业状况是:",
+				"question": "您的就业状况是:",
 				"multi": 0,
 				"options": [
 					{
