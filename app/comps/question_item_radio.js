@@ -37,9 +37,13 @@ export default class QuestionRadio extends React.Component{
 							</p>)
 		})
 
+		if(this.props.title){
+			title = <h2>{this.props.title}</h2>
+		}
+
 		return(
 			<div className="question_item">
-				<h2>{this.props.title}</h2>
+				{title}
 				<h3>{this.props.rank}、{this.props.question.question}</h3>
 				{newArr}
 			</div>

@@ -1,13 +1,18 @@
 .question_item{
-	margin:15px 0px 0px;
-	background-color: #fff;
-	padding:10px;
+	margin:5px 0px 0px;
+	padding:10px 10px 0px;
+}
+
+.question_item h2{
+	color:#fbf506;
+	line-height: 30px;
+	font-size: 22px;
+	margin-bottom: 15px;
 }
 
 .question_item h3{
-	font-size: 16px;
-	color:#333;
-	border-bottom:1px solid #ccc;
+	font-size: 14px;
+	color:#fff;
   line-height: 30px;
 }
 
@@ -22,11 +27,13 @@
 	height: 18px;
 	display: inline-block;
 	margin-right: 2%;
+	margin-left: 5%;
 	vertical-align: top;
 }
 
 .question_item p label{
 	vertical-align: top;
 	display: inline-block;
-	width:90%;
+	width:80%;
+	color:#fff;
 }

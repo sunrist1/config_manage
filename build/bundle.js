@@ -27665,7 +27665,6 @@
 					anwserList: arr
 				});
 
-				// console.log(this.state.anwserList)
 				var anwserList = this.state.anwserList;
 				var resultArr = this.state.resultArr;
 				resultArr[0] = ((anwserList[0] + anwserList[1] + anwserList[2]) / 3).toFixed(2);
@@ -27696,6 +27695,30 @@
 		}, {
 			key: 'nextStep',
 			value: function nextStep() {
+				var count = this.state.count,
+				    anwserList = this.state.anwserList;
+				if (1 == count) {
+					if (undefined == anwserList[0] || undefined == anwserList[1] || undefined == anwserList[2]) {
+						alert("请回答所有问题。");
+						return;
+					}
+				} else if (2 == count) {
+					if (undefined == anwserList[3] || undefined == anwserList[4] || undefined == anwserList[5]) {
+						alert("请回答所有问题。");
+						return;
+					}
+				} else if (3 == count) {
+					if (undefined == anwserList[6] || undefined == anwserList[7] || undefined == anwserList[8] || undefined == anwserList[9]) {
+						alert("请回答所有问题。");
+						return;
+					}
+				} else {
+					if (undefined == resultArr[10] || undefined == resultArr[11] || undefined == resultArr[12]) {
+						alert("请回答所有问题。");
+						return;
+					}
+				}
+
 				this.setState({
 					count: this.state.count + 1
 				});
@@ -27743,14 +27766,14 @@
 
 				return _react2.default.createElement(
 					'div',
-					null,
+					{ className: 'question_page_content' },
 					list.map(function (item, index) {
 						if (0 == item.multi) {
 							return _react2.default.createElement(_question_item_radio2.default, {
 								key: item.id,
 								question: item,
 								title: item.title,
-								rank: index + 1,
+								rank: item.id,
 								handle: _this.getSelect
 							});
 						} else if (1 == item.multi) {
@@ -27758,7 +27781,7 @@
 								key: item.id,
 								question: item,
 								title: item.title,
-								rank: index + 1,
+								rank: item.id,
 								handle: _this.getSelect
 							});
 						}
@@ -27859,14 +27882,18 @@
 					));
 				});
 
-				return _react2.default.createElement(
-					'div',
-					{ className: 'question_item' },
-					_react2.default.createElement(
+				if (this.props.title) {
+					title = _react2.default.createElement(
 						'h2',
 						null,
 						this.props.title
-					),
+					);
+				}
+
+				return _react2.default.createElement(
+					'div',
+					{ className: 'question_item' },
+					title,
 					_react2.default.createElement(
 						'h3',
 						null,
@@ -27919,7 +27946,7 @@
 
 
 	// module
-	exports.push([module.id, ".question_item{\r\n\tmargin:15px 0px 0px;\r\n\tbackground-color: #fff;\r\n\tpadding:10px;\r\n}\r\n\r\n.question_item h3{\r\n\tfont-size: 16px;\r\n\tcolor:#333;\r\n\tborder-bottom:1px solid #ccc;\r\n  line-height: 30px;\r\n}\r\n\r\n.question_item p{\r\n\tline-height: 20px;\r\n\tpadding:5px 2px;\r\n\tfont-size: 15px;\r\n}\r\n\r\n.question_item p input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: 2%;\r\n\tvertical-align: top;\r\n}\r\n\r\n.question_item p label{\r\n\tvertical-align: top;\r\n\tdisplay: inline-block;\r\n\twidth:90%;\r\n}", ""]);
+	exports.push([module.id, ".question_item{\r\n\tmargin:5px 0px 0px;\r\n\tpadding:10px 10px 0px;\r\n}\r\n\r\n.question_item h2{\r\n\tcolor:#fbf506;\r\n\tline-height: 30px;\r\n\tfont-size: 22px;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.question_item h3{\r\n\tfont-size: 14px;\r\n\tcolor:#fff;\r\n  line-height: 30px;\r\n}\r\n\r\n.question_item p{\r\n\tline-height: 20px;\r\n\tpadding:5px 2px;\r\n\tfont-size: 15px;\r\n}\r\n\r\n.question_item p input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: 2%;\r\n\tmargin-left: 5%;\r\n\tvertical-align: top;\r\n}\r\n\r\n.question_item p label{\r\n\tvertical-align: top;\r\n\tdisplay: inline-block;\r\n\twidth:80%;\r\n\tcolor:#fff;\r\n}", ""]);
 
 	// exports
 
@@ -28456,7 +28483,7 @@
 
 
 	// module
-	exports.push([module.id, "body{\r\n\tbackground-color: #f0f0f0;\r\n}\r\n\r\n.submit_btn{\r\n\theight: 80px;\r\n\tline-height: 80px;\r\n\tbackground-color: #fff;\r\n\tmargin-top:15px;\r\n\ttext-align: center;\r\n}\r\n\r\n.submit_btn button{\r\n\tdisplay: inline-block;\r\n\tborder:none;\r\n\theight: 36px;\r\n\tline-height: 36px;\r\n\twidth:70%;\r\n\tborder-radius: 10px;\r\n\tfont-size: 16px;\r\n\tbackground-color: #d4902f;\r\n\tcolor:#fff;\r\n}", ""]);
+	exports.push([module.id, "body{\r\n\tbackground-color: #f0f0f0;\r\n}\r\n.question_page_content{\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n\tpadding-bottom: 50px;\r\n}\r\n\r\n.submit_btn{\r\n\theight: 80px;\r\n\tline-height: 80px;\r\n\tmargin-top:15px;\r\n\ttext-align: center;\r\n}\r\n\r\n.submit_btn button{\r\n\tdisplay: inline-block;\r\n\tborder:none;\r\n\theight: 36px;\r\n\tline-height: 36px;\r\n\twidth:70%;\r\n\tborder-radius: 10px;\r\n\tfont-size: 16px;\r\n\tbackground-color: #d4902f;\r\n\tcolor:#fff;\r\n}", ""]);
 
 	// exports
 

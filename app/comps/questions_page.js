@@ -38,7 +38,6 @@ export default class QuestionsPage extends React.Component{
 			anwserList:arr
 		})
 
-		// console.log(this.state.anwserList)
 		let anwserList = this.state.anwserList;
 		let resultArr = this.state.resultArr;
 		resultArr[0]=((anwserList[0]+anwserList[1]+anwserList[2])/3).toFixed(2)
@@ -66,6 +65,30 @@ export default class QuestionsPage extends React.Component{
 
 	// 下一步
 	nextStep(){
+		let count = this.state.count,
+				anwserList = this.state.anwserList;
+		if(1==count){
+			if(undefined==anwserList[0] || undefined==anwserList[1] || undefined==anwserList[2]){
+				alert("请回答所有问题。")
+				return;
+			}
+		}else if(2==count){
+			if(undefined==anwserList[3] || undefined==anwserList[4] || undefined==anwserList[5]){
+				alert("请回答所有问题。")
+				return;
+			}
+		}else if(3==count){
+			if(undefined==anwserList[6] || undefined==anwserList[7] || undefined==anwserList[8] || undefined==anwserList[9]){
+				alert("请回答所有问题。")
+				return;
+			}
+		}else{
+			if(undefined==resultArr[10] || undefined==resultArr[11] || undefined==resultArr[12]){
+				alert("请回答所有问题。")
+				return;
+			}
+		}
+
 		this.setState({
 			count:this.state.count+1
 		})
@@ -103,7 +126,7 @@ export default class QuestionsPage extends React.Component{
 		}
 
 		return(
-			<div>
+			<div className="question_page_content">
 				{
 					list.map(function(item,index){
 						if(0==item.multi){
@@ -112,7 +135,7 @@ export default class QuestionsPage extends React.Component{
 									key={item.id} 
 									question={item} 
 									title={item.title}
-									rank={index+1}
+									rank={item.id}
 									handle={_this.getSelect}
 								/>
 							)
@@ -122,7 +145,7 @@ export default class QuestionsPage extends React.Component{
 									key={item.id} 
 									question={item} 
 									title={item.title}
-									rank={index+1}
+									rank={item.id}
 									handle={_this.getSelect}
 								/>
 							)
