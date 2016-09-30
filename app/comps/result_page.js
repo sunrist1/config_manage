@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import $ from 'jquery'
 // 引入组件
 import HightItemTitle from './result_comps/hight_item_title.js'
 import LowItemTitle from './result_comps/low_item_title.js'
@@ -54,60 +55,37 @@ export default class ResultPage extends React.Component{
 			asset:this.props.params.asset
 		})
 
-		// this.getFundData('YZ00001')
+		this.getFundData('YZ00001')
 		
 	}
 
-/*	getFundData(fundId){
-		let now = new Date();
-		console.log(now);
-		let dataId = (new Date().getFullYear())+""+
-									(new Date().getMonth()+1)+""+
-									(new Date().getDate())+""+
-									(new Date().getHours())+""+
-									(new Date().getMinutes())+""+
-									(new Date().getSeconds()),
+	getFundData(fundId){
+		let now = new Date(),
+				url = "http://192.168.1.233:3333/lcs",
+				// url = "http://lcs.daliuliang.com.cn/mobile/api/appService",
 				device = 3,
 				deviceId = "0E37A8FF-6882-4413-9C34-8F5B94E16D99";
-		let xhr = new XMLHttpRequest();
 
 		let postData = {
-			code:"searchFundList",
-			data:{
-				pageSize:15,
-				key:fundId,
-				typeCode:1,
-				pageIndex:1
-			},
-			dataId:dataId,
-			userPID:"1001",
-			sign:""
-		}
-
- console.log(postData)
-		xhr.open("POST","http://lcs.daliuliang.com.cn/mobile/api/appService",true);
-		xhr.setRequestHeader("Content-type","application/json");
-		xhr.setRequestHeader("dataId",dataId);
-		xhr.setRequestHeader("deviceId",deviceId);
-		xhr.setRequestHeader("device","3");
-		xhr.setRequestHeader("token","");
-		xhr.setRequestHeader("Authorization","Basic Og==");
-		xhr.setRequestHeader("Access-Control-Allow-Origin","*");
-
-		console.log(xhr)
-		xhr.onreadystatechange = function(){
-		    var XMLHttpReq = xhr;
-		    if (XMLHttpReq.readyState == 4) {
-		        if (XMLHttpReq.status == 200) {
-		            var text = XMLHttpReq.responseText;
-		 
-		            console.log(text);
-		        }
-		    }
+	    "code":"getFundList",
+	    "data":{
+        "fundCodes":"000005,000006"
+	    }
 		};
-		xhr.send(postData);
 
-	}*/
+		console.log($)
+		$.ajax({  
+      url:url,  
+      type:"POST",
+      dataType:'json',  
+      data:postData,  
+      // jsonp:'callback',  
+      success:function(result) {  
+        console.log(result)  
+      },  
+      timeout:3000  
+    });  
+	}
 
 	// 渲染该显示的dom的函数
 	showRender(){
