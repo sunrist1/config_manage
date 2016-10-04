@@ -92,6 +92,8 @@ export default class QuestionsPage extends React.Component{
 		this.setState({
 			count:this.state.count+1
 		})
+
+		window.scrollTo(0,0);  //返回顶部
 	}
 
 	render(){

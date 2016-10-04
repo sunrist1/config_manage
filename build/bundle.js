@@ -62,15 +62,15 @@
 
 	var _questions_page2 = _interopRequireDefault(_questions_page);
 
-	var _echarts_page = __webpack_require__(251);
+	var _echarts_page = __webpack_require__(254);
 
 	var _echarts_page2 = _interopRequireDefault(_echarts_page);
 
-	var _assets_page = __webpack_require__(638);
+	var _assets_page = __webpack_require__(641);
 
 	var _assets_page2 = _interopRequireDefault(_assets_page);
 
-	var _result_page = __webpack_require__(645);
+	var _result_page = __webpack_require__(648);
 
 	var _result_page2 = _interopRequireDefault(_result_page);
 
@@ -16062,8 +16062,7 @@
 	  if (x === y) {
 	    // Steps 1-5, 7-10
 	    // Steps 6.b-6.e: +0 != -0
-	    // Added the nonzero y check to make Flow happy, but it is redundant
-	    return x !== 0 || y !== 0 || 1 / x === 1 / y;
+	    return x !== 0 || 1 / x === 1 / y;
 	  } else {
 	    // Step 6.a: NaN == NaN
 	    return x !== x && y !== y;
@@ -27179,27 +27178,27 @@
 						_react2.default.createElement(
 							'p',
 							null,
-							'1\u3001\u8BF7\u6295\u8D44\u8005\u8BA4\u771F\u9605\u8BFB\u95EE\u5377\u5185\u5BB9\uFF0C\u4E86\u89E3\u8BC4\u5206\u89C4\u5219\uFF0C\u5E76\u786E\u8BA4\u6240\u586B\u5199\u5185\u5BB9\u8868\u8FBE\u771F\u5B9E\u3002'
+							'1、请投资者认真阅读问卷内容，了解评分规则，并确认所填写内容表达真实。'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'2\u3001\u4EBF\u57FA\u91D1\u5411\u5BA2\u6237\u5C65\u884C\u98CE\u9669\u627F\u53D7\u80FD\u529B\u8BC4\u4F30\u7B49\u9002\u5F53\u6027\u804C\u8D23\uFF0C \u5E76\u4E0D\u80FD\u53D6\u4EE3\u60A8\u81EA\u5DF1\u7684\u6295\u8D44\u5224\u65AD\uFF0C\u4E5F\u4E0D\u4F1A\u964D\u4F4E\u91D1\u878D\u4EA7\u54C1\u6216 \u91D1\u878D\u670D\u52A1\u7684\u56FA\u6709\u98CE\u9669\u3002\u65E0t\u8BBA\u6295\u8D44\u8005\u662F\u5426\u6839\u636E\u8C03\u67E5\u7ED3\u679C\u8FDB\u884C\u6295\u8D44\uFF0C\u5747\u5C5E\u6295\u8D44\u8005\u7684\u72EC\u7ACB\u884C\u4E3A\uFF0C\u76F8\u5E94\u7684\u98CE\u9669\u4EA6\u7531\u6295\u8D44\u8005\u72EC\u7ACB\u627F\u62C5\u3002\u540C\u4E8B\uFF0C\u4E0E\u91D1\u878D\u4EA7\u54C1\u6216\u91D1\u878D\u670D\u52A1\u76F8\u5173\u7684\u94A9\u5B50\u98CE\u9669\u3001\u5C65\u5C5E\u8D23\u4EFB\u4EE5\u53CA\u8D39\u7528\u7B49\u5C06\u7531\u60A8\u81EA\u884C\u627F\u62C5\u3002'
+							'2、亿基金向客户履行风险承受能力评估等适当性职责， 并不能取代您自己的投资判断，也不会降低金融产品或 金融服务的固有风险。无t论投资者是否根据调查结果进行投资，均属投资者的独立行为，相应的风险亦由投资者独立承担。同事，与金融产品或金融服务相关的钩子风险、履属责任以及费用等将由您自行承担。'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'3\u3001\u4EBF\u57FA\u91D1\u6839\u636E\u60A8\u63D0\u4F9B\u7684\u4FE1\u606F\u5BF9\u60A8\u8FDB\u884C\u98CE\u9669\u627F\u53D7\u80FD\u529B\u8BC4 \u4F30\uFF0C\u5F00\u5C55\u9002\u5F53\u6027\u5DE5\u4F5C\u3002\u60A8\u5E94\u5F53\u5982\u5B9E\u63D0\u4F9B\u76F8\u5173\u4FE1\u606F\u53CA\u8BC1\u660E \u6750\u6599\uFF0C\u5E76\u5BF9\u6240\u63D0\u4F9B\u7684\u4FE1\u606F\u548C\u8BC1\u660E\u6750\u6599\uFF0C\u5E76\u5BF9\u6240\u63D0\u4F9B\u7684\u4FE1\u606F\u548C\u8BC1\u660E\u6750\u6599\u7684\u771F\u5B9E\u6027\u3001\u51C6\u786E\u6027\u3001\u6709\u6548\u6027\u3001\u5B8C\u6574\u6027\u8D1F\u8D23\uFF0C\u4EBF\u57FA\u91D1\u4E0D\u627F\u62C5\u4EFB\u4F55\u8D23\u4EFB\u6216\u7531\u6B64\u800C\u9020\u6210\u7684\u635F\u5931\u3002'
+							'3、亿基金根据您提供的信息对您进行风险承受能力评 估，开展适当性工作。您应当如实提供相关信息及证明 材料，并对所提供的信息和证明材料，并对所提供的信息和证明材料的真实性、准确性、有效性、完整性负责，亿基金不承担任何责任或由此而造成的损失。'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'4\u3001\u4EBF\u57FA\u91D1\u63D0\u9192\u60A8\uFF1A\u5F53\u60A8\u7684\u5404\u9879\u72B6\u51B5\u3001\u4FE1\u606F\u53D1\u751F\u91CD\u5927\u53D8 \u5316\u65F6\uFF0C\u5E94\u5F53\u53CA\u65F6\u544A\u77E5\u672C\u516C\u53F8\uFF0C\u4EE5\u4FBF\u672C\u516C\u53F8\u53CA\u65F6\u66F4\u65B0\u60A8\u7684 \u91CD\u5927\u53D8\u5316\u4FE1\u606F\u3002\u672C\u516C\u53F8\u5EFA\u8BAE\uFF1A\u6B64\u65F6\u9700\u5BF9\u60A8\u6240\u6295\u8D44\u7684\u91D1\u878D\u4EA7\u54C1\u51E0\u65F6\u8FDB\u884C\u91CD\u65B0\u5BA1\u89C6\uFF0C\u4EE5\u786E\u4FDD\u60A8\u7684\u6295\u8D44\u51B3\u5B9A\u4E0E\u60A8\u53EF\u627F\u53D7\u7684\u6295\u8D44\u98CE\u9669\u7A0B\u5EA6\u7B49\u5B9E\u9645\u60C5\u51B5\u4E00\u81F4\u3002'
+							'4、亿基金提醒您：当您的各项状况、信息发生重大变 化时，应当及时告知本公司，以便本公司及时更新您的 重大变化信息。本公司建议：此时需对您所投资的金融产品几时进行重新审视，以确保您的投资决定与您可承受的投资风险程度等实际情况一致。'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'5\u3001\u672C\u95EE\u5377\u5171\u8BBE\u8BA1\u4E8613\u9053\u95EE\u9898\u3002'
+							'5、本问卷共设计了13道问题。'
 						)
 					),
 					_react2.default.createElement(
@@ -27251,7 +27250,7 @@
 
 
 	// module
-	exports.push([module.id, "*{\n\tpadding:0px;\n\tmargin:0px;\n}\n\n.notice_content{\n\tfont-size: 16px;\n\tmin-height: 100%;\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\n\tbackground-size:100% 100%;\n\tpadding:20px 10px 100px;\n}\n\n.notice_content .title{\n\twidth:35%;\n\tdisplay: block;\n\tmargin:0px auto 20px;\n}\n\n.notice_content .notice_box{\n\tpadding:10px;\n\tborder:1px dashed #fff;\n\tborder-radius: 12px;\n}\n\n.notice_content .notice_box > p{\n\tcolor:#fff;\n\tline-height:18px;\n\tmargin-bottom: 15px;\n\tfont-size: 12px;\n}\n\n.startBtn{\n\tbackground:url(" + __webpack_require__(240) + ") 0px 0px no-repeat;\n\tbackground-size:100% 100%;\n\twidth:120px;\n\theight: 42px;\n\tborder:none;\n\tdisplay: block;\n\tmargin:10px auto;\n}\n\n.linkBtn{\n\tdisplay: inline-block;\n\twidth:100px;\n\theight: 100%;\n}", ""]);
+	exports.push([module.id, "*{\r\n\tpadding:0px;\r\n\tmargin:0px;\r\n}\r\n\r\n.notice_content{\r\n\tfont-size: 16px;\r\n\tmin-height: 100%;\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\tpadding:20px 10px 100px;\r\n}\r\n\r\n.notice_content .title{\r\n\twidth:35%;\r\n\tdisplay: block;\r\n\tmargin:0px auto 20px;\r\n}\r\n\r\n.notice_content .notice_box{\r\n\tpadding:10px;\r\n\tborder:1px dashed #fff;\r\n\tborder-radius: 12px;\r\n}\r\n\r\n.notice_content .notice_box > p{\r\n\tcolor:#fff;\r\n\tline-height:18px;\r\n\tmargin-bottom: 15px;\r\n\tfont-size: 12px;\r\n}\r\n\r\n.startBtn{\r\n\tbackground:url(" + __webpack_require__(240) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\twidth:120px;\r\n\theight: 42px;\r\n\tborder:none;\r\n\tdisplay: block;\r\n\tmargin:10px auto;\r\n}\r\n\r\n.linkBtn{\r\n\tdisplay: inline-block;\r\n\twidth:100px;\r\n\theight: 100%;\r\n}", ""]);
 
 	// exports
 
@@ -27606,15 +27605,15 @@
 
 	var _question_item_radio2 = _interopRequireDefault(_question_item_radio);
 
-	var _question_item_checkbox = __webpack_require__(247);
+	var _question_item_checkbox = __webpack_require__(249);
 
 	var _question_item_checkbox2 = _interopRequireDefault(_question_item_checkbox);
 
-	var _questions = __webpack_require__(248);
+	var _questions = __webpack_require__(250);
 
 	var _questions2 = _interopRequireDefault(_questions);
 
-	__webpack_require__(249);
+	__webpack_require__(251);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27723,6 +27722,8 @@
 				this.setState({
 					count: this.state.count + 1
 				});
+
+				window.scrollTo(0, 0); //返回顶部
 			}
 		}, {
 			key: 'render',
@@ -27892,7 +27893,7 @@
 						'h3',
 						null,
 						this.props.rank,
-						'\u3001',
+						'、',
 						this.props.question.question
 					),
 					newArr
@@ -27940,13 +27941,25 @@
 
 
 	// module
-	exports.push([module.id, ".question_item{\n\tmargin:5px 0px 0px;\n\tpadding:10px 10px 0px;\n}\n\n.question_item h2{\n\tcolor:#fbf506;\n\tline-height: 30px;\n\tfont-size: 22px;\n\tmargin-bottom: 15px;\n}\n\n.question_item h3{\n\tfont-size: 14px;\n\tcolor:#fff;\n  line-height: 30px;\n}\n\n.question_item p{\n\tline-height: 20px;\n\tpadding:5px 2px;\n\tfont-size: 15px;\n}\n\n.question_item p input{\n\twidth:18px;\n\theight: 18px;\n\tdisplay: inline-block;\n\tmargin-right: 2%;\n\tmargin-left: 5%;\n\tvertical-align: top;\n\tdisplay: none;\n}\n\n.question_item p > label:nth-of-type(2){\n\tvertical-align: top;\n\tdisplay: inline-block;\n\twidth:80%;\n\tcolor:#fff;\n}\n\n.question_item p .input_icon{\n\tbackground:url(" + __webpack_require__(761) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n\tdisplay: inline-block;\n\twidth:20px;\n\theight: 20px;\n\tmargin-right: 5px;\n}\n\n.question_item p input:checked+.input_icon{\n\tbackground:url(" + __webpack_require__(762) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n}\n\n.question_item .notice_word{\n\tcolor:yellow;\n\tfont-size: 12px;\n}", ""]);
+	exports.push([module.id, ".question_item{\r\n\tmargin:5px 0px 0px;\r\n\tpadding:10px 10px 0px;\r\n}\r\n\r\n.question_item h2{\r\n\tcolor:#fbf506;\r\n\tline-height: 30px;\r\n\tfont-size: 22px;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.question_item h3{\r\n\tfont-size: 14px;\r\n\tcolor:#fff;\r\n  line-height: 30px;\r\n}\r\n\r\n.question_item p{\r\n\tline-height: 20px;\r\n\tpadding:5px 2px;\r\n\tfont-size: 15px;\r\n}\r\n\r\n.question_item p input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: 2%;\r\n\tmargin-left: 5%;\r\n\tvertical-align: top;\r\n\tdisplay: none;\r\n}\r\n\r\n.question_item p > label:nth-of-type(2){\r\n\tvertical-align: top;\r\n\tdisplay: inline-block;\r\n\twidth:80%;\r\n\tcolor:#fff;\r\n}\r\n\r\n.question_item p .input_icon{\r\n\tbackground:url(" + __webpack_require__(247) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n\tdisplay: inline-block;\r\n\twidth:20px;\r\n\theight: 20px;\r\n\tmargin-right: 5px;\r\n}\r\n\r\n.question_item p input:checked+.input_icon{\r\n\tbackground:url(" + __webpack_require__(248) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n}\r\n\r\n.question_item .notice_word{\r\n\tcolor:yellow;\r\n\tfont-size: 12px;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
 /* 247 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAh1BMVEUAAABprP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP//9gBprP9ur/h9t92tzoyLvcXB2Gvd5jrr7SLz8BT48wx4tOWjyZy71XPW4kZysfCTwbiz0ITJ3Fzj6DCFutGexqXP3lHXN63qAAAAFnRSTlMAlaTEJc9RGwm3XEDx3a+ce3Q5ZTGI4QR8rAAAARNJREFUKM990tdywjAURdErV2zTIdrujRYg//99MWUYO7ayXvfoPNyR9PneZr0J9zJpr1zelt6oOkugOadper8BdjjMCuL0ql+qPAFr1ssWtJXuyU/Yfi/HP3qovOH6n/FTof+qM4JX3sJRj1UJ6tkDUj2lAKfLHk2tJ7VYXV9y0NNKmMmMuNIGZzzZkmmTA0o2pMZeYIsiN/aKuVh8ayP4t9fMRXEw9pKF7GiN/UggDomxX1iLuFxNPSESUbTGefvx84jL6Z6xls6KzHBdV55c0qn1GO/zgS7j259YyVsE93qY8xhLPqI5Tf/M1zNd7vEDSC7Fc6TMM1iEMrSz6TRJEtNRMxmJvmweFqtQTHzHGb78BeohQipmRohAAAAAAElFTkSuQmCC"
+
+/***/ },
+/* 248 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAw1BMVEUAAABprP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP//9gAALdRprP9vsPb58we/129+t9vd5jmiyZ+rzZDK3Vvr7SLh3xnz8BUMNsojSbd7teKKvciPv75GZZmwz4idqVGps0fW4kbj6C/Iyy53s+iEudEdRLyUwbctUK9VcI1heoO10X5rgntziHS6wDnT1CTy7Aucxag2WKeJmWJEL/1vAAAAF3RSTlMAkyTOnqVVwbf23610bGFEOzEZC31M7D2piSAAAAFoSURBVCjPfZPndoMwDEYFZI9m13yMhAxI0uy9277/U5VihULg9P7DV7IkH0FRmp1qpZJrUCoNRQNTziWsWgaw2Tsz53MLIP8SUS3CcFZCMrJsINuK6AzQG4kIloF8M9RZGH0RZ7CF9gxQYHTFK+YEBW4cWIokozGUwBfghIfD9d0UTBdQfd3Bho/Mb0/Xdfc05IAeMr4vw+Lcgy5xF9wj4HtATvbw9JCbDJgiR3VM5MdV/8OTFS0oVOHuHq4eYcEdaqRw+Zse5SRHxDtlIZ9uHvMfsibwrzdRDO9fx/yVByzRG3oiYBf16+BoiQKpsKWfJ8vP0CbSwHtxDPWOX9hGnUh5FjAvrL9YL5H/3TwYAyG5Xw6ud1wIZoK2XK6pSMOCRgEaZim6a4CXuA6c03SGmBrQM+O6byBLIbUixtENXu3B2YxaAOxzN7hkYE2B0hvFqebhM7ZtAz5KixLU+ActZTg3BVVV45k/RmtK8mJhmMwAAAAASUVORK5CYII="
+
+/***/ },
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28044,14 +28057,14 @@
 						'h3',
 						null,
 						this.props.rank,
-						'\u3001(\u591A\u9009)',
+						'、(多选)',
 						this.props.question.question
 					),
 					newArr,
 					_react2.default.createElement(
 						'p',
 						{ className: 'notice_word' },
-						'(\u6CE8\uFF1A\u672C\u9898\u53EF\u591A\u9009\uFF0C\u4F46\u8BC4\u5206\u4EE5\u5176\u4E2D\u6700\u9AD8\u5206\u503C\u9009\u9879\u4E3A\u51C6)'
+						'(注：本题可多选，但评分以其中最高分值选项为准)'
 					)
 				);
 			}
@@ -28063,7 +28076,7 @@
 	exports.default = QuestionCheckbox;
 
 /***/ },
-/* 248 */
+/* 250 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -28449,13 +28462,13 @@
 	};
 
 /***/ },
-/* 249 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(250);
+	var content = __webpack_require__(252);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -28475,7 +28488,7 @@
 	}
 
 /***/ },
-/* 250 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -28483,13 +28496,19 @@
 
 
 	// module
-	exports.push([module.id, "body{\n\tbackground-color: #f0f0f0;\n}\n.question_page_content{\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n\tpadding-bottom: 50px;\n}\n\n.submit_btn{\n\theight: 80px;\n\tline-height: 80px;\n\tmargin-top:15px;\n\ttext-align: center;\n}\n\n.submit_btn button{\n\tdisplay: inline-block;\n\tborder:none;\n\theight: 36px;\n\tline-height: 60px;\n\twidth:120px;\n\tborder-radius: 10px;\n\tfont-size: 16px;\n\tcolor:#fff;\n\tbackground:url(" + __webpack_require__(760) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n}\n\n.submit_btn button >a,\n.submit_btn button >span{\n\tdisplay: inline-block;\n\twidth:100%;\n\theight: 100%;\n\tfont-size: 0px;\n}", ""]);
+	exports.push([module.id, "body{\r\n\tbackground-color: #f0f0f0;\r\n}\r\n.question_page_content{\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n\tpadding-bottom: 50px;\r\n}\r\n\r\n.submit_btn{\r\n\theight: 80px;\r\n\tline-height: 80px;\r\n\tmargin-top:15px;\r\n\ttext-align: center;\r\n}\r\n\r\n.submit_btn button{\r\n\tdisplay: inline-block;\r\n\tborder:none;\r\n\theight: 60px;\r\n\tline-height: 60px;\r\n\twidth:120px;\r\n\tborder-radius: 10px;\r\n\tfont-size: 16px;\r\n\tcolor:#fff;\r\n\tbackground:url(" + __webpack_require__(253) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n}\r\n\r\n.submit_btn button >a,\r\n.submit_btn button >span{\r\n\tdisplay: inline-block;\r\n\twidth:100%;\r\n\theight: 100%;\r\n\tfont-size: 0px;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 251 */
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "37f3297cf53cbdd81979eac04c7def67.png";
+
+/***/ },
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28508,11 +28527,23 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _echartsForReact = __webpack_require__(252);
+	var _echartsForReact = __webpack_require__(255);
 
 	var _echartsForReact2 = _interopRequireDefault(_echartsForReact);
 
-	__webpack_require__(636);
+	__webpack_require__(639);
+
+	var _type_baoshou = __webpack_require__(644);
+
+	var _type_baoshou2 = _interopRequireDefault(_type_baoshou);
+
+	var _type_jinqu = __webpack_require__(764);
+
+	var _type_jinqu2 = _interopRequireDefault(_type_jinqu);
+
+	var _type_wenjian = __webpack_require__(643);
+
+	var _type_wenjian2 = _interopRequireDefault(_type_wenjian);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28526,6 +28557,9 @@
 
 
 	// 引入css
+
+
+	// 引入图片
 
 
 	var EchartsPage = function (_React$Component) {
@@ -28559,14 +28593,39 @@
 		}, {
 			key: 'getOption',
 			value: function getOption() {
+				// 线条颜色
+				var sumType = this.state.resultSum,
+				    lineColor = '';
+
+				if (0 <= sumType && sumType < 50) {
+					lineColor = '#A100F7';
+				} else if (50 <= sumType && sumType < 90) {
+					lineColor = '#00F0FF';
+				} else {
+					lineColor = '#F6FF00';
+				}
+
 				var _this = this;
 				var option = {
 					title: {},
 					tooltip: {},
 					legend: {},
 					radar: {
-						// shape: 'circle',
-						indicator: [{ name: '财务状况', max: 10 }, { name: '其他信息', max: 10 }, { name: '风险偏好', max: 10 }, { name: '投资目标', max: 10 }, { name: '投资经验', max: 10 }, { name: '投资知识', max: 10 }]
+						splitArea: {
+							show: false
+						},
+						indicator: [{ name: '财务状况', max: 10 }, { name: '其他信息', max: 10 }, { name: '风险偏好', max: 10 }, { name: '投资目标', max: 10 }, { name: '投资经验', max: 10 }, { name: '投资知识', max: 10 }],
+						axisLine: {
+							show: false,
+							lineStyle: {
+								color: 'rgba(255, 255, 255, 1)'
+							}
+						},
+						splitLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
 					},
 					series: [{
 						name: '预算 vs 开销（Budget vs spending）',
@@ -28575,19 +28634,24 @@
 						data: [{
 							value: _this.state.resultArr,
 							name: '资产配置类型判断',
-							label: {
+							lineStyle: {
 								normal: {
-									show: true,
-									position: 'insideTop',
-									textStyle: {
-										color: "#ff6800"
-									},
-									formatter: function formatter(params) {
-										return params.value;
-									}
+									color: lineColor,
+									width: 5
 								}
 							}
-						}]
+						}],
+						itemStyle: {
+							normal: {
+								opacity: 0
+							}
+						},
+						areaStyle: {
+							normal: {
+								color: lineColor,
+								opacity: 0.4
+							}
+						}
 					}]
 				};
 
@@ -28596,18 +28660,100 @@
 		}, {
 			key: 'render',
 			value: function render() {
+				var sumType = this.state.resultSum,
+				    typeImgSrc = null,
+				    p1 = null,
+				    p2 = null,
+				    title = null;
+
+				if (0 <= sumType && sumType < 50) {
+					typeImgSrc = _type_baoshou2.default;
+					title = "保守型";
+					p1 = "配置比例:20%二级市场+45%信托、资产管理计划+10%海外投资、影视文化类基金+25%现金。";
+					p2 = "推荐逻辑:在保证安全性的同时，通过信托、资管计划的配置提高整体的收益率。";
+				} else if (50 <= sumType && sumType < 90) {
+					typeImgSrc = _type_wenjian2.default;
+					title = "稳健型";
+					p1 = "配置比例:20%现金+45%信托、资产管理计划+10%定增、股权投资+10%影视文化基金+海外投资10%+二级市场5%。";
+					p2 = "推荐逻辑:3000点左右市场行情是做定增的最好时机，影视文化基金的收益稳定性较强。";
+				} else {
+					typeImgSrc = _type_jinqu2.default;
+					title = "进取型";
+					p1 = "配置比例:20%二级市场+30%定增、股权投资+30%固定收益+10%海外投资管理、影视文化基金+5%现金。";
+					p2 = "推荐逻辑:长期股权投资所获得权益是巨大的，看中的是长期价值。定增是目前动荡的市场行情中较好的投资方向，影视文化基金的稳定也带来一定安全性。";
+				}
+
 				return _react2.default.createElement(
 					'div',
 					{ className: 'echarts_content' },
 					_react2.default.createElement(
-						'h2',
-						{ className: 'echarts_title' },
-						'\u8D44\u4EA7\u914D\u7F6E\u5F97\u5206\u5206\u6790\u56FE'
+						'div',
+						{ className: 'echarts_box' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'line_box' },
+							_react2.default.createElement(
+								'div',
+								null,
+								_react2.default.createElement('span', { className: 'line' }),
+								'保守型'
+							),
+							_react2.default.createElement(
+								'div',
+								null,
+								_react2.default.createElement('span', { className: 'line' }),
+								'进取型'
+							),
+							_react2.default.createElement(
+								'div',
+								null,
+								_react2.default.createElement('span', { className: 'line' }),
+								'稳健型'
+							)
+						),
+						_react2.default.createElement(_echartsForReact2.default, {
+							className: 'echarts_bar',
+							option: this.getOption()
+						})
 					),
-					_react2.default.createElement(_echartsForReact2.default, {
-						className: 'echarts_bar',
-						option: this.getOption()
-					}),
+					_react2.default.createElement(
+						'div',
+						{ className: 'content_box' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'title_box' },
+							_react2.default.createElement(
+								'h3',
+								null,
+								'投资者风险'
+							),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'评估结果'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'text_content' },
+							_react2.default.createElement(
+								'h3',
+								null,
+								title
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								p1
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								p2
+							)
+						),
+						_react2.default.createElement('img', { src: typeImgSrc })
+					),
 					_react2.default.createElement(
 						'div',
 						{ className: 'submit_btn' },
@@ -28617,7 +28763,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ className: 'linkBtn', to: "/assets_select/" + this.state.resultSum },
-								'\u4E0B\u4E00\u6B65'
+								'下一步'
 							)
 						)
 					)
@@ -28631,12 +28777,12 @@
 	exports.default = EchartsPage;
 
 /***/ },
-/* 252 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _echarts = __webpack_require__(253);
+	var _echarts = __webpack_require__(256);
 
 	var _echarts2 = _interopRequireDefault(_echarts);
 
@@ -28644,7 +28790,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _elementResizeEvent = __webpack_require__(635);
+	var _elementResizeEvent = __webpack_require__(638);
 
 	var _elementResizeEvent2 = _interopRequireDefault(_elementResizeEvent);
 
@@ -28727,60 +28873,60 @@
 	module.exports = ReactEcharts;
 
 /***/ },
-/* 253 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Export echarts as CommonJS module
 	 */
-	module.exports = __webpack_require__(254);
+	module.exports = __webpack_require__(257);
 
 	// Import all charts and components
-	__webpack_require__(352);
-	__webpack_require__(386);
-	__webpack_require__(391);
-	__webpack_require__(400);
-	__webpack_require__(404);
+	__webpack_require__(355);
+	__webpack_require__(389);
+	__webpack_require__(394);
+	__webpack_require__(403);
+	__webpack_require__(407);
 
-	__webpack_require__(414);
-	__webpack_require__(435);
-	__webpack_require__(447);
-	__webpack_require__(468);
-	__webpack_require__(472);
-	__webpack_require__(476);
-	__webpack_require__(491);
-	__webpack_require__(497);
-	__webpack_require__(504);
-	__webpack_require__(510);
-	__webpack_require__(514);
-	__webpack_require__(522);
+	__webpack_require__(417);
+	__webpack_require__(438);
+	__webpack_require__(450);
+	__webpack_require__(471);
+	__webpack_require__(475);
+	__webpack_require__(479);
+	__webpack_require__(494);
+	__webpack_require__(500);
+	__webpack_require__(507);
+	__webpack_require__(513);
+	__webpack_require__(517);
+	__webpack_require__(525);
 
-	__webpack_require__(365);
-	__webpack_require__(526);
-	__webpack_require__(532);
-	__webpack_require__(536);
-	__webpack_require__(547);
-	__webpack_require__(477);
+	__webpack_require__(368);
+	__webpack_require__(529);
+	__webpack_require__(535);
+	__webpack_require__(539);
 	__webpack_require__(550);
-	__webpack_require__(556);
+	__webpack_require__(480);
+	__webpack_require__(553);
+	__webpack_require__(559);
 
-	__webpack_require__(568);
+	__webpack_require__(571);
 
-	__webpack_require__(569);
-	__webpack_require__(583);
+	__webpack_require__(572);
+	__webpack_require__(586);
 
-	__webpack_require__(598);
-	__webpack_require__(604);
+	__webpack_require__(601);
 	__webpack_require__(607);
-
 	__webpack_require__(610);
-	__webpack_require__(619);
 
-	__webpack_require__(631);
+	__webpack_require__(613);
+	__webpack_require__(622);
+
+	__webpack_require__(634);
 
 
 /***/ },
-/* 254 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// Enable DEV mode when using source code without build. which has no __DEV__ variable
@@ -28812,25 +28958,25 @@
 	 */
 
 
-	    var env = __webpack_require__(255);
+	    var env = __webpack_require__(258);
 
-	    var GlobalModel = __webpack_require__(256);
-	    var ExtensionAPI = __webpack_require__(278);
-	    var CoordinateSystemManager = __webpack_require__(279);
-	    var OptionManager = __webpack_require__(280);
+	    var GlobalModel = __webpack_require__(259);
+	    var ExtensionAPI = __webpack_require__(281);
+	    var CoordinateSystemManager = __webpack_require__(282);
+	    var OptionManager = __webpack_require__(283);
 
-	    var ComponentModel = __webpack_require__(272);
-	    var SeriesModel = __webpack_require__(281);
+	    var ComponentModel = __webpack_require__(275);
+	    var SeriesModel = __webpack_require__(284);
 
-	    var ComponentView = __webpack_require__(282);
-	    var ChartView = __webpack_require__(295);
-	    var graphic = __webpack_require__(296);
+	    var ComponentView = __webpack_require__(285);
+	    var ChartView = __webpack_require__(298);
+	    var graphic = __webpack_require__(299);
 
-	    var zrender = __webpack_require__(334);
-	    var zrUtil = __webpack_require__(257);
-	    var colorTool = __webpack_require__(292);
-	    var Eventful = __webpack_require__(286);
-	    var timsort = __webpack_require__(338);
+	    var zrender = __webpack_require__(337);
+	    var zrUtil = __webpack_require__(260);
+	    var colorTool = __webpack_require__(295);
+	    var Eventful = __webpack_require__(289);
+	    var timsort = __webpack_require__(341);
 
 	    var each = zrUtil.each;
 
@@ -30327,9 +30473,9 @@
 	        zrUtil.createCanvas = creator;
 	    };
 
-	    echarts.registerVisual(PRIORITY_VISUAL_GLOBAL, __webpack_require__(346));
-	    echarts.registerPreprocessor(__webpack_require__(347));
-	    echarts.registerLoading('default', __webpack_require__(349));
+	    echarts.registerVisual(PRIORITY_VISUAL_GLOBAL, __webpack_require__(349));
+	    echarts.registerPreprocessor(__webpack_require__(350));
+	    echarts.registerLoading('default', __webpack_require__(352));
 
 	    // Default action
 	    echarts.registerAction({
@@ -30348,15 +30494,15 @@
 	    // Exports
 	    // --------
 	    //
-	    echarts.List = __webpack_require__(350);
-	    echarts.Model = __webpack_require__(265);
+	    echarts.List = __webpack_require__(353);
+	    echarts.Model = __webpack_require__(268);
 
-	    echarts.graphic = __webpack_require__(296);
-	    echarts.number = __webpack_require__(260);
-	    echarts.format = __webpack_require__(259);
-	    echarts.matrix = __webpack_require__(264);
-	    echarts.vector = __webpack_require__(263);
-	    echarts.color = __webpack_require__(292);
+	    echarts.graphic = __webpack_require__(299);
+	    echarts.number = __webpack_require__(263);
+	    echarts.format = __webpack_require__(262);
+	    echarts.matrix = __webpack_require__(267);
+	    echarts.vector = __webpack_require__(266);
+	    echarts.color = __webpack_require__(295);
 
 	    echarts.util = {};
 	    each([
@@ -30389,7 +30535,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 255 */
+/* 258 */
 /***/ function(module, exports) {
 
 	/**
@@ -30511,7 +30657,7 @@
 
 
 /***/ },
-/* 256 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -30523,9 +30669,9 @@
 
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
-	    var Model = __webpack_require__(265);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
+	    var Model = __webpack_require__(268);
 	    var each = zrUtil.each;
 	    var filter = zrUtil.filter;
 	    var map = zrUtil.map;
@@ -30533,9 +30679,9 @@
 	    var indexOf = zrUtil.indexOf;
 	    var isObject = zrUtil.isObject;
 
-	    var ComponentModel = __webpack_require__(272);
+	    var ComponentModel = __webpack_require__(275);
 
-	    var globalDefault = __webpack_require__(276);
+	    var globalDefault = __webpack_require__(279);
 
 	    var OPTION_INNER_KEY = '\0_ec_inner';
 
@@ -31276,13 +31422,13 @@
 	        }
 	    }
 
-	    zrUtil.mixin(GlobalModel, __webpack_require__(277));
+	    zrUtil.mixin(GlobalModel, __webpack_require__(280));
 
 	    module.exports = GlobalModel;
 
 
 /***/ },
-/* 257 */
+/* 260 */
 /***/ function(module, exports) {
 
 	/**
@@ -31779,15 +31925,15 @@
 
 
 /***/ },
-/* 258 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var formatUtil = __webpack_require__(259);
-	    var nubmerUtil = __webpack_require__(260);
-	    var Model = __webpack_require__(265);
-	    var zrUtil = __webpack_require__(257);
+	    var formatUtil = __webpack_require__(262);
+	    var nubmerUtil = __webpack_require__(263);
+	    var Model = __webpack_require__(268);
+	    var zrUtil = __webpack_require__(260);
 
 	    var modelUtil = {};
 
@@ -32155,14 +32301,14 @@
 
 
 /***/ },
-/* 259 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
-	    var textContain = __webpack_require__(261);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
+	    var textContain = __webpack_require__(264);
 
 	    var formatUtil = {};
 	    /**
@@ -32324,7 +32470,7 @@
 
 
 /***/ },
-/* 260 */
+/* 263 */
 /***/ function(module, exports) {
 
 	/**
@@ -32581,7 +32727,7 @@
 
 
 /***/ },
-/* 261 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -32590,8 +32736,8 @@
 	    var textWidthCacheCounter = 0;
 	    var TEXT_CACHE_MAX = 5000;
 
-	    var util = __webpack_require__(257);
-	    var BoundingRect = __webpack_require__(262);
+	    var util = __webpack_require__(260);
+	    var BoundingRect = __webpack_require__(265);
 	    var retrieve = util.retrieve;
 
 	    function getTextWidth(text, textFont) {
@@ -32862,7 +33008,7 @@
 
 
 /***/ },
-/* 262 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32871,8 +33017,8 @@
 	 */
 
 
-	    var vec2 = __webpack_require__(263);
-	    var matrix = __webpack_require__(264);
+	    var vec2 = __webpack_require__(266);
+	    var matrix = __webpack_require__(267);
 
 	    var v2ApplyTransform = vec2.applyTransform;
 	    var mathMin = Math.min;
@@ -33021,7 +33167,7 @@
 
 
 /***/ },
-/* 263 */
+/* 266 */
 /***/ function(module, exports) {
 
 	
@@ -33307,7 +33453,7 @@
 
 
 /***/ },
-/* 264 */
+/* 267 */
 /***/ function(module, exports) {
 
 	
@@ -33471,7 +33617,7 @@
 
 
 /***/ },
-/* 265 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33479,8 +33625,8 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var clazzUtil = __webpack_require__(266);
+	    var zrUtil = __webpack_require__(260);
+	    var clazzUtil = __webpack_require__(269);
 
 	    /**
 	     * @alias module:echarts/model/Model
@@ -33624,21 +33770,21 @@
 	    clazzUtil.enableClassExtend(Model);
 
 	    var mixin = zrUtil.mixin;
-	    mixin(Model, __webpack_require__(267));
-	    mixin(Model, __webpack_require__(269));
 	    mixin(Model, __webpack_require__(270));
-	    mixin(Model, __webpack_require__(271));
+	    mixin(Model, __webpack_require__(272));
+	    mixin(Model, __webpack_require__(273));
+	    mixin(Model, __webpack_require__(274));
 
 	    module.exports = Model;
 
 
 /***/ },
-/* 266 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var clazz = {};
 
@@ -33850,11 +33996,11 @@
 
 
 /***/ },
-/* 267 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var getLineStyle = __webpack_require__(268)(
+	    var getLineStyle = __webpack_require__(271)(
 	        [
 	            ['lineWidth', 'width'],
 	            ['stroke', 'color'],
@@ -33882,13 +34028,13 @@
 
 
 /***/ },
-/* 268 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO Parse shadow style
 	// TODO Only shallow path support
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (properties) {
 	        // Normalize
@@ -33915,12 +34061,12 @@
 
 
 /***/ },
-/* 269 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	    module.exports = {
-	        getAreaStyle: __webpack_require__(268)(
+	        getAreaStyle: __webpack_require__(271)(
 	            [
 	                ['fill', 'color'],
 	                ['shadowBlur'],
@@ -33934,12 +34080,12 @@
 
 
 /***/ },
-/* 270 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var textContain = __webpack_require__(261);
+	    var textContain = __webpack_require__(264);
 
 	    function getShallow(model, path) {
 	        return model && model.getShallow(path);
@@ -33991,11 +34137,11 @@
 
 
 /***/ },
-/* 271 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var getItemStyle = __webpack_require__(268)(
+	    var getItemStyle = __webpack_require__(271)(
 	        [
 	            ['fill', 'color'],
 	            ['stroke', 'borderColor'],
@@ -34024,7 +34170,7 @@
 
 
 /***/ },
-/* 272 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34034,12 +34180,12 @@
 	 */
 
 
-	    var Model = __webpack_require__(265);
-	    var zrUtil = __webpack_require__(257);
+	    var Model = __webpack_require__(268);
+	    var zrUtil = __webpack_require__(260);
 	    var arrayPush = Array.prototype.push;
-	    var componentUtil = __webpack_require__(273);
-	    var clazzUtil = __webpack_require__(266);
-	    var layout = __webpack_require__(274);
+	    var componentUtil = __webpack_require__(276);
+	    var clazzUtil = __webpack_require__(269);
+	    var layout = __webpack_require__(277);
 
 	    /**
 	     * @alias module:echarts/model/Component
@@ -34212,19 +34358,19 @@
 	        });
 	    }
 
-	    zrUtil.mixin(ComponentModel, __webpack_require__(275));
+	    zrUtil.mixin(ComponentModel, __webpack_require__(278));
 
 	    module.exports = ComponentModel;
 
 
 /***/ },
-/* 273 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var clazz = __webpack_require__(266);
+	    var zrUtil = __webpack_require__(260);
+	    var clazz = __webpack_require__(269);
 
 	    var parseClassType = clazz.parseClassType;
 
@@ -34399,17 +34545,17 @@
 
 
 /***/ },
-/* 274 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// Layout helpers for each component positioning
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var BoundingRect = __webpack_require__(262);
-	    var numberUtil = __webpack_require__(260);
-	    var formatUtil = __webpack_require__(259);
+	    var zrUtil = __webpack_require__(260);
+	    var BoundingRect = __webpack_require__(265);
+	    var numberUtil = __webpack_require__(263);
+	    var formatUtil = __webpack_require__(262);
 	    var parsePercent = numberUtil.parsePercent;
 	    var each = zrUtil.each;
 
@@ -34804,7 +34950,7 @@
 
 
 /***/ },
-/* 275 */
+/* 278 */
 /***/ function(module, exports) {
 
 	
@@ -34824,7 +34970,7 @@
 
 
 /***/ },
-/* 276 */
+/* 279 */
 /***/ function(module, exports) {
 
 	
@@ -34881,7 +35027,7 @@
 
 
 /***/ },
-/* 277 */
+/* 280 */
 /***/ function(module, exports) {
 
 	
@@ -34915,13 +35061,13 @@
 
 
 /***/ },
-/* 278 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var echartsAPIList = [
 	        'getDom', 'getZr', 'getWidth', 'getHeight', 'dispatchAction', 'isDisposed',
@@ -34938,7 +35084,7 @@
 
 
 /***/ },
-/* 279 */
+/* 282 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34986,7 +35132,7 @@
 
 
 /***/ },
-/* 280 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34997,9 +35143,9 @@
 
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
-	    var ComponentModel = __webpack_require__(272);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
+	    var ComponentModel = __webpack_require__(275);
 	    var each = zrUtil.each;
 	    var clone = zrUtil.clone;
 	    var map = zrUtil.map;
@@ -35426,18 +35572,18 @@
 
 
 /***/ },
-/* 281 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var formatUtil = __webpack_require__(259);
-	    var modelUtil = __webpack_require__(258);
-	    var ComponentModel = __webpack_require__(272);
-	    var colorPaletteMixin = __webpack_require__(277);
-	    var env = __webpack_require__(255);
+	    var zrUtil = __webpack_require__(260);
+	    var formatUtil = __webpack_require__(262);
+	    var modelUtil = __webpack_require__(261);
+	    var ComponentModel = __webpack_require__(275);
+	    var colorPaletteMixin = __webpack_require__(280);
+	    var env = __webpack_require__(258);
 
 	    var encodeHTML = formatUtil.encodeHTML;
 	    var addCommas = formatUtil.addCommas;
@@ -35699,14 +35845,14 @@
 
 
 /***/ },
-/* 282 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var Group = __webpack_require__(283);
-	    var componentUtil = __webpack_require__(273);
-	    var clazzUtil = __webpack_require__(266);
+	    var Group = __webpack_require__(286);
+	    var componentUtil = __webpack_require__(276);
+	    var clazzUtil = __webpack_require__(269);
 
 	    var Component = function () {
 	        /**
@@ -35750,7 +35896,7 @@
 
 
 /***/ },
-/* 283 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -35773,9 +35919,9 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Element = __webpack_require__(284);
-	    var BoundingRect = __webpack_require__(262);
+	    var zrUtil = __webpack_require__(260);
+	    var Element = __webpack_require__(287);
+	    var BoundingRect = __webpack_require__(265);
 
 	    /**
 	     * @alias module:zrender/graphic/Group
@@ -36064,7 +36210,7 @@
 
 
 /***/ },
-/* 284 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36073,11 +36219,11 @@
 	 */
 
 
-	    var guid = __webpack_require__(285);
-	    var Eventful = __webpack_require__(286);
-	    var Transformable = __webpack_require__(287);
-	    var Animatable = __webpack_require__(288);
-	    var zrUtil = __webpack_require__(257);
+	    var guid = __webpack_require__(288);
+	    var Eventful = __webpack_require__(289);
+	    var Transformable = __webpack_require__(290);
+	    var Animatable = __webpack_require__(291);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * @alias module:zrender/Element
@@ -36332,7 +36478,7 @@
 
 
 /***/ },
-/* 285 */
+/* 288 */
 /***/ function(module, exports) {
 
 	/**
@@ -36351,7 +36497,7 @@
 
 
 /***/ },
-/* 286 */
+/* 289 */
 /***/ function(module, exports) {
 
 	/**
@@ -36654,7 +36800,7 @@
 
 
 /***/ },
-/* 287 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36665,8 +36811,8 @@
 	 */
 
 
-	    var matrix = __webpack_require__(264);
-	    var vector = __webpack_require__(263);
+	    var matrix = __webpack_require__(267);
+	    var vector = __webpack_require__(266);
 	    var mIdentity = matrix.identity;
 
 	    var EPSILON = 5e-5;
@@ -36910,7 +37056,7 @@
 
 
 /***/ },
-/* 288 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36919,12 +37065,12 @@
 	 */
 
 
-	    var Animator = __webpack_require__(289);
-	    var util = __webpack_require__(257);
+	    var Animator = __webpack_require__(292);
+	    var util = __webpack_require__(260);
 	    var isString = util.isString;
 	    var isFunction = util.isFunction;
 	    var isObject = util.isObject;
-	    var log = __webpack_require__(293);
+	    var log = __webpack_require__(296);
 
 	    /**
 	     * @alias modue:zrender/mixin/Animatable
@@ -37180,7 +37326,7 @@
 
 
 /***/ },
-/* 289 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -37188,9 +37334,9 @@
 	 */
 
 
-	    var Clip = __webpack_require__(290);
-	    var color = __webpack_require__(292);
-	    var util = __webpack_require__(257);
+	    var Clip = __webpack_require__(293);
+	    var color = __webpack_require__(295);
+	    var util = __webpack_require__(260);
 	    var isArrayLike = util.isArrayLike;
 
 	    var arraySlice = Array.prototype.slice;
@@ -37809,7 +37955,7 @@
 
 
 /***/ },
-/* 290 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -37828,7 +37974,7 @@
 	 */
 
 
-	    var easingFuncs = __webpack_require__(291);
+	    var easingFuncs = __webpack_require__(294);
 
 	    function Clip(options) {
 
@@ -37921,7 +38067,7 @@
 
 
 /***/ },
-/* 291 */
+/* 294 */
 /***/ function(module, exports) {
 
 	/**
@@ -38272,7 +38418,7 @@
 
 
 /***/ },
-/* 292 */
+/* 295 */
 /***/ function(module, exports) {
 
 	/**
@@ -38755,11 +38901,11 @@
 
 
 /***/ },
-/* 293 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	        var config = __webpack_require__(294);
+	        var config = __webpack_require__(297);
 
 	        /**
 	         * @exports zrender/tool/log
@@ -38793,7 +38939,7 @@
 
 
 /***/ },
-/* 294 */
+/* 297 */
 /***/ function(module, exports) {
 
 	
@@ -38825,14 +38971,14 @@
 
 
 /***/ },
-/* 295 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var Group = __webpack_require__(283);
-	    var componentUtil = __webpack_require__(273);
-	    var clazzUtil = __webpack_require__(266);
+	    var Group = __webpack_require__(286);
+	    var componentUtil = __webpack_require__(276);
+	    var clazzUtil = __webpack_require__(269);
 
 	    function Chart() {
 
@@ -38971,55 +39117,55 @@
 
 
 /***/ },
-/* 296 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    var pathTool = __webpack_require__(297);
+	    var pathTool = __webpack_require__(300);
 	    var round = Math.round;
-	    var Path = __webpack_require__(298);
-	    var colorTool = __webpack_require__(292);
-	    var matrix = __webpack_require__(264);
-	    var vector = __webpack_require__(263);
-	    var Gradient = __webpack_require__(314);
+	    var Path = __webpack_require__(301);
+	    var colorTool = __webpack_require__(295);
+	    var matrix = __webpack_require__(267);
+	    var vector = __webpack_require__(266);
+	    var Gradient = __webpack_require__(317);
 
 	    var graphic = {};
 
-	    graphic.Group = __webpack_require__(283);
+	    graphic.Group = __webpack_require__(286);
 
-	    graphic.Image = __webpack_require__(315);
+	    graphic.Image = __webpack_require__(318);
 
-	    graphic.Text = __webpack_require__(317);
+	    graphic.Text = __webpack_require__(320);
 
-	    graphic.Circle = __webpack_require__(318);
+	    graphic.Circle = __webpack_require__(321);
 
-	    graphic.Sector = __webpack_require__(319);
+	    graphic.Sector = __webpack_require__(322);
 
-	    graphic.Ring = __webpack_require__(320);
+	    graphic.Ring = __webpack_require__(323);
 
-	    graphic.Polygon = __webpack_require__(321);
+	    graphic.Polygon = __webpack_require__(324);
 
-	    graphic.Polyline = __webpack_require__(325);
+	    graphic.Polyline = __webpack_require__(328);
 
-	    graphic.Rect = __webpack_require__(326);
+	    graphic.Rect = __webpack_require__(329);
 
-	    graphic.Line = __webpack_require__(328);
+	    graphic.Line = __webpack_require__(331);
 
-	    graphic.BezierCurve = __webpack_require__(329);
+	    graphic.BezierCurve = __webpack_require__(332);
 
-	    graphic.Arc = __webpack_require__(330);
+	    graphic.Arc = __webpack_require__(333);
 
-	    graphic.CompoundPath = __webpack_require__(331);
+	    graphic.CompoundPath = __webpack_require__(334);
 
-	    graphic.LinearGradient = __webpack_require__(332);
+	    graphic.LinearGradient = __webpack_require__(335);
 
-	    graphic.RadialGradient = __webpack_require__(333);
+	    graphic.RadialGradient = __webpack_require__(336);
 
-	    graphic.BoundingRect = __webpack_require__(262);
+	    graphic.BoundingRect = __webpack_require__(265);
 
 	    /**
 	     * Extend shape with parameters
@@ -39529,15 +39675,15 @@
 
 
 /***/ },
-/* 297 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var Path = __webpack_require__(298);
-	    var PathProxy = __webpack_require__(302);
-	    var transformPath = __webpack_require__(313);
-	    var matrix = __webpack_require__(264);
+	    var Path = __webpack_require__(301);
+	    var PathProxy = __webpack_require__(305);
+	    var transformPath = __webpack_require__(316);
+	    var matrix = __webpack_require__(267);
 
 	    // command chars
 	    var cc = [
@@ -39937,7 +40083,7 @@
 
 
 /***/ },
-/* 298 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39947,12 +40093,12 @@
 
 
 
-	    var Displayable = __webpack_require__(299);
-	    var zrUtil = __webpack_require__(257);
-	    var PathProxy = __webpack_require__(302);
-	    var pathContain = __webpack_require__(305);
+	    var Displayable = __webpack_require__(302);
+	    var zrUtil = __webpack_require__(260);
+	    var PathProxy = __webpack_require__(305);
+	    var pathContain = __webpack_require__(308);
 
-	    var Pattern = __webpack_require__(312);
+	    var Pattern = __webpack_require__(315);
 	    var getCanvasPattern = Pattern.prototype.getCanvasPattern;
 
 	    var abs = Math.abs;
@@ -40300,7 +40446,7 @@
 
 
 /***/ },
-/* 299 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -40311,12 +40457,12 @@
 
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    var Style = __webpack_require__(300);
+	    var Style = __webpack_require__(303);
 
-	    var Element = __webpack_require__(284);
-	    var RectText = __webpack_require__(301);
+	    var Element = __webpack_require__(287);
+	    var RectText = __webpack_require__(304);
 	    // var Stateful = require('./mixin/Stateful');
 
 	    /**
@@ -40574,7 +40720,7 @@
 
 
 /***/ },
-/* 300 */
+/* 303 */
 /***/ function(module, exports) {
 
 	/**
@@ -40890,7 +41036,7 @@
 
 
 /***/ },
-/* 301 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -40900,8 +41046,8 @@
 
 
 
-	    var textContain = __webpack_require__(261);
-	    var BoundingRect = __webpack_require__(262);
+	    var textContain = __webpack_require__(264);
+	    var BoundingRect = __webpack_require__(265);
 
 	    var tmpRect = new BoundingRect();
 
@@ -41039,7 +41185,7 @@
 
 
 /***/ },
-/* 302 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41054,11 +41200,11 @@
 	 // TODO getTotalLength, getPointAtLength
 
 
-	    var curve = __webpack_require__(303);
-	    var vec2 = __webpack_require__(263);
-	    var bbox = __webpack_require__(304);
-	    var BoundingRect = __webpack_require__(262);
-	    var dpr = __webpack_require__(294).devicePixelRatio;
+	    var curve = __webpack_require__(306);
+	    var vec2 = __webpack_require__(266);
+	    var bbox = __webpack_require__(307);
+	    var BoundingRect = __webpack_require__(265);
+	    var dpr = __webpack_require__(297).devicePixelRatio;
 
 	    var CMD = {
 	        M: 1,
@@ -41814,7 +41960,7 @@
 
 
 /***/ },
-/* 303 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41825,7 +41971,7 @@
 	 */
 
 
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 	    var v2Create = vec2.create;
 	    var v2DistSquare = vec2.distSquare;
 	    var mathPow = Math.pow;
@@ -42360,7 +42506,7 @@
 
 
 /***/ },
-/* 304 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -42368,8 +42514,8 @@
 	 */
 
 
-	    var vec2 = __webpack_require__(263);
-	    var curve = __webpack_require__(303);
+	    var vec2 = __webpack_require__(266);
+	    var curve = __webpack_require__(306);
 
 	    var bbox = {};
 	    var mathMin = Math.min;
@@ -42596,21 +42742,21 @@
 
 
 /***/ },
-/* 305 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var CMD = __webpack_require__(302).CMD;
-	    var line = __webpack_require__(306);
-	    var cubic = __webpack_require__(307);
-	    var quadratic = __webpack_require__(308);
-	    var arc = __webpack_require__(309);
-	    var normalizeRadian = __webpack_require__(310).normalizeRadian;
-	    var curve = __webpack_require__(303);
+	    var CMD = __webpack_require__(305).CMD;
+	    var line = __webpack_require__(309);
+	    var cubic = __webpack_require__(310);
+	    var quadratic = __webpack_require__(311);
+	    var arc = __webpack_require__(312);
+	    var normalizeRadian = __webpack_require__(313).normalizeRadian;
+	    var curve = __webpack_require__(306);
 
-	    var windingLine = __webpack_require__(311);
+	    var windingLine = __webpack_require__(314);
 
 	    var containStroke = line.containStroke;
 
@@ -43002,7 +43148,7 @@
 
 
 /***/ },
-/* 306 */
+/* 309 */
 /***/ function(module, exports) {
 
 	
@@ -43050,12 +43196,12 @@
 
 
 /***/ },
-/* 307 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var curve = __webpack_require__(303);
+	    var curve = __webpack_require__(306);
 
 	    module.exports = {
 	        /**
@@ -43097,12 +43243,12 @@
 
 
 /***/ },
-/* 308 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var curve = __webpack_require__(303);
+	    var curve = __webpack_require__(306);
 
 	    module.exports = {
 	        /**
@@ -43142,12 +43288,12 @@
 
 
 /***/ },
-/* 309 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var normalizeRadian = __webpack_require__(310).normalizeRadian;
+	    var normalizeRadian = __webpack_require__(313).normalizeRadian;
 	    var PI2 = Math.PI * 2;
 
 	    module.exports = {
@@ -43208,7 +43354,7 @@
 
 
 /***/ },
-/* 310 */
+/* 313 */
 /***/ function(module, exports) {
 
 	
@@ -43226,7 +43372,7 @@
 
 
 /***/ },
-/* 311 */
+/* 314 */
 /***/ function(module, exports) {
 
 	
@@ -43253,7 +43399,7 @@
 
 
 /***/ },
-/* 312 */
+/* 315 */
 /***/ function(module, exports) {
 
 	
@@ -43276,13 +43422,13 @@
 
 
 /***/ },
-/* 313 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var CMD = __webpack_require__(302).CMD;
-	    var vec2 = __webpack_require__(263);
+	    var CMD = __webpack_require__(305).CMD;
+	    var vec2 = __webpack_require__(266);
 	    var v2ApplyTransform = vec2.applyTransform;
 
 	    var points = [[], [], []];
@@ -43377,7 +43523,7 @@
 
 
 /***/ },
-/* 314 */
+/* 317 */
 /***/ function(module, exports) {
 
 	
@@ -43408,7 +43554,7 @@
 
 
 /***/ },
-/* 315 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -43418,11 +43564,11 @@
 
 
 
-	    var Displayable = __webpack_require__(299);
-	    var BoundingRect = __webpack_require__(262);
-	    var zrUtil = __webpack_require__(257);
+	    var Displayable = __webpack_require__(302);
+	    var BoundingRect = __webpack_require__(265);
+	    var zrUtil = __webpack_require__(260);
 
-	    var LRU = __webpack_require__(316);
+	    var LRU = __webpack_require__(319);
 	    var globalImageCache = new LRU(50);
 	    /**
 	     * @alias zrender/graphic/Image
@@ -43569,7 +43715,7 @@
 
 
 /***/ },
-/* 316 */
+/* 319 */
 /***/ function(module, exports) {
 
 	// Simple LRU cache use doubly linked list
@@ -43744,7 +43890,7 @@
 
 
 /***/ },
-/* 317 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -43758,9 +43904,9 @@
 
 
 
-	    var Displayable = __webpack_require__(299);
-	    var zrUtil = __webpack_require__(257);
-	    var textContain = __webpack_require__(261);
+	    var Displayable = __webpack_require__(302);
+	    var zrUtil = __webpack_require__(260);
+	    var textContain = __webpack_require__(264);
 
 	    /**
 	     * @alias zrender/graphic/Text
@@ -43875,7 +44021,7 @@
 
 
 /***/ },
-/* 318 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43886,7 +44032,7 @@
 
 
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'circle',
 
@@ -43912,7 +44058,7 @@
 
 
 /***/ },
-/* 319 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -43922,7 +44068,7 @@
 
 
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'sector',
 
@@ -43978,7 +44124,7 @@
 
 
 /***/ },
-/* 320 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -43987,7 +44133,7 @@
 	 */
 
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'ring',
 
@@ -44012,7 +44158,7 @@
 
 
 /***/ },
-/* 321 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44021,9 +44167,9 @@
 	 */
 
 
-	    var polyHelper = __webpack_require__(322);
+	    var polyHelper = __webpack_require__(325);
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 	        
 	        type: 'polygon',
 
@@ -44042,13 +44188,13 @@
 
 
 /***/ },
-/* 322 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var smoothSpline = __webpack_require__(323);
-	    var smoothBezier = __webpack_require__(324);
+	    var smoothSpline = __webpack_require__(326);
+	    var smoothBezier = __webpack_require__(327);
 
 	    module.exports = {
 	        buildPath: function (ctx, shape, closePath) {
@@ -44089,7 +44235,7 @@
 
 
 /***/ },
-/* 323 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44100,7 +44246,7 @@
 	 *         errorrik (errorrik@gmail.com)
 	 */
 
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 
 	    /**
 	     * @inner
@@ -44165,7 +44311,7 @@
 
 
 /***/ },
-/* 324 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44177,7 +44323,7 @@
 	 */
 
 
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 	    var v2Min = vec2.min;
 	    var v2Max = vec2.max;
 	    var v2Scale = vec2.scale;
@@ -44272,7 +44418,7 @@
 
 
 /***/ },
-/* 325 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44280,9 +44426,9 @@
 	 */
 
 
-	    var polyHelper = __webpack_require__(322);
+	    var polyHelper = __webpack_require__(325);
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 	        
 	        type: 'polyline',
 
@@ -44307,7 +44453,7 @@
 
 
 /***/ },
-/* 326 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44316,9 +44462,9 @@
 	 */
 
 
-	    var roundRectHelper = __webpack_require__(327);
+	    var roundRectHelper = __webpack_require__(330);
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'rect',
 
@@ -44355,7 +44501,7 @@
 
 
 /***/ },
-/* 327 */
+/* 330 */
 /***/ function(module, exports) {
 
 	
@@ -44450,7 +44596,7 @@
 
 
 /***/ },
-/* 328 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44458,7 +44604,7 @@
 	 * @module zrender/graphic/shape/Line
 	 */
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'line',
 
@@ -44515,7 +44661,7 @@
 
 
 /***/ },
-/* 329 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44525,8 +44671,8 @@
 	 */
 
 
-	    var curveTool = __webpack_require__(303);
-	    var vec2 = __webpack_require__(263);
+	    var curveTool = __webpack_require__(306);
+	    var vec2 = __webpack_require__(266);
 	    var quadraticSubdivide = curveTool.quadraticSubdivide;
 	    var cubicSubdivide = curveTool.cubicSubdivide;
 	    var quadraticAt = curveTool.quadraticAt;
@@ -44552,7 +44698,7 @@
 	            ];
 	        }
 	    }
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'bezier-curve',
 
@@ -44656,7 +44802,7 @@
 
 
 /***/ },
-/* 330 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -44665,7 +44811,7 @@
 	 */
 	 
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'arc',
 
@@ -44710,13 +44856,13 @@
 
 
 /***/ },
-/* 331 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// CompoundPath to improve performance
 
 
-	    var Path = __webpack_require__(298);
+	    var Path = __webpack_require__(301);
 	    module.exports = Path.extend({
 
 	        type: 'compound',
@@ -44769,15 +44915,15 @@
 
 
 /***/ },
-/* 332 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    var Gradient = __webpack_require__(314);
+	    var Gradient = __webpack_require__(317);
 
 	    /**
 	     * x, y, x2, y2 are all percent from 0 to 1
@@ -44817,15 +44963,15 @@
 
 
 /***/ },
-/* 333 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    var Gradient = __webpack_require__(314);
+	    var Gradient = __webpack_require__(317);
 
 	    /**
 	     * x, y, r are all percent from 0 to 1
@@ -44862,7 +45008,7 @@
 
 
 /***/ },
-/* 334 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -44876,18 +45022,18 @@
 	 */
 	// Global defines
 
-	    var guid = __webpack_require__(285);
-	    var env = __webpack_require__(255);
+	    var guid = __webpack_require__(288);
+	    var env = __webpack_require__(258);
 
-	    var Handler = __webpack_require__(335);
-	    var Storage = __webpack_require__(337);
-	    var Animation = __webpack_require__(339);
-	    var HandlerProxy = __webpack_require__(342);
+	    var Handler = __webpack_require__(338);
+	    var Storage = __webpack_require__(340);
+	    var Animation = __webpack_require__(342);
+	    var HandlerProxy = __webpack_require__(345);
 
 	    var useVML = !env.canvasSupported;
 
 	    var painterCtors = {
-	        canvas: __webpack_require__(344)
+	        canvas: __webpack_require__(347)
 	    };
 
 	    var instances = {};    // ZRender实例map索引
@@ -45275,7 +45421,7 @@
 
 
 /***/ },
-/* 335 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45288,10 +45434,10 @@
 	 */
 
 
-	    var util = __webpack_require__(257);
-	    var Draggable = __webpack_require__(336);
+	    var util = __webpack_require__(260);
+	    var Draggable = __webpack_require__(339);
 
-	    var Eventful = __webpack_require__(286);
+	    var Eventful = __webpack_require__(289);
 
 	    function makeEventPacket(eveType, target, event) {
 	        return {
@@ -45559,7 +45705,7 @@
 
 
 /***/ },
-/* 336 */
+/* 339 */
 /***/ function(module, exports) {
 
 	// TODO Draggable for group
@@ -45647,7 +45793,7 @@
 
 
 /***/ },
-/* 337 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45660,14 +45806,14 @@
 	 */
 
 
-	    var util = __webpack_require__(257);
-	    var env = __webpack_require__(255);
+	    var util = __webpack_require__(260);
+	    var env = __webpack_require__(258);
 
-	    var Group = __webpack_require__(283);
+	    var Group = __webpack_require__(286);
 
 	    // Use timsort because in most case elements are partially sorted
 	    // https://jsfiddle.net/pissang/jr4x7mdm/8/
-	    var timsort = __webpack_require__(338);
+	    var timsort = __webpack_require__(341);
 
 	    function shapeCompareFunc(a, b) {
 	        if (a.zlevel === b.zlevel) {
@@ -45921,7 +46067,7 @@
 
 
 /***/ },
-/* 338 */
+/* 341 */
 /***/ function(module, exports) {
 
 	// https://github.com/mziccard/node-timsort
@@ -46602,7 +46748,7 @@
 
 
 /***/ },
-/* 339 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46617,12 +46763,12 @@
 	// https://developer.apple.com/videos/wwdc2014/#236
 
 
-	    var util = __webpack_require__(257);
-	    var Dispatcher = __webpack_require__(340).Dispatcher;
+	    var util = __webpack_require__(260);
+	    var Dispatcher = __webpack_require__(343).Dispatcher;
 
-	    var requestAnimationFrame = __webpack_require__(341);
+	    var requestAnimationFrame = __webpack_require__(344);
 
-	    var Animator = __webpack_require__(289);
+	    var Animator = __webpack_require__(292);
 	    /**
 	     * @typedef {Object} IZRenderStage
 	     * @property {Function} update
@@ -46859,7 +47005,7 @@
 
 
 /***/ },
-/* 340 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46870,7 +47016,7 @@
 	 */
 
 
-	    var Eventful = __webpack_require__(286);
+	    var Eventful = __webpack_require__(289);
 
 	    var isDomLevel2 = (typeof window !== 'undefined') && !!window.addEventListener;
 
@@ -46965,7 +47111,7 @@
 
 
 /***/ },
-/* 341 */
+/* 344 */
 /***/ function(module, exports) {
 
 	
@@ -46982,16 +47128,16 @@
 
 
 /***/ },
-/* 342 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var eventTool = __webpack_require__(340);
-	    var zrUtil = __webpack_require__(257);
-	    var Eventful = __webpack_require__(286);
-	    var env = __webpack_require__(255);
-	    var GestureMgr = __webpack_require__(343);
+	    var eventTool = __webpack_require__(343);
+	    var zrUtil = __webpack_require__(260);
+	    var Eventful = __webpack_require__(289);
+	    var env = __webpack_require__(258);
+	    var GestureMgr = __webpack_require__(346);
 
 	    var addEventListener = eventTool.addEventListener;
 	    var removeEventListener = eventTool.removeEventListener;
@@ -47257,7 +47403,7 @@
 
 
 /***/ },
-/* 343 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47266,7 +47412,7 @@
 	 */
 
 
-	    var eventUtil = __webpack_require__(340);
+	    var eventUtil = __webpack_require__(343);
 
 	    var GestureMgr = function () {
 
@@ -47383,7 +47529,7 @@
 
 
 /***/ },
-/* 344 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47396,15 +47542,15 @@
 	 */
 	 
 
-	    var config = __webpack_require__(294);
-	    var util = __webpack_require__(257);
-	    var log = __webpack_require__(293);
-	    var BoundingRect = __webpack_require__(262);
-	    var timsort = __webpack_require__(338);
+	    var config = __webpack_require__(297);
+	    var util = __webpack_require__(260);
+	    var log = __webpack_require__(296);
+	    var BoundingRect = __webpack_require__(265);
+	    var timsort = __webpack_require__(341);
 
-	    var Layer = __webpack_require__(345);
+	    var Layer = __webpack_require__(348);
 
-	    var requestAnimationFrame = __webpack_require__(341);
+	    var requestAnimationFrame = __webpack_require__(344);
 
 	    // PENDIGN
 	    // Layer exceeds MAX_PROGRESSIVE_LAYER_NUMBER may have some problem when flush directly second time.
@@ -48395,7 +48541,7 @@
 	                path.brush(ctx);
 	            }
 
-	            var ImageShape = __webpack_require__(315);
+	            var ImageShape = __webpack_require__(318);
 	            var imgShape = new ImageShape({
 	                id: id,
 	                style: {
@@ -48436,7 +48582,7 @@
 
 
 /***/ },
-/* 345 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -48445,10 +48591,10 @@
 	 */
 
 
-	    var util = __webpack_require__(257);
-	    var config = __webpack_require__(294);
-	    var Style = __webpack_require__(300);
-	    var Pattern = __webpack_require__(312);
+	    var util = __webpack_require__(260);
+	    var config = __webpack_require__(297);
+	    var Style = __webpack_require__(303);
+	    var Pattern = __webpack_require__(315);
 
 	    function returnFalse() {
 	        return false;
@@ -48668,11 +48814,11 @@
 
 
 /***/ },
-/* 346 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var Gradient = __webpack_require__(314);
+	    var Gradient = __webpack_require__(317);
 	    module.exports = function (ecModel) {
 	        function encodeColor(seriesModel) {
 	            var colorAccessPath = (seriesModel.visualColorAccessPath || 'itemStyle.normal.color').split('.');
@@ -48708,14 +48854,14 @@
 
 
 /***/ },
-/* 347 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Compatitable with 2.0
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var compatStyle = __webpack_require__(348);
+	    var zrUtil = __webpack_require__(260);
+	    var compatStyle = __webpack_require__(351);
 
 	    function get(opt, path) {
 	        path = path.split(',');
@@ -48818,12 +48964,12 @@
 
 
 /***/ },
-/* 348 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var POSSIBLE_STYLES = [
 	        'areaStyle', 'lineStyle', 'nodeStyle', 'linkStyle',
@@ -48899,13 +49045,13 @@
 
 
 /***/ },
-/* 349 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 	    var PI = Math.PI;
 	    /**
 	     * @param {module:echarts/ExtensionAPI} api
@@ -49002,7 +49148,7 @@
 
 
 /***/ },
-/* 350 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -49027,11 +49173,11 @@
 	        'time': Array
 	    };
 
-	    var Model = __webpack_require__(265);
-	    var DataDiffer = __webpack_require__(351);
+	    var Model = __webpack_require__(268);
+	    var DataDiffer = __webpack_require__(354);
 
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
 	    var isObject = zrUtil.isObject;
 
 	    var TRANSFERABLE_PROPERTIES = [
@@ -50133,7 +50279,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 351 */
+/* 354 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50262,43 +50408,43 @@
 
 
 /***/ },
-/* 352 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 	    var PRIORITY = echarts.PRIORITY;
 
-	    __webpack_require__(353);
 	    __webpack_require__(356);
+	    __webpack_require__(359);
 
 	    echarts.registerVisual(zrUtil.curry(
-	        __webpack_require__(362), 'line', 'circle', 'line'
+	        __webpack_require__(365), 'line', 'circle', 'line'
 	    ));
 	    echarts.registerLayout(zrUtil.curry(
-	        __webpack_require__(363), 'line'
+	        __webpack_require__(366), 'line'
 	    ));
 
 	    // Down sample after filter
 	    echarts.registerProcessor(PRIORITY.PROCESSOR.STATISTIC, zrUtil.curry(
-	        __webpack_require__(364), 'line'
+	        __webpack_require__(367), 'line'
 	    ));
 
 	    // In case developer forget to include grid component
-	    __webpack_require__(365);
+	    __webpack_require__(368);
 
 
 /***/ },
-/* 353 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var createListFromArray = __webpack_require__(354);
-	    var SeriesModel = __webpack_require__(281);
+	    var createListFromArray = __webpack_require__(357);
+	    var SeriesModel = __webpack_require__(284);
 
 	    module.exports = SeriesModel.extend({
 
@@ -50382,17 +50528,17 @@
 
 
 /***/ },
-/* 354 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var List = __webpack_require__(350);
-	    var completeDimensions = __webpack_require__(355);
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
-	    var CoordinateSystem = __webpack_require__(279);
+	    var List = __webpack_require__(353);
+	    var completeDimensions = __webpack_require__(358);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
+	    var CoordinateSystem = __webpack_require__(282);
 	    var getDataItemValue = modelUtil.getDataItemValue;
 	    var converDataValue = modelUtil.converDataValue;
 
@@ -50668,7 +50814,7 @@
 
 
 /***/ },
-/* 355 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -50676,7 +50822,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * Complete the dimensions array guessed from the data structure.
@@ -50738,22 +50884,22 @@
 
 
 /***/ },
-/* 356 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// FIXME step not support polar
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var SymbolDraw = __webpack_require__(357);
-	    var Symbol = __webpack_require__(358);
-	    var lineAnimationDiff = __webpack_require__(360);
-	    var graphic = __webpack_require__(296);
+	    var zrUtil = __webpack_require__(260);
+	    var SymbolDraw = __webpack_require__(360);
+	    var Symbol = __webpack_require__(361);
+	    var lineAnimationDiff = __webpack_require__(363);
+	    var graphic = __webpack_require__(299);
 
-	    var polyHelper = __webpack_require__(361);
+	    var polyHelper = __webpack_require__(364);
 
-	    var ChartView = __webpack_require__(295);
+	    var ChartView = __webpack_require__(298);
 
 	    function isPointsSame(points1, points2) {
 	        if (points1.length !== points2.length) {
@@ -51457,7 +51603,7 @@
 
 
 /***/ },
-/* 357 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51465,8 +51611,8 @@
 	 */
 
 
-	    var graphic = __webpack_require__(296);
-	    var Symbol = __webpack_require__(358);
+	    var graphic = __webpack_require__(299);
+	    var Symbol = __webpack_require__(361);
 
 	    /**
 	     * @constructor
@@ -51589,7 +51735,7 @@
 
 
 /***/ },
-/* 358 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -51597,10 +51743,10 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var symbolUtil = __webpack_require__(359);
-	    var graphic = __webpack_require__(296);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var symbolUtil = __webpack_require__(362);
+	    var graphic = __webpack_require__(299);
+	    var numberUtil = __webpack_require__(263);
 
 	    function normalizeSymbolSize(symbolSize) {
 	        if (!(symbolSize instanceof Array)) {
@@ -51886,15 +52032,15 @@
 
 
 /***/ },
-/* 359 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// Symbol factory
 
 
-	    var graphic = __webpack_require__(296);
-	    var BoundingRect = __webpack_require__(262);
+	    var graphic = __webpack_require__(299);
+	    var BoundingRect = __webpack_require__(265);
 
 	    /**
 	     * Triangle shape
@@ -52244,7 +52390,7 @@
 
 
 /***/ },
-/* 360 */
+/* 363 */
 /***/ function(module, exports) {
 
 	
@@ -52458,14 +52604,14 @@
 
 
 /***/ },
-/* 361 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Poly path support NaN point
 
 
-	    var Path = __webpack_require__(298);
-	    var vec2 = __webpack_require__(263);
+	    var Path = __webpack_require__(301);
+	    var vec2 = __webpack_require__(266);
 
 	    var vec2Min = vec2.min;
 	    var vec2Max = vec2.max;
@@ -52713,7 +52859,7 @@
 
 
 /***/ },
-/* 362 */
+/* 365 */
 /***/ function(module, exports) {
 
 	
@@ -52762,7 +52908,7 @@
 
 
 /***/ },
-/* 363 */
+/* 366 */
 /***/ function(module, exports) {
 
 	
@@ -52795,7 +52941,7 @@
 
 
 /***/ },
-/* 364 */
+/* 367 */
 /***/ function(module, exports) {
 
 	
@@ -52878,19 +53024,19 @@
 
 
 /***/ },
-/* 365 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(366);
+	    __webpack_require__(369);
 
-	    __webpack_require__(383);
+	    __webpack_require__(386);
 
 	    // Grid view
 	    echarts.extendComponentView({
@@ -52920,7 +53066,7 @@
 
 
 /***/ },
-/* 366 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52930,12 +53076,12 @@
 	 */
 	var factory = exports;
 
-	    var layout = __webpack_require__(274);
-	    var axisHelper = __webpack_require__(367);
+	    var layout = __webpack_require__(277);
+	    var axisHelper = __webpack_require__(370);
 
-	    var zrUtil = __webpack_require__(257);
-	    var Cartesian2D = __webpack_require__(373);
-	    var Axis2D = __webpack_require__(375);
+	    var zrUtil = __webpack_require__(260);
+	    var Cartesian2D = __webpack_require__(376);
+	    var Axis2D = __webpack_require__(378);
 
 	    var each = zrUtil.each;
 
@@ -52943,7 +53089,7 @@
 	    var niceScaleExtent = axisHelper.niceScaleExtent;
 
 	    // 依赖 GridModel, AxisModel 做预处理
-	    __webpack_require__(378);
+	    __webpack_require__(381);
 
 	    /**
 	     * Check if the axis is used in the specified grid
@@ -53405,26 +53551,26 @@
 	    // For deciding which dimensions to use when creating list data
 	    Grid.dimensions = Cartesian2D.prototype.dimensions;
 
-	    __webpack_require__(279).register('cartesian2d', Grid);
+	    __webpack_require__(282).register('cartesian2d', Grid);
 
 	    module.exports = Grid;
 
 
 /***/ },
-/* 367 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var OrdinalScale = __webpack_require__(368);
-	    var IntervalScale = __webpack_require__(370);
-	    __webpack_require__(371);
-	    __webpack_require__(372);
-	    var Scale = __webpack_require__(369);
+	    var OrdinalScale = __webpack_require__(371);
+	    var IntervalScale = __webpack_require__(373);
+	    __webpack_require__(374);
+	    __webpack_require__(375);
+	    var Scale = __webpack_require__(372);
 
-	    var numberUtil = __webpack_require__(260);
-	    var zrUtil = __webpack_require__(257);
-	    var textContain = __webpack_require__(261);
+	    var numberUtil = __webpack_require__(263);
+	    var zrUtil = __webpack_require__(260);
+	    var textContain = __webpack_require__(264);
 	    var axisHelper = {};
 
 	    /**
@@ -53645,7 +53791,7 @@
 
 
 /***/ },
-/* 368 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53658,8 +53804,8 @@
 	// FIXME only one data
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Scale = __webpack_require__(369);
+	    var zrUtil = __webpack_require__(260);
+	    var Scale = __webpack_require__(372);
 
 	    var scaleProto = Scale.prototype;
 
@@ -53745,7 +53891,7 @@
 
 
 /***/ },
-/* 369 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53754,7 +53900,7 @@
 	 */
 
 
-	    var clazzUtil = __webpack_require__(266);
+	    var clazzUtil = __webpack_require__(269);
 
 	    function Scale() {
 	        /**
@@ -53873,7 +54019,7 @@
 
 
 /***/ },
-/* 370 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53883,9 +54029,9 @@
 
 
 
-	    var numberUtil = __webpack_require__(260);
-	    var formatUtil = __webpack_require__(259);
-	    var Scale = __webpack_require__(369);
+	    var numberUtil = __webpack_require__(263);
+	    var formatUtil = __webpack_require__(262);
+	    var Scale = __webpack_require__(372);
 
 	    var mathFloor = Math.floor;
 	    var mathCeil = Math.ceil;
@@ -54104,7 +54250,7 @@
 
 
 /***/ },
-/* 371 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54114,11 +54260,11 @@
 
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
-	    var formatUtil = __webpack_require__(259);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
+	    var formatUtil = __webpack_require__(262);
 
-	    var IntervalScale = __webpack_require__(370);
+	    var IntervalScale = __webpack_require__(373);
 
 	    var intervalScaleProto = IntervalScale.prototype;
 
@@ -54270,7 +54416,7 @@
 
 
 /***/ },
-/* 372 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -54279,12 +54425,12 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Scale = __webpack_require__(369);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var Scale = __webpack_require__(372);
+	    var numberUtil = __webpack_require__(263);
 
 	    // Use some method of IntervalScale
-	    var IntervalScale = __webpack_require__(370);
+	    var IntervalScale = __webpack_require__(373);
 
 	    var scaleProto = Scale.prototype;
 	    var intervalScaleProto = IntervalScale.prototype;
@@ -54415,14 +54561,14 @@
 
 
 /***/ },
-/* 373 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Cartesian = __webpack_require__(374);
+	    var zrUtil = __webpack_require__(260);
+	    var Cartesian = __webpack_require__(377);
 
 	    function Cartesian2D(name) {
 
@@ -54531,7 +54677,7 @@
 
 
 /***/ },
-/* 374 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54542,7 +54688,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    function dimAxisMapper(dim) {
 	        return this._axes[dim];
@@ -54649,14 +54795,14 @@
 
 
 /***/ },
-/* 375 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
-	    var axisLabelInterval = __webpack_require__(377);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
+	    var axisLabelInterval = __webpack_require__(380);
 
 	    /**
 	     * Extend axis 2d
@@ -54771,14 +54917,14 @@
 
 
 /***/ },
-/* 376 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var numberUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var linearMap = numberUtil.linearMap;
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    function fixExtentWithBands(extent, nTick) {
 	        var size = extent[1] - extent[0];
@@ -54996,7 +55142,7 @@
 
 
 /***/ },
-/* 377 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55006,8 +55152,8 @@
 
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var axisHelper = __webpack_require__(367);
+	    var zrUtil = __webpack_require__(260);
+	    var axisHelper = __webpack_require__(370);
 
 	    module.exports = function (axis) {
 	        var axisModel = axis.model;
@@ -55027,7 +55173,7 @@
 
 
 /***/ },
-/* 378 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55035,8 +55181,8 @@
 	// 所以这里也要被 Cartesian2D 依赖
 
 
-	    __webpack_require__(379);
-	    var ComponentModel = __webpack_require__(272);
+	    __webpack_require__(382);
+	    var ComponentModel = __webpack_require__(275);
 
 	    module.exports = ComponentModel.extend({
 
@@ -55071,15 +55217,15 @@
 
 
 /***/ },
-/* 379 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var ComponentModel = __webpack_require__(272);
-	    var zrUtil = __webpack_require__(257);
-	    var axisModelCreator = __webpack_require__(380);
+	    var ComponentModel = __webpack_require__(275);
+	    var zrUtil = __webpack_require__(260);
+	    var axisModelCreator = __webpack_require__(383);
 
 	    var AxisModel = ComponentModel.extend({
 
@@ -55178,7 +55324,7 @@
 	        return option.type || (option.data ? 'category' : 'value');
 	    }
 
-	    zrUtil.merge(AxisModel.prototype, __webpack_require__(382));
+	    zrUtil.merge(AxisModel.prototype, __webpack_require__(385));
 
 	    var extraOption = {
 	        // gridIndex: 0,
@@ -55195,15 +55341,15 @@
 
 
 /***/ },
-/* 380 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var axisDefault = __webpack_require__(381);
-	    var zrUtil = __webpack_require__(257);
-	    var ComponentModel = __webpack_require__(272);
-	    var layout = __webpack_require__(274);
+	    var axisDefault = __webpack_require__(384);
+	    var zrUtil = __webpack_require__(260);
+	    var ComponentModel = __webpack_require__(275);
+	    var layout = __webpack_require__(277);
 
 	    // FIXME axisType is fixed ?
 	    var AXIS_TYPES = ['value', 'category', 'time', 'log'];
@@ -55258,12 +55404,12 @@
 
 
 /***/ },
-/* 381 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var defaultOption = {
 	        show: true,
@@ -55416,13 +55562,13 @@
 
 
 /***/ },
-/* 382 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var axisHelper = __webpack_require__(367);
+	    var zrUtil = __webpack_require__(260);
+	    var axisHelper = __webpack_require__(370);
 
 	    function getName(obj) {
 	        if (zrUtil.isObject(obj) && obj.value != null) {
@@ -55460,27 +55606,27 @@
 
 
 /***/ },
-/* 383 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// TODO boundaryGap
 
 
-	    __webpack_require__(379);
+	    __webpack_require__(382);
 
-	    __webpack_require__(384);
+	    __webpack_require__(387);
 
 
 /***/ },
-/* 384 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var AxisBuilder = __webpack_require__(385);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var AxisBuilder = __webpack_require__(388);
 	    var ifIgnoreOnTick = AxisBuilder.ifIgnoreOnTick;
 	    var getInterval = AxisBuilder.getInterval;
 
@@ -55499,7 +55645,7 @@
 	    //     return alignWithLabel;
 	    // }
 
-	    var AxisView = __webpack_require__(254).extendComponentView({
+	    var AxisView = __webpack_require__(257).extendComponentView({
 
 	        type: 'axis',
 
@@ -55758,19 +55904,19 @@
 
 
 /***/ },
-/* 385 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var formatUtil = __webpack_require__(259);
-	    var graphic = __webpack_require__(296);
-	    var Model = __webpack_require__(265);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var formatUtil = __webpack_require__(262);
+	    var graphic = __webpack_require__(299);
+	    var Model = __webpack_require__(268);
+	    var numberUtil = __webpack_require__(263);
 	    var remRadian = numberUtil.remRadian;
 	    var isRadianAroundZero = numberUtil.isRadianAroundZero;
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 	    var v2ApplyTransform = vec2.applyTransform;
 	    var retrieve = zrUtil.retrieve;
 
@@ -56359,20 +56505,20 @@
 
 
 /***/ },
-/* 386 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    __webpack_require__(366);
+	    __webpack_require__(369);
 
-	    __webpack_require__(387);
-	    __webpack_require__(388);
+	    __webpack_require__(390);
+	    __webpack_require__(391);
 
-	    var barLayoutGrid = __webpack_require__(390);
-	    var echarts = __webpack_require__(254);
+	    var barLayoutGrid = __webpack_require__(393);
+	    var echarts = __webpack_require__(257);
 
 	    echarts.registerLayout(zrUtil.curry(barLayoutGrid, 'bar'));
 	    // Visual coding for legend
@@ -56384,18 +56530,18 @@
 	    });
 
 	    // In case developer forget to include grid component
-	    __webpack_require__(365);
+	    __webpack_require__(368);
 
 
 /***/ },
-/* 387 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var SeriesModel = __webpack_require__(281);
-	    var createListFromArray = __webpack_require__(354);
+	    var SeriesModel = __webpack_require__(284);
+	    var createListFromArray = __webpack_require__(357);
 
 	    module.exports = SeriesModel.extend({
 
@@ -56467,16 +56613,16 @@
 
 
 /***/ },
-/* 388 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
 
-	    zrUtil.extend(__webpack_require__(265).prototype, __webpack_require__(389));
+	    zrUtil.extend(__webpack_require__(268).prototype, __webpack_require__(392));
 
 	    function fixLayoutWithLineWidth(layout, lineWidth) {
 	        var signX = layout.width > 0 ? 1 : -1;
@@ -56489,7 +56635,7 @@
 	        layout.height -= signY * lineWidth;
 	    }
 
-	    module.exports = __webpack_require__(254).extendChartView({
+	    module.exports = __webpack_require__(257).extendChartView({
 
 	        type: 'bar',
 
@@ -56686,13 +56832,13 @@
 
 
 /***/ },
-/* 389 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
 
-	    var getBarItemStyle = __webpack_require__(268)(
+	    var getBarItemStyle = __webpack_require__(271)(
 	        [
 	            ['fill', 'color'],
 	            ['stroke', 'borderColor'],
@@ -56720,14 +56866,14 @@
 
 
 /***/ },
-/* 390 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var parsePercent = numberUtil.parsePercent;
 
 	    function getSeriesStackId(seriesModel) {
@@ -56953,18 +57099,18 @@
 
 
 /***/ },
-/* 391 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(392);
-	    __webpack_require__(394);
+	    __webpack_require__(395);
+	    __webpack_require__(397);
 
-	    __webpack_require__(395)('pie', [{
+	    __webpack_require__(398)('pie', [{
 	        type: 'pieToggleSelect',
 	        event: 'pieselectchanged',
 	        method: 'toggleSelected'
@@ -56978,30 +57124,30 @@
 	        method: 'unSelect'
 	    }]);
 
-	    echarts.registerVisual(zrUtil.curry(__webpack_require__(396), 'pie'));
+	    echarts.registerVisual(zrUtil.curry(__webpack_require__(399), 'pie'));
 
 	    echarts.registerLayout(zrUtil.curry(
-	        __webpack_require__(397), 'pie'
+	        __webpack_require__(400), 'pie'
 	    ));
 
-	    echarts.registerProcessor(zrUtil.curry(__webpack_require__(399), 'pie'));
+	    echarts.registerProcessor(zrUtil.curry(__webpack_require__(402), 'pie'));
 
 
 /***/ },
-/* 392 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var List = __webpack_require__(350);
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
-	    var completeDimensions = __webpack_require__(355);
+	    var List = __webpack_require__(353);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
+	    var completeDimensions = __webpack_require__(358);
 
-	    var dataSelectableMixin = __webpack_require__(393);
+	    var dataSelectableMixin = __webpack_require__(396);
 
-	    var PieSeries = __webpack_require__(254).extendSeriesModel({
+	    var PieSeries = __webpack_require__(257).extendSeriesModel({
 
 	        type: 'series.pie',
 
@@ -57132,7 +57278,7 @@
 
 
 /***/ },
-/* 393 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -57144,7 +57290,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = {
 
@@ -57202,13 +57348,13 @@
 
 
 /***/ },
-/* 394 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * @param {module:echarts/model/Series} seriesModel
@@ -57470,7 +57616,7 @@
 
 
 	    // Pie view
-	    var Pie = __webpack_require__(295).extend({
+	    var Pie = __webpack_require__(298).extend({
 
 	        type: 'pie',
 
@@ -57570,12 +57716,12 @@
 
 
 /***/ },
-/* 395 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 	    module.exports = function (seriesType, actionInfos) {
 	        zrUtil.each(actionInfos, function (actionInfo) {
 	            actionInfo.update = 'updateView';
@@ -57610,7 +57756,7 @@
 
 
 /***/ },
-/* 396 */
+/* 399 */
 /***/ function(module, exports) {
 
 	// Pick color from palette for each data item
@@ -57659,17 +57805,17 @@
 
 
 /***/ },
-/* 397 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO minAngle
 
 
 
-	    var numberUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var parsePercent = numberUtil.parsePercent;
-	    var labelLayout = __webpack_require__(398);
-	    var zrUtil = __webpack_require__(257);
+	    var labelLayout = __webpack_require__(401);
+	    var zrUtil = __webpack_require__(260);
 
 	    var PI2 = Math.PI * 2;
 	    var RADIAN = Math.PI / 180;
@@ -57787,14 +57933,14 @@
 
 
 /***/ },
-/* 398 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// FIXME emphasis label position is not same with normal label position
 
 
-	    var textContain = __webpack_require__(261);
+	    var textContain = __webpack_require__(264);
 
 	    function adjustSingleSide(list, cx, cy, r, dir, viewWidth, viewHeight) {
 	        list.sort(function (a, b) {
@@ -58018,7 +58164,7 @@
 
 
 /***/ },
-/* 399 */
+/* 402 */
 /***/ function(module, exports) {
 
 	
@@ -58046,37 +58192,37 @@
 
 
 /***/ },
-/* 400 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(401);
-	    __webpack_require__(402);
+	    __webpack_require__(404);
+	    __webpack_require__(405);
 
 	    echarts.registerVisual(zrUtil.curry(
-	        __webpack_require__(362), 'scatter', 'circle', null
+	        __webpack_require__(365), 'scatter', 'circle', null
 	    ));
 	    echarts.registerLayout(zrUtil.curry(
-	        __webpack_require__(363), 'scatter'
+	        __webpack_require__(366), 'scatter'
 	    ));
 
 	    // In case developer forget to include grid component
-	    __webpack_require__(365);
+	    __webpack_require__(368);
 
 
 /***/ },
-/* 401 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var createListFromArray = __webpack_require__(354);
-	    var SeriesModel = __webpack_require__(281);
+	    var createListFromArray = __webpack_require__(357);
+	    var SeriesModel = __webpack_require__(284);
 
 	    module.exports = SeriesModel.extend({
 
@@ -58138,15 +58284,15 @@
 
 
 /***/ },
-/* 402 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var SymbolDraw = __webpack_require__(357);
-	    var LargeSymbolDraw = __webpack_require__(403);
+	    var SymbolDraw = __webpack_require__(360);
+	    var LargeSymbolDraw = __webpack_require__(406);
 
-	    __webpack_require__(254).extendChartView({
+	    __webpack_require__(257).extendChartView({
 
 	        type: 'scatter',
 
@@ -58185,15 +58331,15 @@
 
 
 /***/ },
-/* 403 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO Batch by color
 
 
 
-	    var graphic = __webpack_require__(296);
-	    var symbolUtil = __webpack_require__(359);
+	    var graphic = __webpack_require__(299);
+	    var symbolUtil = __webpack_require__(362);
 
 	    var LargeSymbolPath = graphic.extendShape({
 
@@ -58336,57 +58482,57 @@
 
 
 /***/ },
-/* 404 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 
 	    // Must use radar component
-	    __webpack_require__(405);
+	    __webpack_require__(408);
 
-	    __webpack_require__(410);
-	    __webpack_require__(411);
+	    __webpack_require__(413);
+	    __webpack_require__(414);
 
-	    echarts.registerVisual(zrUtil.curry(__webpack_require__(396), 'radar'));
+	    echarts.registerVisual(zrUtil.curry(__webpack_require__(399), 'radar'));
 	    echarts.registerVisual(zrUtil.curry(
-	        __webpack_require__(362), 'radar', 'circle', null
+	        __webpack_require__(365), 'radar', 'circle', null
 	    ));
-	    echarts.registerLayout(__webpack_require__(412));
+	    echarts.registerLayout(__webpack_require__(415));
 
 	    echarts.registerProcessor(
-	        zrUtil.curry(__webpack_require__(399), 'radar')
+	        zrUtil.curry(__webpack_require__(402), 'radar')
 	    );
 
-	    echarts.registerPreprocessor(__webpack_require__(413));
+	    echarts.registerPreprocessor(__webpack_require__(416));
 
 
 /***/ },
-/* 405 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(406);
-	    __webpack_require__(408);
-
 	    __webpack_require__(409);
+	    __webpack_require__(411);
+
+	    __webpack_require__(412);
 
 
 /***/ },
-/* 406 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO clockwise
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var IndicatorAxis = __webpack_require__(407);
-	    var IntervalScale = __webpack_require__(370);
-	    var numberUtil = __webpack_require__(260);
-	    var axisHelper = __webpack_require__(367);
+	    var zrUtil = __webpack_require__(260);
+	    var IndicatorAxis = __webpack_require__(410);
+	    var IntervalScale = __webpack_require__(373);
+	    var numberUtil = __webpack_require__(263);
+	    var axisHelper = __webpack_require__(370);
 
 	    function Radar(radarModel, ecModel, api) {
 
@@ -58610,18 +58756,18 @@
 	        return radarList;
 	    };
 
-	    __webpack_require__(279).register('radar', Radar);
+	    __webpack_require__(282).register('radar', Radar);
 	    module.exports = Radar;
 
 
 /***/ },
-/* 407 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
 
 	    function IndicatorAxis(dim, scale, radiusExtent) {
 	        Axis.call(this, dim, scale, radiusExtent);
@@ -58655,18 +58801,18 @@
 
 
 /***/ },
-/* 408 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
 
-	    var axisDefault = __webpack_require__(381);
+	    var axisDefault = __webpack_require__(384);
 	    var valueAxisDefault = axisDefault.valueAxis;
-	    var Model = __webpack_require__(265);
-	    var zrUtil = __webpack_require__(257);
+	    var Model = __webpack_require__(268);
+	    var zrUtil = __webpack_require__(260);
 
-	    var axisModelCommonMixin = __webpack_require__(382);
+	    var axisModelCommonMixin = __webpack_require__(385);
 
 	    function defaultsShow(opt, show) {
 	        return zrUtil.defaults({
@@ -58674,7 +58820,7 @@
 	        }, opt);
 	    }
 
-	    var RadarModel = __webpack_require__(254).extendComponentModel({
+	    var RadarModel = __webpack_require__(257).extendComponentModel({
 
 	        type: 'radar',
 
@@ -58784,20 +58930,20 @@
 
 
 /***/ },
-/* 409 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var AxisBuilder = __webpack_require__(385);
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
+	    var AxisBuilder = __webpack_require__(388);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
 
 	    var axisBuilderAttrs = [
 	        'axisLine', 'axisLabel', 'axisTick', 'axisName'
 	    ];
 
-	    module.exports = __webpack_require__(254).extendComponentView({
+	    module.exports = __webpack_require__(257).extendComponentView({
 
 	        type: 'radar',
 
@@ -58964,16 +59110,16 @@
 
 
 /***/ },
-/* 410 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var SeriesModel = __webpack_require__(281);
-	    var List = __webpack_require__(350);
-	    var completeDimensions = __webpack_require__(355);
-	    var zrUtil = __webpack_require__(257);
+	    var SeriesModel = __webpack_require__(284);
+	    var List = __webpack_require__(353);
+	    var completeDimensions = __webpack_require__(358);
+	    var zrUtil = __webpack_require__(260);
 
 	    var RadarSeries = SeriesModel.extend({
 
@@ -59043,14 +59189,14 @@
 
 
 /***/ },
-/* 411 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
-	    var symbolUtil = __webpack_require__(359);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
+	    var symbolUtil = __webpack_require__(362);
 
 	    function normalizeSymbolSize(symbolSize) {
 	        if (!zrUtil.isArray(symbolSize)) {
@@ -59058,7 +59204,7 @@
 	        }
 	        return symbolSize;
 	    }
-	    module.exports = __webpack_require__(254).extendChartView({
+	    module.exports = __webpack_require__(257).extendChartView({
 	        type: 'radar',
 
 	        render: function (seriesModel, ecModel, api) {
@@ -59267,7 +59413,7 @@
 
 
 /***/ },
-/* 412 */
+/* 415 */
 /***/ function(module, exports) {
 
 	
@@ -59300,13 +59446,13 @@
 
 
 /***/ },
-/* 413 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Backward compat for radar chart in 2
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (option) {
 	        var polarOptArr = option.polar;
@@ -59341,31 +59487,31 @@
 
 
 /***/ },
-/* 414 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 	    var PRIORITY = echarts.PRIORITY;
 
-	    __webpack_require__(415);
+	    __webpack_require__(418);
 
-	    __webpack_require__(425);
+	    __webpack_require__(428);
 
-	    __webpack_require__(429);
+	    __webpack_require__(432);
 
-	    __webpack_require__(416);
+	    __webpack_require__(419);
 
-	    echarts.registerLayout(__webpack_require__(431));
+	    echarts.registerLayout(__webpack_require__(434));
 
-	    echarts.registerVisual(__webpack_require__(432));
+	    echarts.registerVisual(__webpack_require__(435));
 
-	    echarts.registerProcessor(PRIORITY.PROCESSOR.STATISTIC, __webpack_require__(433));
+	    echarts.registerProcessor(PRIORITY.PROCESSOR.STATISTIC, __webpack_require__(436));
 
-	    echarts.registerPreprocessor(__webpack_require__(434));
+	    echarts.registerPreprocessor(__webpack_require__(437));
 
-	    __webpack_require__(395)('map', [{
+	    __webpack_require__(398)('map', [{
 	        type: 'mapToggleSelect',
 	        event: 'mapselectchanged',
 	        method: 'toggleSelected'
@@ -59381,23 +59527,23 @@
 
 
 /***/ },
-/* 415 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var List = __webpack_require__(350);
-	    var SeriesModel = __webpack_require__(281);
-	    var zrUtil = __webpack_require__(257);
-	    var completeDimensions = __webpack_require__(355);
+	    var List = __webpack_require__(353);
+	    var SeriesModel = __webpack_require__(284);
+	    var zrUtil = __webpack_require__(260);
+	    var completeDimensions = __webpack_require__(358);
 
-	    var formatUtil = __webpack_require__(259);
+	    var formatUtil = __webpack_require__(262);
 	    var encodeHTML = formatUtil.encodeHTML;
 	    var addCommas = formatUtil.addCommas;
 
-	    var dataSelectableMixin = __webpack_require__(393);
+	    var dataSelectableMixin = __webpack_require__(396);
 
-	    var geoCreator = __webpack_require__(416);
+	    var geoCreator = __webpack_require__(419);
 
 	    var MapSeries = SeriesModel.extend({
 
@@ -59593,16 +59739,16 @@
 
 
 /***/ },
-/* 416 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var Geo = __webpack_require__(417);
+	    var Geo = __webpack_require__(420);
 
-	    var layout = __webpack_require__(274);
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var layout = __webpack_require__(277);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 
 	    var mapDataStores = {};
 
@@ -59861,7 +60007,7 @@
 	    };
 
 	    // Inject methods into echarts
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    echarts.registerMap = geoCreator.registerMap;
 
@@ -59876,25 +60022,25 @@
 
 
 /***/ },
-/* 417 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var parseGeoJson = __webpack_require__(418);
+	    var parseGeoJson = __webpack_require__(421);
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    var BoundingRect = __webpack_require__(262);
+	    var BoundingRect = __webpack_require__(265);
 
-	    var View = __webpack_require__(421);
+	    var View = __webpack_require__(424);
 
 
 	    // Geo fix functions
 	    var geoFixFuncs = [
-	        __webpack_require__(422),
-	        __webpack_require__(423),
-	        __webpack_require__(424)
+	        __webpack_require__(425),
+	        __webpack_require__(426),
+	        __webpack_require__(427)
 	    ];
 
 	    /**
@@ -60111,7 +60257,7 @@
 
 
 /***/ },
-/* 418 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -60120,9 +60266,9 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    var Region = __webpack_require__(419);
+	    var Region = __webpack_require__(422);
 
 	    function decode(json) {
 	        if (!json.UTF8Encoding) {
@@ -60230,7 +60376,7 @@
 
 
 /***/ },
-/* 419 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -60238,12 +60384,12 @@
 	 */
 
 
-	    var polygonContain = __webpack_require__(420);
+	    var polygonContain = __webpack_require__(423);
 
-	    var BoundingRect = __webpack_require__(262);
+	    var BoundingRect = __webpack_require__(265);
 
-	    var bbox = __webpack_require__(304);
-	    var vec2 = __webpack_require__(263);
+	    var bbox = __webpack_require__(307);
+	    var vec2 = __webpack_require__(266);
 
 	    /**
 	     * @param {string} name
@@ -60362,12 +60508,12 @@
 
 
 /***/ },
-/* 420 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var windingLine = __webpack_require__(311);
+	    var windingLine = __webpack_require__(314);
 
 	    var EPSILON = 1e-8;
 
@@ -60405,7 +60551,7 @@
 
 
 /***/ },
-/* 421 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -60414,13 +60560,13 @@
 	 */
 
 
-	    var vector = __webpack_require__(263);
-	    var matrix = __webpack_require__(264);
+	    var vector = __webpack_require__(266);
+	    var matrix = __webpack_require__(267);
 
-	    var Transformable = __webpack_require__(287);
-	    var zrUtil = __webpack_require__(257);
+	    var Transformable = __webpack_require__(290);
+	    var zrUtil = __webpack_require__(260);
 
-	    var BoundingRect = __webpack_require__(262);
+	    var BoundingRect = __webpack_require__(265);
 
 	    var v2ApplyTransform = vector.applyTransform;
 
@@ -60682,13 +60828,13 @@
 
 
 /***/ },
-/* 422 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Fix for 南海诸岛
 
 
-	    var Region = __webpack_require__(419);
+	    var Region = __webpack_require__(422);
 
 	    var geoCoord = [126, 25];
 
@@ -60727,12 +60873,12 @@
 
 
 /***/ },
-/* 423 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var coordsOffsetMap = {
 	        '南海诸岛' : [32, 80],
@@ -60757,12 +60903,12 @@
 
 
 /***/ },
-/* 424 */
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var geoCoordMap = {
 	        'Russia': [100, 60],
@@ -60782,17 +60928,17 @@
 
 
 /***/ },
-/* 425 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
 	    // var zrUtil = require('zrender/lib/core/util');
-	    var graphic = __webpack_require__(296);
+	    var graphic = __webpack_require__(299);
 
-	    var MapDraw = __webpack_require__(426);
+	    var MapDraw = __webpack_require__(429);
 
-	    __webpack_require__(254).extendChartView({
+	    __webpack_require__(257).extendChartView({
 
 	        type: 'map',
 
@@ -60927,7 +61073,7 @@
 
 
 /***/ },
-/* 426 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -60935,9 +61081,9 @@
 	 */
 
 
-	    var RoamController = __webpack_require__(427);
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var RoamController = __webpack_require__(430);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 
 	    function getFixedItemStyle(model, scale) {
 	        var itemStyle = model.getItemStyle();
@@ -61227,7 +61373,7 @@
 
 
 /***/ },
-/* 427 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -61236,10 +61382,10 @@
 
 
 
-	    var Eventful = __webpack_require__(286);
-	    var zrUtil = __webpack_require__(257);
-	    var eventTool = __webpack_require__(340);
-	    var interactionMutex = __webpack_require__(428);
+	    var Eventful = __webpack_require__(289);
+	    var zrUtil = __webpack_require__(260);
+	    var eventTool = __webpack_require__(343);
+	    var interactionMutex = __webpack_require__(431);
 
 	    function mousedown(e) {
 	        if (e.target && e.target.draggable) {
@@ -61452,7 +61598,7 @@
 
 
 /***/ },
-/* 428 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -61491,7 +61637,7 @@
 	     *         If no userKey, release global cursor.
 	     * }
 	     */
-	    __webpack_require__(254).registerAction(
+	    __webpack_require__(257).registerAction(
 	        {type: 'takeGlobalCursor', event: 'globalCursorTaken', update: 'update'},
 	        function () {}
 	    );
@@ -61500,15 +61646,15 @@
 
 
 /***/ },
-/* 429 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var roamHelper = __webpack_require__(430);
+	    var zrUtil = __webpack_require__(260);
+	    var roamHelper = __webpack_require__(433);
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    /**
 	     * @payload
@@ -61558,7 +61704,7 @@
 
 
 /***/ },
-/* 430 */
+/* 433 */
 /***/ function(module, exports) {
 
 	
@@ -61623,12 +61769,12 @@
 
 
 /***/ },
-/* 431 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (ecModel) {
 
@@ -61687,7 +61833,7 @@
 
 
 /***/ },
-/* 432 */
+/* 435 */
 /***/ function(module, exports) {
 
 	
@@ -61709,12 +61855,12 @@
 
 
 /***/ },
-/* 433 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    // FIXME 公用？
 	    /**
@@ -61797,12 +61943,12 @@
 
 
 /***/ },
-/* 434 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (option) {
 	        // Save geoCoord
@@ -61822,33 +61968,33 @@
 
 
 /***/ },
-/* 435 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(436);
 	    __webpack_require__(439);
-	    __webpack_require__(443);
+	    __webpack_require__(442);
+	    __webpack_require__(446);
 
-	    echarts.registerVisual(__webpack_require__(444));
+	    echarts.registerVisual(__webpack_require__(447));
 
-	    echarts.registerLayout(__webpack_require__(446));
+	    echarts.registerLayout(__webpack_require__(449));
 
 
 /***/ },
-/* 436 */
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var SeriesModel = __webpack_require__(281);
-	    var Tree = __webpack_require__(437);
-	    var zrUtil = __webpack_require__(257);
-	    var Model = __webpack_require__(265);
-	    var formatUtil = __webpack_require__(259);
+	    var SeriesModel = __webpack_require__(284);
+	    var Tree = __webpack_require__(440);
+	    var zrUtil = __webpack_require__(260);
+	    var Model = __webpack_require__(268);
+	    var formatUtil = __webpack_require__(262);
 	    var encodeHTML = formatUtil.encodeHTML;
 	    var addCommas = formatUtil.addCommas;
 
@@ -62205,7 +62351,7 @@
 
 
 /***/ },
-/* 437 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -62215,11 +62361,11 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Model = __webpack_require__(265);
-	    var List = __webpack_require__(350);
-	    var linkList = __webpack_require__(438);
-	    var completeDimensions = __webpack_require__(355);
+	    var zrUtil = __webpack_require__(260);
+	    var Model = __webpack_require__(268);
+	    var List = __webpack_require__(353);
+	    var linkList = __webpack_require__(441);
+	    var completeDimensions = __webpack_require__(358);
 
 	    /**
 	     * @constructor module:echarts/data/Tree~TreeNode
@@ -62682,7 +62828,7 @@
 
 
 /***/ },
-/* 438 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -62690,7 +62836,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 	    var each = zrUtil.each;
 
 	    var DATAS = '\0__link_datas';
@@ -62820,20 +62966,20 @@
 
 
 /***/ },
-/* 439 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 	 
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var DataDiffer = __webpack_require__(351);
-	    var helper = __webpack_require__(440);
-	    var Breadcrumb = __webpack_require__(441);
-	    var RoamController = __webpack_require__(427);
-	    var BoundingRect = __webpack_require__(262);
-	    var matrix = __webpack_require__(264);
-	    var animationUtil = __webpack_require__(442);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var DataDiffer = __webpack_require__(354);
+	    var helper = __webpack_require__(443);
+	    var Breadcrumb = __webpack_require__(444);
+	    var RoamController = __webpack_require__(430);
+	    var BoundingRect = __webpack_require__(265);
+	    var matrix = __webpack_require__(267);
+	    var animationUtil = __webpack_require__(445);
 	    var bind = zrUtil.bind;
 	    var Group = graphic.Group;
 	    var Rect = graphic.Rect;
@@ -62846,7 +62992,7 @@
 	    var Z_BG = 1;
 	    var Z_CONTENT = 2;
 
-	    module.exports = __webpack_require__(254).extendChartView({
+	    module.exports = __webpack_require__(257).extendChartView({
 
 	        type: 'treemap',
 
@@ -63700,12 +63846,12 @@
 
 
 /***/ },
-/* 440 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var helper = {
 
@@ -63749,14 +63895,14 @@
 
 
 /***/ },
-/* 441 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	 
 
-	    var graphic = __webpack_require__(296);
-	    var layout = __webpack_require__(274);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var layout = __webpack_require__(277);
+	    var zrUtil = __webpack_require__(260);
 
 	    var TEXT_PADDING = 8;
 	    var ITEM_GAP = 8;
@@ -63913,12 +64059,12 @@
 
 
 /***/ },
-/* 442 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 	 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * @param {number} [time=500] Time in ms
@@ -64019,7 +64165,7 @@
 
 
 /***/ },
-/* 443 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -64027,8 +64173,8 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
-	    var helper = __webpack_require__(440);
+	    var echarts = __webpack_require__(257);
+	    var helper = __webpack_require__(443);
 
 	    var noop = function () {};
 
@@ -64069,14 +64215,14 @@
 
 
 /***/ },
-/* 444 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var VisualMapping = __webpack_require__(445);
-	    var zrColor = __webpack_require__(292);
-	    var zrUtil = __webpack_require__(257);
+	    var VisualMapping = __webpack_require__(448);
+	    var zrColor = __webpack_require__(295);
+	    var zrUtil = __webpack_require__(260);
 	    var isArray = zrUtil.isArray;
 
 	    var ITEM_STYLE_NORMAL = 'itemStyle.normal';
@@ -64294,7 +64440,7 @@
 
 
 /***/ },
-/* 445 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -64302,9 +64448,9 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var zrColor = __webpack_require__(292);
-	    var linearMap = __webpack_require__(260).linearMap;
+	    var zrUtil = __webpack_require__(260);
+	    var zrColor = __webpack_require__(295);
+	    var linearMap = __webpack_require__(263).linearMap;
 	    var each = zrUtil.each;
 	    var isObject = zrUtil.isObject;
 
@@ -64882,17 +65028,17 @@
 
 
 /***/ },
-/* 446 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
-	    var layout = __webpack_require__(274);
-	    var helper = __webpack_require__(440);
-	    var BoundingRect = __webpack_require__(262);
-	    var helper = __webpack_require__(440);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
+	    var layout = __webpack_require__(277);
+	    var helper = __webpack_require__(443);
+	    var BoundingRect = __webpack_require__(265);
+	    var helper = __webpack_require__(443);
 
 	    var mathMax = Math.max;
 	    var mathMin = Math.min;
@@ -65437,52 +65583,52 @@
 
 
 /***/ },
-/* 447 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
-	    __webpack_require__(448);
 	    __webpack_require__(451);
+	    __webpack_require__(454);
 
-	    __webpack_require__(456);
+	    __webpack_require__(459);
 
-	    echarts.registerProcessor(__webpack_require__(457));
+	    echarts.registerProcessor(__webpack_require__(460));
 
 	    echarts.registerVisual(zrUtil.curry(
-	        __webpack_require__(362), 'graph', 'circle', null
+	        __webpack_require__(365), 'graph', 'circle', null
 	    ));
-	    echarts.registerVisual(__webpack_require__(458));
-	    echarts.registerVisual(__webpack_require__(459));
+	    echarts.registerVisual(__webpack_require__(461));
+	    echarts.registerVisual(__webpack_require__(462));
 
-	    echarts.registerLayout(__webpack_require__(460));
 	    echarts.registerLayout(__webpack_require__(463));
-	    echarts.registerLayout(__webpack_require__(465));
+	    echarts.registerLayout(__webpack_require__(466));
+	    echarts.registerLayout(__webpack_require__(468));
 
 	    // Graph view coordinate system
 	    echarts.registerCoordinateSystem('graphView', {
-	        create: __webpack_require__(467)
+	        create: __webpack_require__(470)
 	    });
 
 
 /***/ },
-/* 448 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var List = __webpack_require__(350);
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
-	    var Model = __webpack_require__(265);
+	    var List = __webpack_require__(353);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
+	    var Model = __webpack_require__(268);
 
-	    var createGraphFromNodeEdge = __webpack_require__(449);
+	    var createGraphFromNodeEdge = __webpack_require__(452);
 
-	    var GraphSeries = __webpack_require__(254).extendSeriesModel({
+	    var GraphSeries = __webpack_require__(257).extendSeriesModel({
 
 	        type: 'series.graph',
 
@@ -65734,18 +65880,18 @@
 
 
 /***/ },
-/* 449 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var List = __webpack_require__(350);
-	    var Graph = __webpack_require__(450);
-	    var linkList = __webpack_require__(438);
-	    var completeDimensions = __webpack_require__(355);
-	    var CoordinateSystem = __webpack_require__(279);
-	    var zrUtil = __webpack_require__(257);
-	    var createListFromArray = __webpack_require__(354);
+	    var List = __webpack_require__(353);
+	    var Graph = __webpack_require__(453);
+	    var linkList = __webpack_require__(441);
+	    var completeDimensions = __webpack_require__(358);
+	    var CoordinateSystem = __webpack_require__(282);
+	    var zrUtil = __webpack_require__(260);
+	    var createListFromArray = __webpack_require__(357);
 
 	    module.exports = function (nodes, edges, hostModel, directed, beforeLink) {
 	        var graph = new Graph(directed);
@@ -65809,7 +65955,7 @@
 
 
 /***/ },
-/* 450 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65821,7 +65967,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * @alias module:echarts/data/Graph
@@ -66328,19 +66474,19 @@
 
 
 /***/ },
-/* 451 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
 
-	    var SymbolDraw = __webpack_require__(357);
-	    var LineDraw = __webpack_require__(452);
-	    var RoamController = __webpack_require__(427);
+	    var SymbolDraw = __webpack_require__(360);
+	    var LineDraw = __webpack_require__(455);
+	    var RoamController = __webpack_require__(430);
 
-	    var graphic = __webpack_require__(296);
-	    var adjustEdge = __webpack_require__(455);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var adjustEdge = __webpack_require__(458);
+	    var zrUtil = __webpack_require__(260);
 
 	    var nodeOpacityPath = ['itemStyle', 'normal', 'opacity'];
 	    var lineOpacityPath = ['lineStyle', 'normal', 'opacity'];
@@ -66349,7 +66495,7 @@
 	        return item.getVisual('opacity') || item.getModel().get(opacityPath);
 	    }
 
-	    __webpack_require__(254).extendChartView({
+	    __webpack_require__(257).extendChartView({
 
 	        type: 'graph',
 
@@ -66652,7 +66798,7 @@
 
 
 /***/ },
-/* 452 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -66660,8 +66806,8 @@
 	 */
 
 
-	    var graphic = __webpack_require__(296);
-	    var LineGroup = __webpack_require__(453);
+	    var graphic = __webpack_require__(299);
+	    var LineGroup = __webpack_require__(456);
 
 
 	    function isPointNaN(pt) {
@@ -66751,7 +66897,7 @@
 
 
 /***/ },
-/* 453 */
+/* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -66759,13 +66905,13 @@
 	 */
 
 
-	    var symbolUtil = __webpack_require__(359);
-	    var vector = __webpack_require__(263);
+	    var symbolUtil = __webpack_require__(362);
+	    var vector = __webpack_require__(266);
 	    // var matrix = require('zrender/lib/core/matrix');
-	    var LinePath = __webpack_require__(454);
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var LinePath = __webpack_require__(457);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 
 	    var SYMBOL_CATEGORIES = ['fromSymbol', 'toSymbol'];
 	    function makeSymbolTypeKey(symbolCategory) {
@@ -67117,15 +67263,15 @@
 
 
 /***/ },
-/* 454 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Line path for bezier and straight line draw
 	 */
 
-	    var graphic = __webpack_require__(296);
-	    var vec2 = __webpack_require__(263);
+	    var graphic = __webpack_require__(299);
+	    var vec2 = __webpack_require__(266);
 
 	    var straightLineProto = graphic.Line.prototype;
 	    var bezierCurveProto = graphic.BezierCurve.prototype;
@@ -67174,13 +67320,13 @@
 
 
 /***/ },
-/* 455 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var curveTool = __webpack_require__(303);
-	    var vec2 = __webpack_require__(263);
+	    var curveTool = __webpack_require__(306);
+	    var vec2 = __webpack_require__(266);
 
 	    var v1 = [];
 	    var v2 = [];
@@ -67340,13 +67486,13 @@
 
 
 /***/ },
-/* 456 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
-	    var roamHelper = __webpack_require__(430);
+	    var echarts = __webpack_require__(257);
+	    var roamHelper = __webpack_require__(433);
 
 	    var actionInfo = {
 	        type: 'graphRoam',
@@ -67380,7 +67526,7 @@
 
 
 /***/ },
-/* 457 */
+/* 460 */
 /***/ function(module, exports) {
 
 	
@@ -67420,7 +67566,7 @@
 
 
 /***/ },
-/* 458 */
+/* 461 */
 /***/ function(module, exports) {
 
 	
@@ -67467,7 +67613,7 @@
 
 
 /***/ },
-/* 459 */
+/* 462 */
 /***/ function(module, exports) {
 
 	
@@ -67525,13 +67671,13 @@
 
 
 /***/ },
-/* 460 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var simpleLayoutHelper = __webpack_require__(461);
-	    var simpleLayoutEdge = __webpack_require__(462);
+	    var simpleLayoutHelper = __webpack_require__(464);
+	    var simpleLayoutEdge = __webpack_require__(465);
 	    module.exports = function (ecModel, api) {
 	        ecModel.eachSeriesByType('graph', function (seriesModel) {
 	            var layout = seriesModel.get('layout');
@@ -67558,12 +67704,12 @@
 
 
 /***/ },
-/* 461 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var simpleLayoutEdge = __webpack_require__(462);
+	    var simpleLayoutEdge = __webpack_require__(465);
 
 	    module.exports = function (seriesModel) {
 	        var coordSys = seriesModel.coordinateSystem;
@@ -67582,11 +67728,11 @@
 
 
 /***/ },
-/* 462 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 	    module.exports = function (graph) {
 	        graph.eachEdge(function (edge) {
 	            var curveness = edge.getModel().get('lineStyle.normal.curveness') || 0;
@@ -67605,11 +67751,11 @@
 
 
 /***/ },
-/* 463 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var circularLayoutHelper = __webpack_require__(464);
+	    var circularLayoutHelper = __webpack_require__(467);
 	    module.exports = function (ecModel) {
 	        ecModel.eachSeriesByType('graph', function (seriesModel) {
 	            if (seriesModel.get('layout') === 'circular') {
@@ -67620,11 +67766,11 @@
 
 
 /***/ },
-/* 464 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 	    module.exports = function (seriesModel) {
 	        var coordSys = seriesModel.coordinateSystem;
 	        if (coordSys && coordSys.type !== 'view') {
@@ -67683,17 +67829,17 @@
 
 
 /***/ },
-/* 465 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var forceHelper = __webpack_require__(466);
-	    var numberUtil = __webpack_require__(260);
-	    var simpleLayoutHelper = __webpack_require__(461);
-	    var circularLayoutHelper = __webpack_require__(464);
-	    var vec2 = __webpack_require__(263);
-	    var zrUtil = __webpack_require__(257);
+	    var forceHelper = __webpack_require__(469);
+	    var numberUtil = __webpack_require__(263);
+	    var simpleLayoutHelper = __webpack_require__(464);
+	    var circularLayoutHelper = __webpack_require__(467);
+	    var vec2 = __webpack_require__(266);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (ecModel) {
 	        ecModel.eachSeriesByType('graph', function (graphSeries) {
@@ -67822,12 +67968,12 @@
 
 
 /***/ },
-/* 466 */
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var vec2 = __webpack_require__(263);
+	    var vec2 = __webpack_require__(266);
 	    var scaleAndAdd = vec2.scaleAndAdd;
 
 	    // function adjacentNode(n, e) {
@@ -67964,14 +68110,14 @@
 
 
 /***/ },
-/* 467 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	    // FIXME Where to create the simple view coordinate system
-	    var View = __webpack_require__(421);
-	    var layout = __webpack_require__(274);
-	    var bbox = __webpack_require__(304);
+	    var View = __webpack_require__(424);
+	    var layout = __webpack_require__(277);
+	    var bbox = __webpack_require__(307);
 
 	    function getViewRect(seriesModel, api, aspect) {
 	        var option = seriesModel.getBoxLayoutParams();
@@ -68045,23 +68191,23 @@
 
 
 /***/ },
-/* 468 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    __webpack_require__(469);
-	    __webpack_require__(470);
+	    __webpack_require__(472);
+	    __webpack_require__(473);
 
 
 /***/ },
-/* 469 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var List = __webpack_require__(350);
-	    var SeriesModel = __webpack_require__(281);
-	    var zrUtil = __webpack_require__(257);
+	    var List = __webpack_require__(353);
+	    var SeriesModel = __webpack_require__(284);
+	    var zrUtil = __webpack_require__(260);
 
 	    var GaugeSeries = SeriesModel.extend({
 
@@ -68182,15 +68328,15 @@
 
 
 /***/ },
-/* 470 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var PointerPath = __webpack_require__(471);
+	    var PointerPath = __webpack_require__(474);
 
-	    var graphic = __webpack_require__(296);
-	    var numberUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var numberUtil = __webpack_require__(263);
 	    var parsePercent = numberUtil.parsePercent;
 
 	    function parsePosition(seriesModel, api) {
@@ -68224,7 +68370,7 @@
 
 	    var PI2 = Math.PI * 2;
 
-	    var GaugeView = __webpack_require__(295).extend({
+	    var GaugeView = __webpack_require__(298).extend({
 
 	        type: 'gauge',
 
@@ -68598,12 +68744,12 @@
 
 
 /***/ },
-/* 471 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    module.exports = __webpack_require__(298).extend({
+	    module.exports = __webpack_require__(301).extend({
 
 	        type: 'echartsGaugePointer',
 
@@ -68650,35 +68796,35 @@
 
 
 /***/ },
-/* 472 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(473);
-	    __webpack_require__(474);
+	    __webpack_require__(476);
+	    __webpack_require__(477);
 
-	    echarts.registerVisual(zrUtil.curry(__webpack_require__(396), 'funnel'));
-	    echarts.registerLayout(__webpack_require__(475));
+	    echarts.registerVisual(zrUtil.curry(__webpack_require__(399), 'funnel'));
+	    echarts.registerLayout(__webpack_require__(478));
 
-	    echarts.registerProcessor(zrUtil.curry(__webpack_require__(399), 'funnel'));
+	    echarts.registerProcessor(zrUtil.curry(__webpack_require__(402), 'funnel'));
 
 
 /***/ },
-/* 473 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var List = __webpack_require__(350);
-	    var modelUtil = __webpack_require__(258);
-	    var completeDimensions = __webpack_require__(355);
+	    var List = __webpack_require__(353);
+	    var modelUtil = __webpack_require__(261);
+	    var completeDimensions = __webpack_require__(358);
 
-	    var FunnelSeries = __webpack_require__(254).extendSeriesModel({
+	    var FunnelSeries = __webpack_require__(257).extendSeriesModel({
 
 	        type: 'series.funnel',
 
@@ -68773,13 +68919,13 @@
 
 
 /***/ },
-/* 474 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * Piece of pie including Sector, Label, LabelLine
@@ -68947,7 +69093,7 @@
 	    zrUtil.inherits(FunnelPiece, graphic.Group);
 
 
-	    var Funnel = __webpack_require__(295).extend({
+	    var Funnel = __webpack_require__(298).extend({
 
 	        type: 'funnel',
 
@@ -68992,13 +69138,13 @@
 
 
 /***/ },
-/* 475 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var layout = __webpack_require__(274);
-	    var number = __webpack_require__(260);
+	    var layout = __webpack_require__(277);
+	    var number = __webpack_require__(263);
 
 	    var parsePercent = number.parsePercent;
 
@@ -69167,34 +69313,34 @@
 
 
 /***/ },
-/* 476 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(477);
+	    __webpack_require__(480);
 
-	    __webpack_require__(488);
-	    __webpack_require__(489);
+	    __webpack_require__(491);
+	    __webpack_require__(492);
 
-	    echarts.registerVisual(__webpack_require__(490));
+	    echarts.registerVisual(__webpack_require__(493));
 
 
 
 /***/ },
-/* 477 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(478);
 	    __webpack_require__(481);
-	    __webpack_require__(483);
+	    __webpack_require__(484);
+	    __webpack_require__(486);
 
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var CLICK_THRESHOLD = 5; // > 4
 
@@ -69241,13 +69387,13 @@
 	    });
 
 	    echarts.registerPreprocessor(
-	        __webpack_require__(487)
+	        __webpack_require__(490)
 	    );
 
 
 
 /***/ },
-/* 478 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69255,7 +69401,7 @@
 	 */
 
 
-	    var Parallel = __webpack_require__(479);
+	    var Parallel = __webpack_require__(482);
 
 	    function create(ecModel, api) {
 	        var coordSysList = [];
@@ -69287,12 +69433,12 @@
 	        return coordSysList;
 	    }
 
-	    __webpack_require__(279).register('parallel', {create: create});
+	    __webpack_require__(282).register('parallel', {create: create});
 
 
 
 /***/ },
-/* 479 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69301,12 +69447,12 @@
 	 */
 
 
-	    var layout = __webpack_require__(274);
-	    var axisHelper = __webpack_require__(367);
-	    var zrUtil = __webpack_require__(257);
-	    var ParallelAxis = __webpack_require__(480);
-	    var graphic = __webpack_require__(296);
-	    var matrix = __webpack_require__(264);
+	    var layout = __webpack_require__(277);
+	    var axisHelper = __webpack_require__(370);
+	    var zrUtil = __webpack_require__(260);
+	    var ParallelAxis = __webpack_require__(483);
+	    var graphic = __webpack_require__(299);
+	    var matrix = __webpack_require__(267);
 
 	    var each = zrUtil.each;
 
@@ -69689,13 +69835,13 @@
 
 
 /***/ },
-/* 480 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
 
 	    /**
 	     * @constructor module:echarts/coord/parallel/ParallelAxis
@@ -69744,15 +69890,15 @@
 
 
 /***/ },
-/* 481 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var Component = __webpack_require__(272);
+	    var zrUtil = __webpack_require__(260);
+	    var Component = __webpack_require__(275);
 
-	    __webpack_require__(482);
+	    __webpack_require__(485);
 
 	    Component.extend({
 
@@ -69870,16 +70016,16 @@
 
 
 /***/ },
-/* 482 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var ComponentModel = __webpack_require__(272);
-	    var zrUtil = __webpack_require__(257);
-	    var makeStyleMapper = __webpack_require__(268);
-	    var axisModelCreator = __webpack_require__(380);
-	    var numberUtil = __webpack_require__(260);
+	    var ComponentModel = __webpack_require__(275);
+	    var zrUtil = __webpack_require__(260);
+	    var makeStyleMapper = __webpack_require__(271);
+	    var axisModelCreator = __webpack_require__(383);
+	    var numberUtil = __webpack_require__(263);
 
 	    var AxisModel = ComponentModel.extend({
 
@@ -69985,7 +70131,7 @@
 	        z: 10
 	    };
 
-	    zrUtil.merge(AxisModel.prototype, __webpack_require__(382));
+	    zrUtil.merge(AxisModel.prototype, __webpack_require__(385));
 
 	    function getAxisType(axisName, option) {
 	        return option.type || (option.data ? 'category' : 'value');
@@ -69997,24 +70143,24 @@
 
 
 /***/ },
-/* 483 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(478);
-	    __webpack_require__(484);
-	    __webpack_require__(485);
+	    __webpack_require__(481);
+	    __webpack_require__(487);
+	    __webpack_require__(488);
 
 
 
 /***/ },
-/* 484 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    /**
 	     * @payload
@@ -70050,19 +70196,19 @@
 
 
 /***/ },
-/* 485 */
+/* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var AxisBuilder = __webpack_require__(385);
-	    var BrushController = __webpack_require__(486);
-	    var graphic = __webpack_require__(296);
+	    var zrUtil = __webpack_require__(260);
+	    var AxisBuilder = __webpack_require__(388);
+	    var BrushController = __webpack_require__(489);
+	    var graphic = __webpack_require__(299);
 
 	    var elementList = ['axisLine', 'axisLabel', 'axisTick', 'axisName'];
 
-	    var AxisView = __webpack_require__(254).extendComponentView({
+	    var AxisView = __webpack_require__(257).extendComponentView({
 
 	        type: 'parallelAxis',
 
@@ -70225,7 +70371,7 @@
 
 
 /***/ },
-/* 486 */
+/* 489 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70236,11 +70382,11 @@
 
 
 
-	    var Eventful = __webpack_require__(286);
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var interactionMutex = __webpack_require__(428);
-	    var DataDiffer = __webpack_require__(351);
+	    var Eventful = __webpack_require__(289);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var interactionMutex = __webpack_require__(431);
+	    var DataDiffer = __webpack_require__(354);
 
 	    var curry = zrUtil.curry;
 	    var each = zrUtil.each;
@@ -71224,13 +71370,13 @@
 
 
 /***/ },
-/* 487 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
 
 	    module.exports = function (option) {
 	        createParallelIfNeeded(option);
@@ -71283,15 +71429,15 @@
 
 
 /***/ },
-/* 488 */
+/* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var List = __webpack_require__(350);
-	    var zrUtil = __webpack_require__(257);
-	    var SeriesModel = __webpack_require__(281);
-	    var completeDimensions = __webpack_require__(355);
+	    var List = __webpack_require__(353);
+	    var zrUtil = __webpack_require__(260);
+	    var SeriesModel = __webpack_require__(284);
+	    var completeDimensions = __webpack_require__(358);
 
 	    module.exports = SeriesModel.extend({
 
@@ -71446,17 +71592,17 @@
 
 
 /***/ },
-/* 489 */
+/* 492 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 
 	    var SMOOTH = 0.3;
 
-	    var ParallelView = __webpack_require__(295).extend({
+	    var ParallelView = __webpack_require__(298).extend({
 
 	        type: 'parallel',
 
@@ -71687,7 +71833,7 @@
 
 
 /***/ },
-/* 490 */
+/* 493 */
 /***/ function(module, exports) {
 
 	
@@ -71726,21 +71872,21 @@
 
 
 /***/ },
-/* 491 */
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(492);
-	    __webpack_require__(493);
-	    echarts.registerLayout(__webpack_require__(494));
-	    echarts.registerVisual(__webpack_require__(496));
+	    __webpack_require__(495);
+	    __webpack_require__(496);
+	    echarts.registerLayout(__webpack_require__(497));
+	    echarts.registerVisual(__webpack_require__(499));
 
 
 /***/ },
-/* 492 */
+/* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71749,8 +71895,8 @@
 	 */
 
 
-	    var SeriesModel = __webpack_require__(281);
-	    var createGraphFromNodeEdge = __webpack_require__(449);
+	    var SeriesModel = __webpack_require__(284);
+	    var createGraphFromNodeEdge = __webpack_require__(452);
 
 	    var SankeySeries = SeriesModel.extend({
 
@@ -71876,7 +72022,7 @@
 
 
 /***/ },
-/* 493 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71885,8 +72031,8 @@
 	 */
 
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 
 	    var SankeyShape = graphic.extendShape({
 	        shape: {
@@ -71916,7 +72062,7 @@
 	        }
 	    });
 
-	    module.exports = __webpack_require__(254).extendChartView({
+	    module.exports = __webpack_require__(257).extendChartView({
 
 	        type: 'sankey',
 
@@ -72081,7 +72227,7 @@
 
 
 /***/ },
-/* 494 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72090,9 +72236,9 @@
 	 */
 
 
-	    var layout = __webpack_require__(274);
-	    var nest = __webpack_require__(495);
-	    var zrUtil = __webpack_require__(257);
+	    var layout = __webpack_require__(277);
+	    var nest = __webpack_require__(498);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (ecModel, api, payload) {
 
@@ -72457,12 +72603,12 @@
 
 
 /***/ },
-/* 495 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * nest helper used to group by the array.
@@ -72568,7 +72714,7 @@
 
 
 /***/ },
-/* 496 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72577,7 +72723,7 @@
 	 */
 
 
-	    var VisualMapping = __webpack_require__(445);
+	    var VisualMapping = __webpack_require__(448);
 
 	    module.exports = function (ecModel, payload) {
 	        ecModel.eachSeriesByType('sankey', function (seriesModel) {
@@ -72615,31 +72761,31 @@
 
 
 /***/ },
-/* 497 */
+/* 500 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(498);
 	    __webpack_require__(501);
+	    __webpack_require__(504);
 
-	    echarts.registerVisual(__webpack_require__(502));
-	    echarts.registerLayout(__webpack_require__(503));
+	    echarts.registerVisual(__webpack_require__(505));
+	    echarts.registerLayout(__webpack_require__(506));
 
 
 
 /***/ },
-/* 498 */
+/* 501 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var SeriesModel = __webpack_require__(281);
-	    var whiskerBoxCommon = __webpack_require__(499);
+	    var zrUtil = __webpack_require__(260);
+	    var SeriesModel = __webpack_require__(284);
+	    var whiskerBoxCommon = __webpack_require__(502);
 
 	    var BoxplotSeries = SeriesModel.extend({
 
@@ -72707,16 +72853,16 @@
 
 
 /***/ },
-/* 499 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var List = __webpack_require__(350);
-	    var completeDimensions = __webpack_require__(355);
-	    var WhiskerBoxDraw = __webpack_require__(500);
-	    var zrUtil = __webpack_require__(257);
+	    var List = __webpack_require__(353);
+	    var completeDimensions = __webpack_require__(358);
+	    var WhiskerBoxDraw = __webpack_require__(503);
+	    var zrUtil = __webpack_require__(260);
 
 	    function getItemValue(item) {
 	        return item.value == null ? item : item.value;
@@ -72851,7 +72997,7 @@
 
 
 /***/ },
-/* 500 */
+/* 503 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72859,9 +73005,9 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var Path = __webpack_require__(298);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var Path = __webpack_require__(301);
 
 	    var WhiskerPath = Path.extend({
 
@@ -73071,16 +73217,16 @@
 
 
 /***/ },
-/* 501 */
+/* 504 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var ChartView = __webpack_require__(295);
-	    var graphic = __webpack_require__(296);
-	    var whiskerBoxCommon = __webpack_require__(499);
+	    var zrUtil = __webpack_require__(260);
+	    var ChartView = __webpack_require__(298);
+	    var graphic = __webpack_require__(299);
+	    var whiskerBoxCommon = __webpack_require__(502);
 
 	    var BoxplotView = ChartView.extend({
 
@@ -73124,7 +73270,7 @@
 
 
 /***/ },
-/* 502 */
+/* 505 */
 /***/ function(module, exports) {
 
 	
@@ -73163,13 +73309,13 @@
 
 
 /***/ },
-/* 503 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var parsePercent = numberUtil.parsePercent;
 	    var each = zrUtil.each;
 
@@ -73349,36 +73495,36 @@
 
 
 /***/ },
-/* 504 */
+/* 507 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(505);
-	    __webpack_require__(506);
+	    __webpack_require__(508);
+	    __webpack_require__(509);
 
 	    echarts.registerPreprocessor(
-	        __webpack_require__(507)
+	        __webpack_require__(510)
 	    );
 
-	    echarts.registerVisual(__webpack_require__(508));
-	    echarts.registerLayout(__webpack_require__(509));
+	    echarts.registerVisual(__webpack_require__(511));
+	    echarts.registerLayout(__webpack_require__(512));
 
 
 
 /***/ },
-/* 505 */
+/* 508 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var SeriesModel = __webpack_require__(281);
-	    var whiskerBoxCommon = __webpack_require__(499);
-	    var formatUtil = __webpack_require__(259);
+	    var zrUtil = __webpack_require__(260);
+	    var SeriesModel = __webpack_require__(284);
+	    var whiskerBoxCommon = __webpack_require__(502);
+	    var formatUtil = __webpack_require__(262);
 	    var encodeHTML = formatUtil.encodeHTML;
 	    var addCommas = formatUtil.addCommas;
 
@@ -73469,16 +73615,16 @@
 
 
 /***/ },
-/* 506 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var ChartView = __webpack_require__(295);
-	    var graphic = __webpack_require__(296);
-	    var whiskerBoxCommon = __webpack_require__(499);
+	    var zrUtil = __webpack_require__(260);
+	    var ChartView = __webpack_require__(298);
+	    var graphic = __webpack_require__(299);
+	    var whiskerBoxCommon = __webpack_require__(502);
 
 	    var CandlestickView = ChartView.extend({
 
@@ -73527,12 +73673,12 @@
 
 
 /***/ },
-/* 507 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (option) {
 	        if (!option || !zrUtil.isArray(option.series)) {
@@ -73550,7 +73696,7 @@
 
 
 /***/ },
-/* 508 */
+/* 511 */
 /***/ function(module, exports) {
 
 	
@@ -73595,7 +73741,7 @@
 
 
 /***/ },
-/* 509 */
+/* 512 */
 /***/ function(module, exports) {
 
 	
@@ -73719,34 +73865,34 @@
 
 
 /***/ },
-/* 510 */
+/* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var echarts = __webpack_require__(257);
 
-	    __webpack_require__(511);
-	    __webpack_require__(512);
+	    __webpack_require__(514);
+	    __webpack_require__(515);
 
 	    echarts.registerVisual(zrUtil.curry(
-	        __webpack_require__(362), 'effectScatter', 'circle', null
+	        __webpack_require__(365), 'effectScatter', 'circle', null
 	    ));
 	    echarts.registerLayout(zrUtil.curry(
-	        __webpack_require__(363), 'effectScatter'
+	        __webpack_require__(366), 'effectScatter'
 	    ));
 
 
 /***/ },
-/* 511 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var createListFromArray = __webpack_require__(354);
-	    var SeriesModel = __webpack_require__(281);
+	    var createListFromArray = __webpack_require__(357);
+	    var SeriesModel = __webpack_require__(284);
 
 	    module.exports = SeriesModel.extend({
 
@@ -73810,15 +73956,15 @@
 
 
 /***/ },
-/* 512 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var SymbolDraw = __webpack_require__(357);
-	    var EffectSymbol = __webpack_require__(513);
+	    var SymbolDraw = __webpack_require__(360);
+	    var EffectSymbol = __webpack_require__(516);
 
-	    __webpack_require__(254).extendChartView({
+	    __webpack_require__(257).extendChartView({
 
 	        type: 'effectScatter',
 
@@ -73844,7 +73990,7 @@
 
 
 /***/ },
-/* 513 */
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73853,11 +73999,11 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var symbolUtil = __webpack_require__(359);
-	    var graphic = __webpack_require__(296);
-	    var numberUtil = __webpack_require__(260);
-	    var Symbol = __webpack_require__(358);
+	    var zrUtil = __webpack_require__(260);
+	    var symbolUtil = __webpack_require__(362);
+	    var graphic = __webpack_require__(299);
+	    var numberUtil = __webpack_require__(263);
+	    var Symbol = __webpack_require__(361);
 	    var Group = graphic.Group;
 
 	    var EFFECT_RIPPLE_NUMBER = 3;
@@ -74072,31 +74218,31 @@
 
 
 /***/ },
-/* 514 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(515);
-	    __webpack_require__(516);
+	    __webpack_require__(518);
+	    __webpack_require__(519);
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 	    echarts.registerLayout(
-	        __webpack_require__(521)
+	        __webpack_require__(524)
 	    );
 
 
 /***/ },
-/* 515 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var SeriesModel = __webpack_require__(281);
-	    var List = __webpack_require__(350);
-	    var zrUtil = __webpack_require__(257);
-	    var CoordinateSystem = __webpack_require__(279);
+	    var SeriesModel = __webpack_require__(284);
+	    var List = __webpack_require__(353);
+	    var zrUtil = __webpack_require__(260);
+	    var CoordinateSystem = __webpack_require__(282);
 
 	    // Convert [ [{coord: []}, {coord: []}] ]
 	    // to [ { coords: [[]] } ]
@@ -74243,19 +74389,19 @@
 
 
 /***/ },
-/* 516 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var LineDraw = __webpack_require__(452);
-	    var EffectLine = __webpack_require__(517);
-	    var Line = __webpack_require__(453);
-	    var Polyline = __webpack_require__(518);
-	    var EffectPolyline = __webpack_require__(519);
-	    var LargeLineDraw = __webpack_require__(520);
+	    var LineDraw = __webpack_require__(455);
+	    var EffectLine = __webpack_require__(520);
+	    var Line = __webpack_require__(456);
+	    var Polyline = __webpack_require__(521);
+	    var EffectPolyline = __webpack_require__(522);
+	    var LargeLineDraw = __webpack_require__(523);
 
-	    __webpack_require__(254).extendChartView({
+	    __webpack_require__(257).extendChartView({
 
 	        type: 'lines',
 
@@ -74341,7 +74487,7 @@
 
 
 /***/ },
-/* 517 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74350,13 +74496,13 @@
 	 */
 
 
-	    var graphic = __webpack_require__(296);
-	    var Line = __webpack_require__(453);
-	    var zrUtil = __webpack_require__(257);
-	    var symbolUtil = __webpack_require__(359);
-	    var vec2 = __webpack_require__(263);
+	    var graphic = __webpack_require__(299);
+	    var Line = __webpack_require__(456);
+	    var zrUtil = __webpack_require__(260);
+	    var symbolUtil = __webpack_require__(362);
+	    var vec2 = __webpack_require__(266);
 
-	    var curveUtil = __webpack_require__(303);
+	    var curveUtil = __webpack_require__(306);
 
 	    /**
 	     * @constructor
@@ -74534,7 +74680,7 @@
 
 
 /***/ },
-/* 518 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74542,8 +74688,8 @@
 	 */
 
 
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * @constructor
@@ -74624,7 +74770,7 @@
 
 
 /***/ },
-/* 519 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74633,10 +74779,10 @@
 	 */
 
 
-	    var Polyline = __webpack_require__(518);
-	    var zrUtil = __webpack_require__(257);
-	    var EffectLine = __webpack_require__(517);
-	    var vec2 = __webpack_require__(263);
+	    var Polyline = __webpack_require__(521);
+	    var zrUtil = __webpack_require__(260);
+	    var EffectLine = __webpack_require__(520);
+	    var vec2 = __webpack_require__(266);
 
 	    /**
 	     * @constructor
@@ -74736,17 +74882,17 @@
 
 
 /***/ },
-/* 520 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO Batch by color
 
 
 
-	    var graphic = __webpack_require__(296);
+	    var graphic = __webpack_require__(299);
 
-	    var quadraticContain = __webpack_require__(308);
-	    var lineContain = __webpack_require__(306);
+	    var quadraticContain = __webpack_require__(311);
+	    var lineContain = __webpack_require__(309);
 
 	    var LargeLineShape = graphic.extendShape({
 	        shape: {
@@ -74884,7 +75030,7 @@
 
 
 /***/ },
-/* 521 */
+/* 524 */
 /***/ function(module, exports) {
 
 	
@@ -74932,23 +75078,23 @@
 
 
 /***/ },
-/* 522 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(523);
-	    __webpack_require__(524);
+	    __webpack_require__(526);
+	    __webpack_require__(527);
 
 
 /***/ },
-/* 523 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var SeriesModel = __webpack_require__(281);
-	    var createListFromArray = __webpack_require__(354);
+	    var SeriesModel = __webpack_require__(284);
+	    var createListFromArray = __webpack_require__(357);
 
 	    module.exports = SeriesModel.extend({
 	        type: 'series.heatmap',
@@ -74985,14 +75131,14 @@
 
 
 /***/ },
-/* 524 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var graphic = __webpack_require__(296);
-	    var HeatmapLayer = __webpack_require__(525);
-	    var zrUtil = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var HeatmapLayer = __webpack_require__(528);
+	    var zrUtil = __webpack_require__(260);
 
 	    function getIsInPiecewiseRange(dataExtent, pieceList, selected) {
 	        var dataSpan = dataExtent[1] - dataExtent[0];
@@ -75045,7 +75191,7 @@
 	        return dimensions[0] === 'lng' && dimensions[1] === 'lat';
 	    }
 
-	    module.exports = __webpack_require__(254).extendChartView({
+	    module.exports = __webpack_require__(257).extendChartView({
 
 	        type: 'heatmap',
 
@@ -75221,7 +75367,7 @@
 
 
 /***/ },
-/* 525 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75234,7 +75380,7 @@
 
 
 	    var GRADIENT_LEVELS = 256;
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    /**
 	     * Heatmap Chart
@@ -75375,7 +75521,7 @@
 
 
 /***/ },
-/* 526 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75383,26 +75529,26 @@
 	 */
 
 
-	    __webpack_require__(527);
-	    __webpack_require__(528);
-	    __webpack_require__(529);
+	    __webpack_require__(530);
+	    __webpack_require__(531);
+	    __webpack_require__(532);
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 	    // Series Filter
-	    echarts.registerProcessor(__webpack_require__(531));
+	    echarts.registerProcessor(__webpack_require__(534));
 
 
 /***/ },
-/* 527 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Model = __webpack_require__(265);
+	    var zrUtil = __webpack_require__(260);
+	    var Model = __webpack_require__(268);
 
-	    var LegendModel = __webpack_require__(254).extendComponentModel({
+	    var LegendModel = __webpack_require__(257).extendComponentModel({
 
 	        type: 'legend',
 
@@ -75590,7 +75736,7 @@
 
 
 /***/ },
-/* 528 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75598,8 +75744,8 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    function legendSelectActionHandler(methodName, payload, ecModel) {
 	        var selectedMap = {};
@@ -75677,15 +75823,15 @@
 
 
 /***/ },
-/* 529 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var symbolCreator = __webpack_require__(359);
-	    var graphic = __webpack_require__(296);
-	    var listComponentHelper = __webpack_require__(530);
+	    var zrUtil = __webpack_require__(260);
+	    var symbolCreator = __webpack_require__(362);
+	    var graphic = __webpack_require__(299);
+	    var listComponentHelper = __webpack_require__(533);
 
 	    var curry = zrUtil.curry;
 
@@ -75720,7 +75866,7 @@
 	        }
 	    }
 
-	    module.exports = __webpack_require__(254).extendComponentView({
+	    module.exports = __webpack_require__(257).extendComponentView({
 
 	        type: 'legend',
 
@@ -75946,14 +76092,14 @@
 
 
 /***/ },
-/* 530 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 	    // List layout
-	    var layout = __webpack_require__(274);
-	    var formatUtil = __webpack_require__(259);
-	    var graphic = __webpack_require__(296);
+	    var layout = __webpack_require__(277);
+	    var formatUtil = __webpack_require__(262);
+	    var graphic = __webpack_require__(299);
 
 	    function positionGroup(group, model, api) {
 	        layout.positionGroup(
@@ -76016,7 +76162,7 @@
 
 
 /***/ },
-/* 531 */
+/* 534 */
 /***/ function(module, exports) {
 
 	
@@ -76040,15 +76186,15 @@
 
 
 /***/ },
-/* 532 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// FIXME Better way to pack data in graphic element
 
 
-	    __webpack_require__(533);
+	    __webpack_require__(536);
 
-	    __webpack_require__(534);
+	    __webpack_require__(537);
 
 	    // Show tip action
 	    /**
@@ -76059,7 +76205,7 @@
 	     * @property {number} [x]
 	     * @property {number} [y]
 	     */
-	    __webpack_require__(254).registerAction(
+	    __webpack_require__(257).registerAction(
 	        {
 	            type: 'showTip',
 	            event: 'showTip',
@@ -76069,7 +76215,7 @@
 	        function () {}
 	    );
 	    // Hide tip action
-	    __webpack_require__(254).registerAction(
+	    __webpack_require__(257).registerAction(
 	        {
 	            type: 'hideTip',
 	            event: 'hideTip',
@@ -76081,12 +76227,12 @@
 
 
 /***/ },
-/* 533 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(254).extendComponentModel({
+	    __webpack_require__(257).extendComponentModel({
 
 	        type: 'tooltip',
 
@@ -76190,19 +76336,19 @@
 
 
 /***/ },
-/* 534 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var TooltipContent = __webpack_require__(535);
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
-	    var formatUtil = __webpack_require__(259);
-	    var numberUtil = __webpack_require__(260);
+	    var TooltipContent = __webpack_require__(538);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
+	    var formatUtil = __webpack_require__(262);
+	    var numberUtil = __webpack_require__(263);
 	    var parsePercent = numberUtil.parsePercent;
-	    var env = __webpack_require__(255);
-	    var Model = __webpack_require__(265);
+	    var env = __webpack_require__(258);
+	    var Model = __webpack_require__(268);
 
 	    function dataEqual(a, b) {
 	        if (!a || !b) {
@@ -76356,7 +76502,7 @@
 	            || trigger === 'item');
 	    }
 
-	    __webpack_require__(254).extendComponentView({
+	    __webpack_require__(257).extendComponentView({
 
 	        type: 'tooltip',
 
@@ -77365,7 +77511,7 @@
 
 
 /***/ },
-/* 535 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77373,13 +77519,13 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var zrColor = __webpack_require__(292);
-	    var eventUtil = __webpack_require__(340);
-	    var formatUtil = __webpack_require__(259);
+	    var zrUtil = __webpack_require__(260);
+	    var zrColor = __webpack_require__(295);
+	    var eventUtil = __webpack_require__(343);
+	    var formatUtil = __webpack_require__(262);
 	    var each = zrUtil.each;
 	    var toCamelCase = formatUtil.toCamelCase;
-	    var env = __webpack_require__(255);
+	    var env = __webpack_require__(258);
 
 	    var vendors = ['', '-webkit-', '-moz-', '-o-'];
 
@@ -77638,38 +77784,38 @@
 
 
 /***/ },
-/* 536 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    __webpack_require__(537);
-	    __webpack_require__(543);
-	    __webpack_require__(545);
+	    __webpack_require__(540);
+	    __webpack_require__(546);
+	    __webpack_require__(548);
 
 	    // Polar view
-	    __webpack_require__(254).extendComponentView({
+	    __webpack_require__(257).extendComponentView({
 	        type: 'polar'
 	    });
 
 
 /***/ },
-/* 537 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO Axis scale
 
 
-	    var Polar = __webpack_require__(538);
-	    var numberUtil = __webpack_require__(260);
-	    var zrUtil = __webpack_require__(257);
+	    var Polar = __webpack_require__(541);
+	    var numberUtil = __webpack_require__(263);
+	    var zrUtil = __webpack_require__(260);
 
-	    var axisHelper = __webpack_require__(367);
+	    var axisHelper = __webpack_require__(370);
 	    var niceScaleExtent = axisHelper.niceScaleExtent;
 
 	    // 依赖 PolarModel 做预处理
-	    __webpack_require__(541);
+	    __webpack_require__(544);
 
 	    /**
 	     * Resize method bound to the polar
@@ -77805,11 +77951,11 @@
 	        }
 	    };
 
-	    __webpack_require__(279).register('polar', polarCreator);
+	    __webpack_require__(282).register('polar', polarCreator);
 
 
 /***/ },
-/* 538 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -77818,8 +77964,8 @@
 	 */
 
 
-	    var RadiusAxis = __webpack_require__(539);
-	    var AngleAxis = __webpack_require__(540);
+	    var RadiusAxis = __webpack_require__(542);
+	    var AngleAxis = __webpack_require__(543);
 
 	    /**
 	     * @alias {module:echarts/coord/polar/Polar}
@@ -78042,14 +78188,14 @@
 
 
 /***/ },
-/* 539 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
 
 	    function RadiusAxis(scale, radiusExtent) {
 
@@ -78081,14 +78227,14 @@
 
 
 /***/ },
-/* 540 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
 
 	    function AngleAxis(scale, angleExtent) {
 
@@ -78122,15 +78268,15 @@
 
 
 /***/ },
-/* 541 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    __webpack_require__(542);
+	    __webpack_require__(545);
 
-	    __webpack_require__(254).extendComponentModel({
+	    __webpack_require__(257).extendComponentModel({
 
 	        type: 'polar',
 
@@ -78177,15 +78323,15 @@
 
 
 /***/ },
-/* 542 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var ComponentModel = __webpack_require__(272);
-	    var axisModelCreator = __webpack_require__(380);
+	    var zrUtil = __webpack_require__(260);
+	    var ComponentModel = __webpack_require__(275);
+	    var axisModelCreator = __webpack_require__(383);
 
 	    var PolarAxisModel = ComponentModel.extend({
 	        type: 'polarAxis',
@@ -78195,7 +78341,7 @@
 	        axis: null
 	    });
 
-	    zrUtil.merge(PolarAxisModel.prototype, __webpack_require__(382));
+	    zrUtil.merge(PolarAxisModel.prototype, __webpack_require__(385));
 
 	    var polarAxisDefaultExtendedOption = {
 	        angle: {
@@ -78231,27 +78377,27 @@
 
 
 /***/ },
-/* 543 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    __webpack_require__(537);
+	    __webpack_require__(540);
 
-	    __webpack_require__(544);
+	    __webpack_require__(547);
 
 
 /***/ },
-/* 544 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var Model = __webpack_require__(265);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var Model = __webpack_require__(268);
 
 	    var elementList = ['axisLine', 'axisLabel', 'axisTick', 'splitLine', 'splitArea'];
 
@@ -78266,7 +78412,7 @@
 	            y2: end[1]
 	        };
 	    }
-	    __webpack_require__(254).extendComponentView({
+	    __webpack_require__(257).extendComponentView({
 
 	        type: 'angleAxis',
 
@@ -78477,26 +78623,26 @@
 
 
 /***/ },
-/* 545 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(537);
+	    __webpack_require__(540);
 
-	    __webpack_require__(546);
+	    __webpack_require__(549);
 
 
 /***/ },
-/* 546 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var AxisBuilder = __webpack_require__(385);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var AxisBuilder = __webpack_require__(388);
 
 	    var axisBuilderAttrs = [
 	        'axisLine', 'axisLabel', 'axisTick', 'axisName'
@@ -78505,7 +78651,7 @@
 	        'splitLine', 'splitArea'
 	    ];
 
-	    __webpack_require__(254).extendComponentView({
+	    __webpack_require__(257).extendComponentView({
 
 	        type: 'radiusAxis',
 
@@ -78636,21 +78782,21 @@
 
 
 /***/ },
-/* 547 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(548);
+	    __webpack_require__(551);
 
-	    __webpack_require__(416);
+	    __webpack_require__(419);
 
-	    __webpack_require__(549);
+	    __webpack_require__(552);
 
-	    __webpack_require__(429);
+	    __webpack_require__(432);
 
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    function makeAction(method, actionInfo) {
 	        actionInfo.update = 'updateView';
@@ -78690,19 +78836,19 @@
 
 
 /***/ },
-/* 548 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	    var modelUtil = __webpack_require__(258);
-	    var ComponentModel = __webpack_require__(272);
-	    var Model = __webpack_require__(265);
-	    var zrUtil = __webpack_require__(257);
+	    var modelUtil = __webpack_require__(261);
+	    var ComponentModel = __webpack_require__(275);
+	    var Model = __webpack_require__(268);
+	    var zrUtil = __webpack_require__(260);
 
-	    var selectableMixin = __webpack_require__(393);
+	    var selectableMixin = __webpack_require__(396);
 
-	    var geoCreator = __webpack_require__(416);
+	    var geoCreator = __webpack_require__(419);
 
 	    var GeoModel = ComponentModel.extend({
 
@@ -78857,15 +79003,15 @@
 
 
 /***/ },
-/* 549 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var MapDraw = __webpack_require__(426);
+	    var MapDraw = __webpack_require__(429);
 
-	    module.exports = __webpack_require__(254).extendComponentView({
+	    module.exports = __webpack_require__(257).extendComponentView({
 
 	        type: 'geo',
 
@@ -78898,16 +79044,16 @@
 
 
 /***/ },
-/* 550 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(551);
 	    __webpack_require__(554);
-	    __webpack_require__(555);
+	    __webpack_require__(557);
+	    __webpack_require__(558);
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    echarts.extendComponentView({
 	        type: 'single'
@@ -78916,7 +79062,7 @@
 
 
 /***/ },
-/* 551 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78924,7 +79070,7 @@
 	 */
 
 
-	    var Single = __webpack_require__(552);
+	    var Single = __webpack_require__(555);
 
 	    /**
 	     * Create single coordinate system and inject it into seriesModel.
@@ -78960,14 +79106,14 @@
 	        return singles;
 	    }
 
-	    __webpack_require__(279).register('single', {
+	    __webpack_require__(282).register('single', {
 	        create: create,
 	        dimensions: Single.prototype.dimensions
 	    });
 
 
 /***/ },
-/* 552 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78975,9 +79121,9 @@
 	 */
 
 
-	    var SingleAxis = __webpack_require__(553);
-	    var axisHelper = __webpack_require__(367);
-	    var layout = __webpack_require__(274);
+	    var SingleAxis = __webpack_require__(556);
+	    var axisHelper = __webpack_require__(370);
+	    var layout = __webpack_require__(277);
 
 	    /**
 	     * Create a single coordinates system.
@@ -79234,14 +79380,14 @@
 
 
 /***/ },
-/* 553 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
-	    var axisHelper = __webpack_require__(367);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
+	    var axisHelper = __webpack_require__(370);
 
 	    /**
 	     * @constructor  module:echarts/coord/single/SingleAxis
@@ -79360,14 +79506,14 @@
 
 
 /***/ },
-/* 554 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var AxisBuilder = __webpack_require__(385);
-	    var zrUtil =  __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
+	    var AxisBuilder = __webpack_require__(388);
+	    var zrUtil =  __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
 	    var getInterval = AxisBuilder.getInterval;
 	    var ifIgnoreOnTick = AxisBuilder.ifIgnoreOnTick;
 
@@ -79377,7 +79523,7 @@
 
 	    var selfBuilderAttr = 'splitLine'; 
 
-	    var AxisView = __webpack_require__(254).extendComponentView({
+	    var AxisView = __webpack_require__(257).extendComponentView({
 
 	        type: 'singleAxis',
 
@@ -79526,14 +79672,14 @@
 
 
 /***/ },
-/* 555 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var ComponentModel = __webpack_require__(272);
-	    var axisModelCreator = __webpack_require__(380);
-	    var zrUtil =  __webpack_require__(257);
+	    var ComponentModel = __webpack_require__(275);
+	    var axisModelCreator = __webpack_require__(383);
+	    var zrUtil =  __webpack_require__(260);
 
 	    var AxisModel = ComponentModel.extend({
 
@@ -79600,7 +79746,7 @@
 	        return option.type || (option.data ? 'category' : 'value');
 	    }
 
-	    zrUtil.merge(AxisModel.prototype, __webpack_require__(382));
+	    zrUtil.merge(AxisModel.prototype, __webpack_require__(385));
 
 	    axisModelCreator('single', AxisModel, getAxisType, defaultOption);
 
@@ -79608,7 +79754,7 @@
 
 
 /***/ },
-/* 556 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79616,21 +79762,21 @@
 	 */
 
 
-	    __webpack_require__(254).registerPreprocessor(
-	        __webpack_require__(557)
+	    __webpack_require__(257).registerPreprocessor(
+	        __webpack_require__(560)
 	    );
 
-	    __webpack_require__(558);
-	    __webpack_require__(563);
-	    __webpack_require__(564);
-	    __webpack_require__(565);
-
+	    __webpack_require__(561);
 	    __webpack_require__(566);
+	    __webpack_require__(567);
+	    __webpack_require__(568);
+
+	    __webpack_require__(569);
 
 
 
 /***/ },
-/* 557 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79638,7 +79784,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var DEFAULT_TOOLBOX_BTNS = ['rect', 'polygon', 'keep', 'clear'];
 
@@ -79700,7 +79846,7 @@
 
 
 /***/ },
-/* 558 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79708,13 +79854,13 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
-	    var visualSolution = __webpack_require__(559);
-	    var zrUtil = __webpack_require__(257);
-	    var BoundingRect = __webpack_require__(262);
-	    var selector = __webpack_require__(560);
-	    var throttle = __webpack_require__(561);
-	    var brushHelper = __webpack_require__(562);
+	    var echarts = __webpack_require__(257);
+	    var visualSolution = __webpack_require__(562);
+	    var zrUtil = __webpack_require__(260);
+	    var BoundingRect = __webpack_require__(265);
+	    var selector = __webpack_require__(563);
+	    var throttle = __webpack_require__(564);
+	    var brushHelper = __webpack_require__(565);
 
 	    var STATE_LIST = ['inBrush', 'outOfBrush'];
 	    var DISPATCH_METHOD = '__ecBrushSelect';
@@ -80029,7 +80175,7 @@
 
 
 /***/ },
-/* 559 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80037,8 +80183,8 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var VisualMapping = __webpack_require__(445);
+	    var zrUtil = __webpack_require__(260);
+	    var VisualMapping = __webpack_require__(448);
 	    var each = zrUtil.each;
 
 	    function hasKeys(obj) {
@@ -80177,13 +80323,13 @@
 
 
 /***/ },
-/* 560 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var polygonContain = __webpack_require__(420).contain;
-	    var BoundingRect = __webpack_require__(262);
+	    var polygonContain = __webpack_require__(423).contain;
+	    var BoundingRect = __webpack_require__(265);
 
 	    // Key of the first level is brushType: `line`, `rect`, `polygon`.
 	    // Key of the second level is chart element type: `point`, `rect`.
@@ -80324,7 +80470,7 @@
 
 
 /***/ },
-/* 561 */
+/* 564 */
 /***/ function(module, exports) {
 
 	
@@ -80472,13 +80618,13 @@
 
 
 /***/ },
-/* 562 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
 
 	    var each = zrUtil.each;
 
@@ -80706,7 +80852,7 @@
 
 
 /***/ },
-/* 563 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80714,10 +80860,10 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
-	    var visualSolution = __webpack_require__(559);
-	    var Model = __webpack_require__(265);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
+	    var visualSolution = __webpack_require__(562);
+	    var Model = __webpack_require__(268);
 
 	    var DEFAULT_OUT_OF_BRUSH_COLOR = ['#ddd'];
 
@@ -80860,15 +81006,15 @@
 
 
 /***/ },
-/* 564 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var BrushController = __webpack_require__(486);
-	    var echarts = __webpack_require__(254);
-	    var brushHelper = __webpack_require__(562);
+	    var zrUtil = __webpack_require__(260);
+	    var BrushController = __webpack_require__(489);
+	    var echarts = __webpack_require__(257);
+	    var brushHelper = __webpack_require__(565);
 
 	    module.exports = echarts.extendComponentView({
 
@@ -80966,7 +81112,7 @@
 
 
 /***/ },
-/* 565 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80974,7 +81120,7 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    /**
 	     * payload: {
@@ -81021,14 +81167,14 @@
 
 
 /***/ },
-/* 566 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var featureManager = __webpack_require__(567);
-	    var zrUtil = __webpack_require__(257);
+	    var featureManager = __webpack_require__(570);
+	    var zrUtil = __webpack_require__(260);
 
 	    function Brush(model, ecModel, api) {
 	        this.model = model;
@@ -81146,7 +81292,7 @@
 
 
 /***/ },
-/* 567 */
+/* 570 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81166,15 +81312,15 @@
 
 
 /***/ },
-/* 568 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var echarts = __webpack_require__(254);
-	    var graphic = __webpack_require__(296);
-	    var layout = __webpack_require__(274);
+	    var echarts = __webpack_require__(257);
+	    var graphic = __webpack_require__(299);
+	    var layout = __webpack_require__(277);
 
 	    // Model
 	    echarts.extendComponentModel({
@@ -81380,7 +81526,7 @@
 
 
 /***/ },
-/* 569 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81388,13 +81534,10 @@
 	 */
 
 
-	    __webpack_require__(570);
+	    __webpack_require__(573);
 
-	    __webpack_require__(571);
 	    __webpack_require__(574);
-
-	    __webpack_require__(575);
-	    __webpack_require__(576);
+	    __webpack_require__(577);
 
 	    __webpack_require__(578);
 	    __webpack_require__(579);
@@ -81402,15 +81545,18 @@
 	    __webpack_require__(581);
 	    __webpack_require__(582);
 
+	    __webpack_require__(584);
+	    __webpack_require__(585);
+
 
 
 /***/ },
-/* 570 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(272).registerSubTypeDefaulter('dataZoom', function (option) {
+	    __webpack_require__(275).registerSubTypeDefaulter('dataZoom', function (option) {
 	        // Default 'slider' when no type specified.
 	        return 'slider';
 	    });
@@ -81418,7 +81564,7 @@
 
 
 /***/ },
-/* 571 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81426,12 +81572,12 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var env = __webpack_require__(255);
-	    var echarts = __webpack_require__(254);
-	    var modelUtil = __webpack_require__(258);
-	    var helper = __webpack_require__(572);
-	    var AxisProxy = __webpack_require__(573);
+	    var zrUtil = __webpack_require__(260);
+	    var env = __webpack_require__(258);
+	    var echarts = __webpack_require__(257);
+	    var modelUtil = __webpack_require__(261);
+	    var helper = __webpack_require__(575);
+	    var AxisProxy = __webpack_require__(576);
 	    var each = zrUtil.each;
 	    var eachAxisDim = helper.eachAxisDim;
 
@@ -81904,12 +82050,12 @@
 
 
 /***/ },
-/* 572 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    var formatUtil = __webpack_require__(259);
-	    var zrUtil = __webpack_require__(257);
+	    var formatUtil = __webpack_require__(262);
+	    var zrUtil = __webpack_require__(260);
 
 	    var helper = {};
 
@@ -82032,7 +82178,7 @@
 
 
 /***/ },
-/* 573 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -82040,8 +82186,8 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var each = zrUtil.each;
 	    var asc = numberUtil.asc;
 
@@ -82401,12 +82547,12 @@
 
 
 /***/ },
-/* 574 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var ComponentView = __webpack_require__(282);
+	    var ComponentView = __webpack_require__(285);
 
 	    module.exports = ComponentView.extend({
 
@@ -82495,7 +82641,7 @@
 
 
 /***/ },
-/* 575 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -82503,7 +82649,7 @@
 	 */
 
 
-	    var DataZoomModel = __webpack_require__(571);
+	    var DataZoomModel = __webpack_require__(574);
 
 	    var SliderZoomModel = DataZoomModel.extend({
 
@@ -82574,20 +82720,20 @@
 
 
 /***/ },
-/* 576 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var throttle = __webpack_require__(561);
-	    var DataZoomView = __webpack_require__(574);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var throttle = __webpack_require__(564);
+	    var DataZoomView = __webpack_require__(577);
 	    var Rect = graphic.Rect;
-	    var numberUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var linearMap = numberUtil.linearMap;
-	    var layout = __webpack_require__(274);
-	    var sliderMove = __webpack_require__(577);
+	    var layout = __webpack_require__(277);
+	    var sliderMove = __webpack_require__(580);
 	    var asc = numberUtil.asc;
 	    var bind = zrUtil.bind;
 	    // var mathMax = Math.max;
@@ -83313,7 +83459,7 @@
 
 
 /***/ },
-/* 577 */
+/* 580 */
 /***/ function(module, exports) {
 
 	
@@ -83372,7 +83518,7 @@
 
 
 /***/ },
-/* 578 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83380,7 +83526,7 @@
 	 */
 
 
-	    module.exports = __webpack_require__(571).extend({
+	    module.exports = __webpack_require__(574).extend({
 
 	        type: 'dataZoom.inside',
 
@@ -83394,15 +83540,15 @@
 
 
 /***/ },
-/* 579 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var DataZoomView = __webpack_require__(574);
-	    var zrUtil = __webpack_require__(257);
-	    var sliderMove = __webpack_require__(577);
-	    var roams = __webpack_require__(580);
+	    var DataZoomView = __webpack_require__(577);
+	    var zrUtil = __webpack_require__(260);
+	    var sliderMove = __webpack_require__(580);
+	    var roams = __webpack_require__(583);
 	    var bind = zrUtil.bind;
 
 	    var InsideZoomView = DataZoomView.extend({
@@ -83585,7 +83731,7 @@
 
 
 /***/ },
-/* 580 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83599,9 +83745,9 @@
 	    // pan or zoom, only dispatch one action for those data zoom
 	    // components.
 
-	    var zrUtil = __webpack_require__(257);
-	    var RoamController = __webpack_require__(427);
-	    var throttle = __webpack_require__(561);
+	    var zrUtil = __webpack_require__(260);
+	    var RoamController = __webpack_require__(430);
+	    var throttle = __webpack_require__(564);
 	    var curry = zrUtil.curry;
 
 	    var ATTR = '\0_ec_dataZoom_roams';
@@ -83782,7 +83928,7 @@
 
 
 /***/ },
-/* 581 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83790,7 +83936,7 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    echarts.registerProcessor(function (ecModel, api) {
 
@@ -83845,7 +83991,7 @@
 
 
 /***/ },
-/* 582 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83853,9 +83999,9 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var helper = __webpack_require__(572);
-	    var echarts = __webpack_require__(254);
+	    var zrUtil = __webpack_require__(260);
+	    var helper = __webpack_require__(575);
+	    var echarts = __webpack_require__(257);
 
 
 	    echarts.registerAction('dataZoom', function (payload, ecModel) {
@@ -83893,7 +84039,7 @@
 
 
 /***/ },
-/* 583 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83901,13 +84047,13 @@
 	 */
 
 
-	    __webpack_require__(584);
-	    __webpack_require__(595);
+	    __webpack_require__(587);
+	    __webpack_require__(598);
 
 
 
 /***/ },
-/* 584 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83915,20 +84061,20 @@
 	 */
 
 
-	    __webpack_require__(254).registerPreprocessor(
-	        __webpack_require__(585)
+	    __webpack_require__(257).registerPreprocessor(
+	        __webpack_require__(588)
 	    );
 
-	    __webpack_require__(586);
-	    __webpack_require__(587);
-	    __webpack_require__(588);
+	    __webpack_require__(589);
+	    __webpack_require__(590);
 	    __webpack_require__(591);
 	    __webpack_require__(594);
+	    __webpack_require__(597);
 
 
 
 /***/ },
-/* 585 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83936,7 +84082,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 	    var each = zrUtil.each;
 
 	    module.exports = function (option) {
@@ -83980,12 +84126,12 @@
 
 
 /***/ },
-/* 586 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(272).registerSubTypeDefaulter('visualMap', function (option) {
+	    __webpack_require__(275).registerSubTypeDefaulter('visualMap', function (option) {
 	        // Compatible with ec2, when splitNumber === 0, continuous visualMap will be used.
 	        return (
 	                !option.categories
@@ -84004,7 +84150,7 @@
 
 
 /***/ },
-/* 587 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84012,9 +84158,9 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
-	    var visualSolution = __webpack_require__(559);
-	    var VisualMapping = __webpack_require__(445);
+	    var echarts = __webpack_require__(257);
+	    var visualSolution = __webpack_require__(562);
+	    var VisualMapping = __webpack_require__(448);
 
 	    echarts.registerVisual(echarts.PRIORITY.VISUAL.COMPONENT, function (ecModel) {
 	        ecModel.eachComponent('visualMap', function (visualMapModel) {
@@ -84089,7 +84235,7 @@
 
 
 /***/ },
-/* 588 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84097,9 +84243,9 @@
 	 */
 
 
-	    var VisualMapModel = __webpack_require__(589);
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var VisualMapModel = __webpack_require__(592);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 
 	    // Constant
 	    var DEFAULT_BAR_BOUND = [20, 140];
@@ -84322,7 +84468,7 @@
 
 
 /***/ },
-/* 589 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84330,16 +84476,16 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
-	    var zrUtil = __webpack_require__(257);
-	    var env = __webpack_require__(255);
-	    var visualDefault = __webpack_require__(590);
-	    var VisualMapping = __webpack_require__(445);
-	    var visualSolution = __webpack_require__(559);
+	    var echarts = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
+	    var env = __webpack_require__(258);
+	    var visualDefault = __webpack_require__(593);
+	    var VisualMapping = __webpack_require__(448);
+	    var visualSolution = __webpack_require__(562);
 	    var mapVisual = VisualMapping.mapVisual;
-	    var modelUtil = __webpack_require__(258);
+	    var modelUtil = __webpack_require__(261);
 	    var eachVisual = VisualMapping.eachVisual;
-	    var numberUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var isArray = zrUtil.isArray;
 	    var each = zrUtil.each;
 	    var asc = numberUtil.asc;
@@ -84832,7 +84978,7 @@
 
 
 /***/ },
-/* 590 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84840,7 +84986,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    var visualDefault = {
 
@@ -84908,19 +85054,19 @@
 
 
 /***/ },
-/* 591 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var VisualMapView = __webpack_require__(592);
-	    var graphic = __webpack_require__(296);
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
-	    var sliderMove = __webpack_require__(577);
-	    var LinearGradient = __webpack_require__(332);
-	    var helper = __webpack_require__(593);
-	    var modelUtil = __webpack_require__(258);
+	    var VisualMapView = __webpack_require__(595);
+	    var graphic = __webpack_require__(299);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
+	    var sliderMove = __webpack_require__(580);
+	    var LinearGradient = __webpack_require__(335);
+	    var helper = __webpack_require__(596);
+	    var modelUtil = __webpack_require__(261);
 
 	    var linearMap = numberUtil.linearMap;
 	    var each = zrUtil.each;
@@ -85741,17 +85887,17 @@
 
 
 /***/ },
-/* 592 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var formatUtil = __webpack_require__(259);
-	    var layout = __webpack_require__(274);
-	    var echarts = __webpack_require__(254);
-	    var VisualMapping = __webpack_require__(445);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var formatUtil = __webpack_require__(262);
+	    var layout = __webpack_require__(277);
+	    var echarts = __webpack_require__(257);
+	    var VisualMapping = __webpack_require__(448);
 
 	    module.exports = echarts.extendComponentView({
 
@@ -85901,12 +86047,12 @@
 
 
 /***/ },
-/* 593 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var layout = __webpack_require__(274);
+	    var layout = __webpack_require__(277);
 
 	    var helper = {
 
@@ -85958,7 +86104,7 @@
 
 
 /***/ },
-/* 594 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -85966,7 +86112,7 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    var actionInfo = {
 	        type: 'selectDataRange',
@@ -85986,7 +86132,7 @@
 
 
 /***/ },
-/* 595 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -85994,27 +86140,27 @@
 	 */
 
 
-	    __webpack_require__(254).registerPreprocessor(
-	        __webpack_require__(585)
+	    __webpack_require__(257).registerPreprocessor(
+	        __webpack_require__(588)
 	    );
 
-	    __webpack_require__(586);
-	    __webpack_require__(587);
-	    __webpack_require__(596);
+	    __webpack_require__(589);
+	    __webpack_require__(590);
+	    __webpack_require__(599);
+	    __webpack_require__(600);
 	    __webpack_require__(597);
-	    __webpack_require__(594);
 
 
 
 /***/ },
-/* 596 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var VisualMapModel = __webpack_require__(589);
-	    var zrUtil = __webpack_require__(257);
-	    var VisualMapping = __webpack_require__(445);
+	    var VisualMapModel = __webpack_require__(592);
+	    var zrUtil = __webpack_require__(260);
+	    var VisualMapping = __webpack_require__(448);
 
 	    var PiecewiseModel = VisualMapModel.extend({
 
@@ -86461,17 +86607,17 @@
 
 
 /***/ },
-/* 597 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var VisualMapView = __webpack_require__(592);
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var symbolCreators = __webpack_require__(359);
-	    var layout = __webpack_require__(274);
-	    var helper = __webpack_require__(593);
+	    var VisualMapView = __webpack_require__(595);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var symbolCreators = __webpack_require__(362);
+	    var layout = __webpack_require__(277);
+	    var helper = __webpack_require__(596);
 
 	    var PiecewiseVisualMapView = VisualMapView.extend({
 
@@ -86684,28 +86830,28 @@
 
 
 /***/ },
-/* 598 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// HINT Markpoint can't be used too much
 
 
-	    __webpack_require__(599);
-	    __webpack_require__(601);
+	    __webpack_require__(602);
+	    __webpack_require__(604);
 
-	    __webpack_require__(254).registerPreprocessor(function (opt) {
+	    __webpack_require__(257).registerPreprocessor(function (opt) {
 	        // Make sure markPoint component is enabled
 	        opt.markPoint = opt.markPoint || {};
 	    });
 
 
 /***/ },
-/* 599 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    module.exports = __webpack_require__(600).extend({
+	    module.exports = __webpack_require__(603).extend({
 
 	        type: 'markPoint',
 
@@ -86738,16 +86884,16 @@
 
 
 /***/ },
-/* 600 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var modelUtil = __webpack_require__(258);
-	    var zrUtil = __webpack_require__(257);
-	    var env = __webpack_require__(255);
+	    var modelUtil = __webpack_require__(261);
+	    var zrUtil = __webpack_require__(260);
+	    var env = __webpack_require__(258);
 
-	    var formatUtil = __webpack_require__(259);
+	    var formatUtil = __webpack_require__(262);
 	    var addCommas = formatUtil.addCommas;
 	    var encodeHTML = formatUtil.encodeHTML;
 
@@ -86757,7 +86903,7 @@
 	            modelUtil.LABEL_OPTIONS
 	        );
 	    }
-	    var MarkerModel = __webpack_require__(254).extendComponentModel({
+	    var MarkerModel = __webpack_require__(257).extendComponentModel({
 
 	        type: 'marker',
 
@@ -86873,18 +87019,18 @@
 
 
 /***/ },
-/* 601 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var SymbolDraw = __webpack_require__(357);
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var SymbolDraw = __webpack_require__(360);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 
-	    var List = __webpack_require__(350);
+	    var List = __webpack_require__(353);
 
-	    var markerHelper = __webpack_require__(602);
+	    var markerHelper = __webpack_require__(605);
 
 	    function updateMarkerLayout(mpData, seriesModel, api) {
 	        var coordSys = seriesModel.coordinateSystem;
@@ -86922,7 +87068,7 @@
 	        });
 	    }
 
-	    __webpack_require__(603).extend({
+	    __webpack_require__(606).extend({
 
 	        type: 'markPoint',
 
@@ -87034,13 +87180,13 @@
 
 
 /***/ },
-/* 602 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var numberUtil = __webpack_require__(263);
 	    var indexOf = zrUtil.indexOf;
 
 	    function hasXOrY(item) {
@@ -87238,12 +87384,12 @@
 
 
 /***/ },
-/* 603 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    module.exports = __webpack_require__(254).extendComponentView({
+	    module.exports = __webpack_require__(257).extendComponentView({
 
 	        type: 'marker',
 
@@ -87280,27 +87426,27 @@
 
 
 /***/ },
-/* 604 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(605);
-	    __webpack_require__(606);
+	    __webpack_require__(608);
+	    __webpack_require__(609);
 
-	    __webpack_require__(254).registerPreprocessor(function (opt) {
+	    __webpack_require__(257).registerPreprocessor(function (opt) {
 	        // Make sure markLine component is enabled
 	        opt.markLine = opt.markLine || {};
 	    });
 
 
 /***/ },
-/* 605 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    module.exports = __webpack_require__(600).extend({
+	    module.exports = __webpack_require__(603).extend({
 
 	        type: 'markLine',
 
@@ -87340,18 +87486,18 @@
 
 
 /***/ },
-/* 606 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var List = __webpack_require__(350);
-	    var numberUtil = __webpack_require__(260);
+	    var zrUtil = __webpack_require__(260);
+	    var List = __webpack_require__(353);
+	    var numberUtil = __webpack_require__(263);
 
-	    var markerHelper = __webpack_require__(602);
+	    var markerHelper = __webpack_require__(605);
 
-	    var LineDraw = __webpack_require__(452);
+	    var LineDraw = __webpack_require__(455);
 
 	    var markLineTransform = function (seriesModel, coordSys, mlModel, item) {
 	        var data = seriesModel.getData();
@@ -87521,7 +87667,7 @@
 	        data.setItemLayout(idx, point);
 	    }
 
-	    __webpack_require__(603).extend({
+	    __webpack_require__(606).extend({
 
 	        type: 'markLine',
 
@@ -87700,27 +87846,27 @@
 
 
 /***/ },
-/* 607 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(608);
-	    __webpack_require__(609);
+	    __webpack_require__(611);
+	    __webpack_require__(612);
 
-	    __webpack_require__(254).registerPreprocessor(function (opt) {
+	    __webpack_require__(257).registerPreprocessor(function (opt) {
 	        // Make sure markArea component is enabled
 	        opt.markArea = opt.markArea || {};
 	    });
 
 
 /***/ },
-/* 608 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    module.exports = __webpack_require__(600).extend({
+	    module.exports = __webpack_require__(603).extend({
 
 	        type: 'markArea',
 
@@ -87756,19 +87902,19 @@
 
 
 /***/ },
-/* 609 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// TODO Better on polar
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var List = __webpack_require__(350);
-	    var numberUtil = __webpack_require__(260);
-	    var graphic = __webpack_require__(296);
-	    var colorUtil = __webpack_require__(292);
+	    var zrUtil = __webpack_require__(260);
+	    var List = __webpack_require__(353);
+	    var numberUtil = __webpack_require__(263);
+	    var graphic = __webpack_require__(299);
+	    var colorUtil = __webpack_require__(295);
 
-	    var markerHelper = __webpack_require__(602);
+	    var markerHelper = __webpack_require__(605);
 
 	    var markAreaTransform = function (seriesModel, coordSys, maModel, item) {
 	        var lt = markerHelper.dataTransform(seriesModel, item[0]);
@@ -87888,7 +88034,7 @@
 
 	    var dimPermutations = [['x0', 'y0'], ['x1', 'y0'], ['x1', 'y1'], ['x0', 'y1']];
 
-	    __webpack_require__(603).extend({
+	    __webpack_require__(606).extend({
 
 	        type: 'markArea',
 
@@ -88067,7 +88213,7 @@
 
 
 /***/ },
-/* 610 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88075,19 +88221,19 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
-	    echarts.registerPreprocessor(__webpack_require__(611));
+	    echarts.registerPreprocessor(__webpack_require__(614));
 
-	    __webpack_require__(612);
-	    __webpack_require__(613);
-	    __webpack_require__(614);
+	    __webpack_require__(615);
 	    __webpack_require__(616);
+	    __webpack_require__(617);
+	    __webpack_require__(619);
 
 
 
 /***/ },
-/* 611 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88095,7 +88241,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    module.exports = function (option) {
 	        var timelineOpt = option && option.timeline;
@@ -88178,12 +88324,12 @@
 
 
 /***/ },
-/* 612 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(272).registerSubTypeDefaulter('timeline', function () {
+	    __webpack_require__(275).registerSubTypeDefaulter('timeline', function () {
 	        // Only slider now.
 	        return 'slider';
 	    });
@@ -88191,7 +88337,7 @@
 
 
 /***/ },
-/* 613 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88199,7 +88345,7 @@
 	 */
 
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 
 	    echarts.registerAction(
 
@@ -88235,7 +88381,7 @@
 
 
 /***/ },
-/* 614 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88243,9 +88389,9 @@
 	 */
 
 
-	    var TimelineModel = __webpack_require__(615);
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
+	    var TimelineModel = __webpack_require__(618);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
 
 	    var SliderTimelineModel = TimelineModel.extend({
 
@@ -88351,7 +88497,7 @@
 
 
 /***/ },
-/* 615 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88359,10 +88505,10 @@
 	 */
 
 
-	    var ComponentModel = __webpack_require__(272);
-	    var List = __webpack_require__(350);
-	    var zrUtil = __webpack_require__(257);
-	    var modelUtil = __webpack_require__(258);
+	    var ComponentModel = __webpack_require__(275);
+	    var List = __webpack_require__(353);
+	    var zrUtil = __webpack_require__(260);
+	    var modelUtil = __webpack_require__(261);
 
 	    var TimelineModel = ComponentModel.extend({
 
@@ -88553,7 +88699,7 @@
 
 
 /***/ },
-/* 616 */
+/* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88561,17 +88707,17 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var layout = __webpack_require__(274);
-	    var TimelineView = __webpack_require__(617);
-	    var TimelineAxis = __webpack_require__(618);
-	    var symbolUtil = __webpack_require__(359);
-	    var axisHelper = __webpack_require__(367);
-	    var BoundingRect = __webpack_require__(262);
-	    var matrix = __webpack_require__(264);
-	    var numberUtil = __webpack_require__(260);
-	    var formatUtil = __webpack_require__(259);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var layout = __webpack_require__(277);
+	    var TimelineView = __webpack_require__(620);
+	    var TimelineAxis = __webpack_require__(621);
+	    var symbolUtil = __webpack_require__(362);
+	    var axisHelper = __webpack_require__(370);
+	    var BoundingRect = __webpack_require__(265);
+	    var matrix = __webpack_require__(267);
+	    var numberUtil = __webpack_require__(263);
+	    var formatUtil = __webpack_require__(262);
 	    var encodeHTML = formatUtil.encodeHTML;
 
 	    var bind = zrUtil.bind;
@@ -89246,7 +89392,7 @@
 
 
 /***/ },
-/* 617 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -89256,7 +89402,7 @@
 
 	    // var zrUtil = require('zrender/lib/core/util');
 	    // var graphic = require('../../util/graphic');
-	    var ComponentView = __webpack_require__(282);
+	    var ComponentView = __webpack_require__(285);
 
 	    module.exports = ComponentView.extend({
 
@@ -89266,14 +89412,14 @@
 
 
 /***/ },
-/* 618 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var zrUtil = __webpack_require__(257);
-	    var Axis = __webpack_require__(376);
-	    var axisHelper = __webpack_require__(367);
+	    var zrUtil = __webpack_require__(260);
+	    var Axis = __webpack_require__(379);
+	    var axisHelper = __webpack_require__(370);
 
 	    /**
 	     * Extend axis 2d
@@ -89367,31 +89513,31 @@
 
 
 /***/ },
-/* 619 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    __webpack_require__(620);
-	    __webpack_require__(621);
-
-	    __webpack_require__(622);
 	    __webpack_require__(623);
 	    __webpack_require__(624);
+
 	    __webpack_require__(625);
-	    __webpack_require__(630);
+	    __webpack_require__(626);
+	    __webpack_require__(627);
+	    __webpack_require__(628);
+	    __webpack_require__(633);
 
 
 /***/ },
-/* 620 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var featureManager = __webpack_require__(567);
-	    var zrUtil = __webpack_require__(257);
+	    var featureManager = __webpack_require__(570);
+	    var zrUtil = __webpack_require__(260);
 
-	    var ToolboxModel = __webpack_require__(254).extendComponentModel({
+	    var ToolboxModel = __webpack_require__(257).extendComponentModel({
 
 	        type: 'toolbox',
 
@@ -89459,20 +89605,20 @@
 
 
 /***/ },
-/* 621 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {
 
-	    var featureManager = __webpack_require__(567);
-	    var zrUtil = __webpack_require__(257);
-	    var graphic = __webpack_require__(296);
-	    var Model = __webpack_require__(265);
-	    var DataDiffer = __webpack_require__(351);
-	    var listComponentHelper = __webpack_require__(530);
-	    var textContain = __webpack_require__(261);
+	    var featureManager = __webpack_require__(570);
+	    var zrUtil = __webpack_require__(260);
+	    var graphic = __webpack_require__(299);
+	    var Model = __webpack_require__(268);
+	    var DataDiffer = __webpack_require__(354);
+	    var listComponentHelper = __webpack_require__(533);
+	    var textContain = __webpack_require__(264);
 
-	    module.exports = __webpack_require__(254).extendComponentView({
+	    module.exports = __webpack_require__(257).extendComponentView({
 
 	        type: 'toolbox',
 
@@ -89712,12 +89858,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 622 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    var env = __webpack_require__(255);
+	    var env = __webpack_require__(258);
 
 	    function SaveAsImage (model) {
 	        this.model = model;
@@ -89776,7 +89922,7 @@
 	        }
 	    };
 
-	    __webpack_require__(567).register(
+	    __webpack_require__(570).register(
 	        'saveAsImage', SaveAsImage
 	    );
 
@@ -89784,13 +89930,13 @@
 
 
 /***/ },
-/* 623 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 
 	    function MagicType(model) {
 	        this.model = model;
@@ -89949,7 +90095,7 @@
 	        });
 	    };
 
-	    var echarts = __webpack_require__(254);
+	    var echarts = __webpack_require__(257);
 	    echarts.registerAction({
 	        type: 'changeMagicType',
 	        event: 'magicTypeChanged',
@@ -89958,13 +90104,13 @@
 	        ecModel.mergeOption(payload.newOption);
 	    });
 
-	    __webpack_require__(567).register('magicType', MagicType);
+	    __webpack_require__(570).register('magicType', MagicType);
 
 	    module.exports = MagicType;
 
 
 /***/ },
-/* 624 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -89973,8 +90119,8 @@
 
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var eventTool = __webpack_require__(340);
+	    var zrUtil = __webpack_require__(260);
+	    var eventTool = __webpack_require__(343);
 
 
 	    var BLOCK_SPLITER = new Array(60).join('-');
@@ -90411,9 +90557,9 @@
 	        });
 	    }
 
-	    __webpack_require__(567).register('dataView', DataView);
+	    __webpack_require__(570).register('dataView', DataView);
 
-	    __webpack_require__(254).registerAction({
+	    __webpack_require__(257).registerAction({
 	        type: 'changeDataView',
 	        event: 'dataViewChanged',
 	        update: 'prepareAndUpdate'
@@ -90447,21 +90593,21 @@
 
 
 /***/ },
-/* 625 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var zrUtil = __webpack_require__(257);
-	    var BrushController = __webpack_require__(486);
-	    var brushHelper = __webpack_require__(562);
-	    var history = __webpack_require__(626);
+	    var zrUtil = __webpack_require__(260);
+	    var BrushController = __webpack_require__(489);
+	    var brushHelper = __webpack_require__(565);
+	    var history = __webpack_require__(629);
 
 	    var each = zrUtil.each;
 
 	    // Use dataZoomSelect
-	    __webpack_require__(627);
+	    __webpack_require__(630);
 
 	    // Spectial component id start with \0ec\0, see echarts/model/Global.js~hasInnerId
 	    var DATA_ZOOM_ID_BASE = '\0_ec_\0toolbox-dataZoom_';
@@ -90679,11 +90825,11 @@
 	    }
 
 
-	    __webpack_require__(567).register('dataZoom', DataZoom);
+	    __webpack_require__(570).register('dataZoom', DataZoom);
 
 
 	    // Create special dataZoom option for select
-	    __webpack_require__(254).registerPreprocessor(function (option) {
+	    __webpack_require__(257).registerPreprocessor(function (option) {
 	        if (!option) {
 	            return;
 	        }
@@ -90755,7 +90901,7 @@
 
 
 /***/ },
-/* 626 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -90763,7 +90909,7 @@
 	 */
 
 
-	    var zrUtil = __webpack_require__(257);
+	    var zrUtil = __webpack_require__(260);
 	    var each = zrUtil.each;
 
 	    var ATTR = '\0_ec_hist_store';
@@ -90869,7 +91015,7 @@
 
 
 /***/ },
-/* 627 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -90877,21 +91023,21 @@
 	 */
 
 
-	    __webpack_require__(570);
+	    __webpack_require__(573);
 
-	    __webpack_require__(571);
 	    __webpack_require__(574);
+	    __webpack_require__(577);
 
-	    __webpack_require__(628);
-	    __webpack_require__(629);
+	    __webpack_require__(631);
+	    __webpack_require__(632);
 
-	    __webpack_require__(581);
-	    __webpack_require__(582);
+	    __webpack_require__(584);
+	    __webpack_require__(585);
 
 
 
 /***/ },
-/* 628 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -90899,7 +91045,7 @@
 	 */
 
 
-	    var DataZoomModel = __webpack_require__(571);
+	    var DataZoomModel = __webpack_require__(574);
 
 	    module.exports = DataZoomModel.extend({
 
@@ -90910,12 +91056,12 @@
 
 
 /***/ },
-/* 629 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	    module.exports = __webpack_require__(574).extend({
+	    module.exports = __webpack_require__(577).extend({
 
 	        type: 'dataZoom.select'
 
@@ -90924,13 +91070,13 @@
 
 
 /***/ },
-/* 630 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	    var history = __webpack_require__(626);
+	    var history = __webpack_require__(629);
 
 	    function Restore(model) {
 	        this.model = model;
@@ -90954,10 +91100,10 @@
 	    };
 
 
-	    __webpack_require__(567).register('restore', Restore);
+	    __webpack_require__(570).register('restore', Restore);
 
 
-	    __webpack_require__(254).registerAction(
+	    __webpack_require__(257).registerAction(
 	        {type: 'restore', event: 'restore', update: 'prepareAndUpdate'},
 	        function (payload, ecModel) {
 	            ecModel.resetOption('recreate');
@@ -90968,37 +91114,37 @@
 
 
 /***/ },
-/* 631 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    __webpack_require__(632);
-	    __webpack_require__(334).registerPainter('vml', __webpack_require__(634));
+	    __webpack_require__(635);
+	    __webpack_require__(337).registerPainter('vml', __webpack_require__(637));
 
 
 /***/ },
-/* 632 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// http://www.w3.org/TR/NOTE-VML
 	// TODO Use proxy like svg instead of overwrite brush methods
 
 
-	if (!__webpack_require__(255).canvasSupported) {
-	    var vec2 = __webpack_require__(263);
-	    var BoundingRect = __webpack_require__(262);
-	    var CMD = __webpack_require__(302).CMD;
-	    var colorTool = __webpack_require__(292);
-	    var textContain = __webpack_require__(261);
-	    var RectText = __webpack_require__(301);
-	    var Displayable = __webpack_require__(299);
-	    var ZImage = __webpack_require__(315);
-	    var Text = __webpack_require__(317);
-	    var Path = __webpack_require__(298);
+	if (!__webpack_require__(258).canvasSupported) {
+	    var vec2 = __webpack_require__(266);
+	    var BoundingRect = __webpack_require__(265);
+	    var CMD = __webpack_require__(305).CMD;
+	    var colorTool = __webpack_require__(295);
+	    var textContain = __webpack_require__(264);
+	    var RectText = __webpack_require__(304);
+	    var Displayable = __webpack_require__(302);
+	    var ZImage = __webpack_require__(318);
+	    var Text = __webpack_require__(320);
+	    var Path = __webpack_require__(301);
 
-	    var Gradient = __webpack_require__(314);
+	    var Gradient = __webpack_require__(317);
 
-	    var vmlCore = __webpack_require__(633);
+	    var vmlCore = __webpack_require__(636);
 
 	    var round = Math.round;
 	    var sqrt = Math.sqrt;
@@ -92035,12 +92181,12 @@
 
 
 /***/ },
-/* 633 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
 
-	if (!__webpack_require__(255).canvasSupported) {
+	if (!__webpack_require__(258).canvasSupported) {
 	    var urn = 'urn:schemas-microsoft-com:vml';
 
 	    var createNode;
@@ -92088,7 +92234,7 @@
 
 
 /***/ },
-/* 634 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -92099,8 +92245,8 @@
 
 
 
-	    var zrLog = __webpack_require__(293);
-	    var vmlCore = __webpack_require__(633);
+	    var zrLog = __webpack_require__(296);
+	    var vmlCore = __webpack_require__(636);
 
 	    function parseInt10(val) {
 	        return parseInt(val, 10);
@@ -92285,7 +92431,7 @@
 
 
 /***/ },
-/* 635 */
+/* 638 */
 /***/ function(module, exports) {
 
 	var exports = function exports(element, fn) {
@@ -92385,13 +92531,13 @@
 
 
 /***/ },
-/* 636 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(637);
+	var content = __webpack_require__(640);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -92411,7 +92557,7 @@
 	}
 
 /***/ },
-/* 637 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -92419,13 +92565,13 @@
 
 
 	// module
-	exports.push([module.id, ".echarts_content{\n\tbackground-color: #fff;\n\tpadding-top: 20px;\n\theight: 100%;\n}\n\n.echarts_title{\n\twidth:100%;\n\ttext-align: center;\n\tfont-size:20px;\n}\n\n.echarts_bar{\n\twidth:90%;\n\tdisplay: block;\n\tmargin:10px auto;\n\theight: 250px;\n}", ""]);
+	exports.push([module.id, ".echarts_content{\r\n\tbackground-color: #fff;\r\n\theight: 100%;\r\n}\r\n\r\n.echarts_title{\r\n\twidth:100%;\r\n\ttext-align: center;\r\n\tfont-size:20px;\r\n}\r\n\r\n.echarts_bar{\r\n\twidth:65%;\r\n\tdisplay: block;\r\n\tmargin:0px auto;\r\n\theight: 250px;\r\n\tcolor:#fff;\r\n}\r\n\r\n.echarts_box{\r\n\tbackground:url(" + __webpack_require__(763) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n\tposition: relative;\r\n}\r\n\r\n.line_box{\r\n\tposition: absolute;\r\n\ttop:15px;\r\n\tleft:15px;\r\n\tcolor: #fff;\r\n\tfont-size:12px;\r\n}\r\n\r\n.line_box>div{\r\n\tmargin-bottom: 5px;\r\n}\r\n.line_box .line{\r\n\tdisplay: inline-block;\r\n\theight: 5px;\r\n\twidth:30px;\r\n\tvertical-align: middle;\r\n\tmargin-right: 5px;\r\n}\r\n.line_box div:nth-of-type(1) .line{\r\n\tbackground-color: #A100F7;\r\n}\r\n.line_box div:nth-of-type(2) .line{\r\n\tbackground-color: #F6FF00;\r\n}\r\n.line_box div:nth-of-type(3) .line{\r\n\tbackground-color: #00F0FF;\r\n}\r\n\r\n.content_box{\r\n\tbackground: url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 638 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92444,19 +92590,19 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _type_jiji = __webpack_require__(639);
+	var _type_jiji = __webpack_require__(642);
 
 	var _type_jiji2 = _interopRequireDefault(_type_jiji);
 
-	var _type_wenjian = __webpack_require__(640);
+	var _type_wenjian = __webpack_require__(643);
 
 	var _type_wenjian2 = _interopRequireDefault(_type_wenjian);
 
-	var _type_baoshou = __webpack_require__(641);
+	var _type_baoshou = __webpack_require__(644);
 
 	var _type_baoshou2 = _interopRequireDefault(_type_baoshou);
 
-	__webpack_require__(642);
+	__webpack_require__(645);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -92518,12 +92664,12 @@
 						_react2.default.createElement(
 							'h2',
 							{ className: 'title_1' },
-							'\u9632\u5B88\u578B\u914D\u7F6E\u7B56\u7565'
+							'防守型配置策略'
 						),
 						_react2.default.createElement(
 							'h3',
 							{ className: 'title_2' },
-							'\u63A8\u8350\u6295\u8D44\u4F4E\u98CE\u9669\u7B49\u7EA7\u4EA7\u54C1'
+							'推荐投资低风险等级产品'
 						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_baoshou2.default })
 					);
@@ -92534,12 +92680,12 @@
 						_react2.default.createElement(
 							'h2',
 							{ className: 'title_1' },
-							'\u7A33\u5065\u6027\u914D\u7F6E\u7B56\u7565'
+							'稳健性配置策略'
 						),
 						_react2.default.createElement(
 							'h3',
 							{ className: 'title_2' },
-							'\u9002\u5408\u6295\u8D44\u4E2D\u3001\u4F4E\u98CE\u9669\u7B49\u7EA7\u4EA7\u54C1'
+							'适合投资中、低风险等级产品'
 						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_wenjian2.default })
 					);
@@ -92550,12 +92696,12 @@
 						_react2.default.createElement(
 							'h2',
 							{ className: 'title_1' },
-							'\u79EF\u6781\u6027\u914D\u7F6E\u7B56\u7565'
+							'积极性配置策略'
 						),
 						_react2.default.createElement(
 							'h3',
 							{ className: 'title_2' },
-							'\u9002\u5408\u6295\u8D44\u9AD8\u3001\u4E2D\u3001\u4F4E\u98CE\u9669\u7B49\u7EA7\u4EA7\u54C1'
+							'适合投资高、中、低风险等级产品'
 						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_jiji2.default })
 					);
@@ -92598,7 +92744,7 @@
 						_react2.default.createElement(
 							'h3',
 							null,
-							'\u8BF7\u9009\u62E9\u60A8\u53EF\u6295\u8D44\u8D44\u4EA7\uFF1A'
+							'请选择您可投资资产：'
 						),
 						_react2.default.createElement(
 							'div',
@@ -92608,7 +92754,7 @@
 							_react2.default.createElement(
 								'label',
 								{ htmlFor: 'value1' },
-								'100\u4E07\u20141000\u4E07'
+								'100万—1000万'
 							)
 						),
 						_react2.default.createElement(
@@ -92619,7 +92765,7 @@
 							_react2.default.createElement(
 								'label',
 								{ htmlFor: 'value2' },
-								'1000\u4E07\u4EE5\u4E0A'
+								'1000万以上'
 							)
 						)
 					),
@@ -92629,7 +92775,7 @@
 						_react2.default.createElement(
 							_reactRouter.Link,
 							{ className: 'linkBtn', to: "/result/" + this.state.selectedValue + "/" + this.state.sum },
-							'\u4E0B\u4E00\u6B65'
+							'下一步'
 						)
 					)
 				);
@@ -92642,31 +92788,31 @@
 	exports.default = AssetsPage;
 
 /***/ },
-/* 639 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1ef5e54fe319bf535fa29c5cac9946c7.png";
 
 /***/ },
-/* 640 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "72795bbf4f030c988bf83fd4f7384b3f.png";
 
 /***/ },
-/* 641 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "47fe62c5cfa0320321bb3a755bbb64fa.png";
 
 /***/ },
-/* 642 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(643);
+	var content = __webpack_require__(646);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -92686,7 +92832,7 @@
 	}
 
 /***/ },
-/* 643 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -92694,19 +92840,19 @@
 
 
 	// module
-	exports.push([module.id, ".select_box{\n\tbackground-color: #fff;\n\theight: 100%;\n\tdisplay: block;\n}\n.top_box{\n\twidth:100%;\n\theight: auto;\n\ttext-align: center;\n\tpadding-top:20px;\n}\n\n.title_1{\n\tfont-size: 20px;\n\twidth:100%;\n}\n\n.title_2{\n\tfont-size: 16px;\n\twidth:100%;\n\tmargin-top:10px;\n\tcolor:#d4902f;\n}\n\n.type_img{\n\twidth: 50%;\n\tdisplay: inline-block;\n\tmargin:15px auto;\n}\n\n.selectAssetBox{\n\tpadding:10px;\n\twidth:98%;\n\tmargin:10px 1%;\n\tborder-radius: 8px;\n\tbox-sizing: border-box;\n\tbackground-color: #f0f0f0;\n}\n\n.selectAssetBox h3{\n\tline-height: 30px;\n\tfont-size: 16px;\n\tborder-bottom: 1px solid #ddd;\n\tmargin-bottom: 10px;\n}\n\n.selectAssetBox .item_group{\n\tdisplay: inline-block;\n\twidth:50%;\n\tfont-size:0px;\n  text-align: center;\n}\n.selectAssetBox .item_group input{\n\twidth:18px;\n\theight: 18px;\n\tvertical-align: middle;\n\tmargin-right: 5px;\n\tdisplay: none;\n}\n\n.selectAssetBox .item_group label:nth-of-type(1){\n\twidth:20px;\n\theight: 20px;\n\tdisplay: inline-block;\n\tbackground-color: #aaa;\n\tvertical-align: middle;\n\tborder-radius: 3px;\n\tmargin-right: 3px;\n}\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\n\tbackground: url(" + __webpack_require__(644) + ") 0px 0px no-repeat;\n\tbackground-size:100% 100%;\n}\n.selectAssetBox .item_group label:nth-of-type(2){\n\tfont-size: 16px;\n\tvertical-align: middle;\n\tfont-size: 16px;\n}\n\n.nextStepBtn{\n\twidth:90%;\n\tdisplay: block;\n\tmargin:20px auto;\n\theight: 36px;\n\tborder:none;\n\tborder-radius: 8px;\n\tbackground-color: #d4902f;\n}", ""]);
+	exports.push([module.id, ".select_box{\r\n\tbackground-color: #fff;\r\n\theight: 100%;\r\n\tdisplay: block;\r\n}\r\n.top_box{\r\n\twidth:100%;\r\n\theight: auto;\r\n\ttext-align: center;\r\n\tpadding-top:20px;\r\n}\r\n\r\n.title_1{\r\n\tfont-size: 20px;\r\n\twidth:100%;\r\n}\r\n\r\n.title_2{\r\n\tfont-size: 16px;\r\n\twidth:100%;\r\n\tmargin-top:10px;\r\n\tcolor:#d4902f;\r\n}\r\n\r\n.type_img{\r\n\twidth: 50%;\r\n\tdisplay: inline-block;\r\n\tmargin:15px auto;\r\n}\r\n\r\n.selectAssetBox{\r\n\tpadding:10px;\r\n\twidth:98%;\r\n\tmargin:10px 1%;\r\n\tborder-radius: 8px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: #f0f0f0;\r\n}\r\n\r\n.selectAssetBox h3{\r\n\tline-height: 30px;\r\n\tfont-size: 16px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.selectAssetBox .item_group{\r\n\tdisplay: inline-block;\r\n\twidth:50%;\r\n\tfont-size:0px;\r\n  text-align: center;\r\n}\r\n.selectAssetBox .item_group input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tvertical-align: middle;\r\n\tmargin-right: 5px;\r\n\tdisplay: none;\r\n}\r\n\r\n.selectAssetBox .item_group label:nth-of-type(1){\r\n\twidth:20px;\r\n\theight: 20px;\r\n\tdisplay: inline-block;\r\n\tbackground-color: #aaa;\r\n\tvertical-align: middle;\r\n\tborder-radius: 3px;\r\n\tmargin-right: 3px;\r\n}\r\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\r\n\tbackground: url(" + __webpack_require__(647) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n}\r\n.selectAssetBox .item_group label:nth-of-type(2){\r\n\tfont-size: 16px;\r\n\tvertical-align: middle;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.nextStepBtn{\r\n\twidth:90%;\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\theight: 36px;\r\n\tborder:none;\r\n\tborder-radius: 8px;\r\n\tbackground-color: #d4902f;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 644 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "11cd196e6257367150527dccd245b031.png";
 
 /***/ },
-/* 645 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92723,23 +92869,23 @@
 
 	var _reactDom = __webpack_require__(34);
 
-	var _jquery = __webpack_require__(646);
+	var _jquery = __webpack_require__(649);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _hight_item_title = __webpack_require__(746);
+	var _hight_item_title = __webpack_require__(749);
 
 	var _hight_item_title2 = _interopRequireDefault(_hight_item_title);
 
-	var _low_item_title = __webpack_require__(749);
+	var _low_item_title = __webpack_require__(752);
 
 	var _low_item_title2 = _interopRequireDefault(_low_item_title);
 
-	var _steady_title = __webpack_require__(752);
+	var _steady_title = __webpack_require__(755);
 
 	var _steady_title2 = _interopRequireDefault(_steady_title);
 
-	var _fund_item = __webpack_require__(755);
+	var _fund_item = __webpack_require__(758);
 
 	var _fund_item2 = _interopRequireDefault(_fund_item);
 
@@ -92882,7 +93028,7 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(_hight_item_title2.default, { per: type, title: '\u56FA\u5B9A\u6536\u76CA\u7C7B' }),
+					_react2.default.createElement(_hight_item_title2.default, { per: type, title: '固定收益类' }),
 					_react2.default.createElement(_fund_item2.default, null),
 					_react2.default.createElement(_fund_item2.default, null)
 				);
@@ -92905,7 +93051,7 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(_low_item_title2.default, { title: '\u56FA\u5B9A\u6536\u76CA\u7C7B' }),
+					_react2.default.createElement(_low_item_title2.default, { title: '固定收益类' }),
 					_react2.default.createElement(_fund_item2.default, null),
 					_react2.default.createElement(_fund_item2.default, null)
 				);
@@ -92927,43 +93073,43 @@
 	exports.default = ResultPage;
 
 /***/ },
-/* 646 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(674),
-		__webpack_require__(688),
-		__webpack_require__(686),
-		__webpack_require__(685),
+		__webpack_require__(652),
+		__webpack_require__(677),
 		__webpack_require__(691),
-		__webpack_require__(683),
-		__webpack_require__(692),
-		__webpack_require__(697),
-		__webpack_require__(698),
-		__webpack_require__(713),
-		__webpack_require__(711),
-		__webpack_require__(720),
-		__webpack_require__(722),
-		__webpack_require__(702),
-		__webpack_require__(724),
-		__webpack_require__(731),
-		__webpack_require__(647),
-		__webpack_require__(732),
-		__webpack_require__(730),
+		__webpack_require__(689),
+		__webpack_require__(688),
+		__webpack_require__(694),
+		__webpack_require__(686),
+		__webpack_require__(695),
+		__webpack_require__(700),
+		__webpack_require__(701),
+		__webpack_require__(716),
+		__webpack_require__(714),
+		__webpack_require__(723),
 		__webpack_require__(725),
-		__webpack_require__(733),
+		__webpack_require__(705),
+		__webpack_require__(727),
 		__webpack_require__(734),
+		__webpack_require__(650),
 		__webpack_require__(735),
+		__webpack_require__(733),
+		__webpack_require__(728),
 		__webpack_require__(736),
+		__webpack_require__(737),
+		__webpack_require__(738),
 		__webpack_require__(739),
-		__webpack_require__(699),
-		__webpack_require__(740),
-		__webpack_require__(741),
 		__webpack_require__(742),
+		__webpack_require__(702),
 		__webpack_require__(743),
 		__webpack_require__(744),
-		__webpack_require__(745)
+		__webpack_require__(745),
+		__webpack_require__(746),
+		__webpack_require__(747),
+		__webpack_require__(748)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -92974,28 +93120,28 @@
 
 
 /***/ },
-/* 647 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(667),
-		__webpack_require__(664),
-		__webpack_require__(665),
-		__webpack_require__(657),
-		__webpack_require__(666),
-		__webpack_require__(668),
-		__webpack_require__(669),
+		__webpack_require__(652),
 		__webpack_require__(670),
-		__webpack_require__(648),
+		__webpack_require__(667),
+		__webpack_require__(668),
+		__webpack_require__(660),
+		__webpack_require__(669),
 		__webpack_require__(671),
-		__webpack_require__(677),
-		__webpack_require__(678),
 		__webpack_require__(672),
+		__webpack_require__(673),
+		__webpack_require__(651),
+		__webpack_require__(674),
+		__webpack_require__(680),
+		__webpack_require__(681),
+		__webpack_require__(675),
 
-		__webpack_require__(679),
-		__webpack_require__(683),
-		__webpack_require__(674) // contains
+		__webpack_require__(682),
+		__webpack_require__(686),
+		__webpack_require__(677) // contains
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, pnum, access, rmargin, document, rcssNum, rnumnonpx, cssExpand,
 		getStyles, swap, curCSS, adjustCSS, addGetHookIf, support ) {
 
@@ -93406,7 +93552,7 @@
 
 
 /***/ },
-/* 648 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -93438,7 +93584,7 @@
 
 
 /***/ },
-/* 649 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* global Symbol */
@@ -93446,20 +93592,20 @@
 	// unguarded in another place, it seems safer to define global only for this module
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(651),
-		__webpack_require__(657),
-		__webpack_require__(652),
-		__webpack_require__(653),
 		__webpack_require__(654),
+		__webpack_require__(660),
 		__webpack_require__(655),
 		__webpack_require__(656),
-		__webpack_require__(650),
+		__webpack_require__(657),
 		__webpack_require__(658),
 		__webpack_require__(659),
-		__webpack_require__(660),
+		__webpack_require__(653),
 		__webpack_require__(661),
 		__webpack_require__(662),
-		__webpack_require__(663)
+		__webpack_require__(663),
+		__webpack_require__(664),
+		__webpack_require__(665),
+		__webpack_require__(666)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( arr, document, getProto, slice, concat, push, indexOf,
 		class2type, toString, hasOwn, fnToString, ObjectFunctionString,
 		support, DOMEval ) {
@@ -93926,7 +94072,7 @@
 
 
 /***/ },
-/* 650 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -93938,7 +94084,7 @@
 
 
 /***/ },
-/* 651 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -93949,7 +94095,7 @@
 
 
 /***/ },
-/* 652 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -93960,11 +94106,11 @@
 
 
 /***/ },
-/* 653 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(651)
+		__webpack_require__(654)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( arr ) {
 		"use strict";
 
@@ -93973,11 +94119,11 @@
 
 
 /***/ },
-/* 654 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(651)
+		__webpack_require__(654)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( arr ) {
 		"use strict";
 
@@ -93986,11 +94132,11 @@
 
 
 /***/ },
-/* 655 */
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(651)
+		__webpack_require__(654)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( arr ) {
 		"use strict";
 
@@ -93999,11 +94145,11 @@
 
 
 /***/ },
-/* 656 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(651)
+		__webpack_require__(654)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( arr ) {
 		"use strict";
 
@@ -94012,7 +94158,7 @@
 
 
 /***/ },
-/* 657 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -94023,11 +94169,11 @@
 
 
 /***/ },
-/* 658 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(650)
+		__webpack_require__(653)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( class2type ) {
 		"use strict";
 
@@ -94036,11 +94182,11 @@
 
 
 /***/ },
-/* 659 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(650)
+		__webpack_require__(653)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( class2type ) {
 		"use strict";
 
@@ -94049,11 +94195,11 @@
 
 
 /***/ },
-/* 660 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(659)
+		__webpack_require__(662)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( hasOwn ) {
 		"use strict";
 
@@ -94062,11 +94208,11 @@
 
 
 /***/ },
-/* 661 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(660)
+		__webpack_require__(663)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( fnToString ) {
 		"use strict";
 
@@ -94075,7 +94221,7 @@
 
 
 /***/ },
-/* 662 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -94087,11 +94233,11 @@
 
 
 /***/ },
-/* 663 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(657)
+		__webpack_require__(660)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( document ) {
 		"use strict";
 
@@ -94109,11 +94255,11 @@
 
 
 /***/ },
-/* 664 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -94185,7 +94331,7 @@
 
 
 /***/ },
-/* 665 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -94196,11 +94342,11 @@
 
 
 /***/ },
-/* 666 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(667)
+		__webpack_require__(670)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( pnum ) {
 
 	"use strict";
@@ -94211,7 +94357,7 @@
 
 
 /***/ },
-/* 667 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -94222,11 +94368,11 @@
 
 
 /***/ },
-/* 668 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(667)
+		__webpack_require__(670)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( pnum ) {
 		"use strict";
 
@@ -94235,7 +94381,7 @@
 
 
 /***/ },
-/* 669 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -94246,7 +94392,7 @@
 
 
 /***/ },
-/* 670 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -94269,16 +94415,16 @@
 
 
 /***/ },
-/* 671 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
+		__webpack_require__(652),
+		__webpack_require__(671),
 		__webpack_require__(668),
-		__webpack_require__(665),
-		__webpack_require__(670),
-		__webpack_require__(672),
-		__webpack_require__(674) // Get jQuery.contains
+		__webpack_require__(673),
+		__webpack_require__(675),
+		__webpack_require__(677) // Get jQuery.contains
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, rnumnonpx, rmargin, getStyles, support ) {
 
 	"use strict";
@@ -94334,14 +94480,14 @@
 
 
 /***/ },
-/* 672 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(673),
-		__webpack_require__(662)
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(676),
+		__webpack_require__(665)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, documentElement, support ) {
 
 	"use strict";
@@ -94429,11 +94575,11 @@
 
 
 /***/ },
-/* 673 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(657)
+		__webpack_require__(660)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( document ) {
 		"use strict";
 
@@ -94442,21 +94588,21 @@
 
 
 /***/ },
-/* 674 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(675) ], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(678) ], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 		"use strict";
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 
 /***/ },
-/* 675 */
+/* 678 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(676)
+		__webpack_require__(652),
+		__webpack_require__(679)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, Sizzle ) {
 
 	"use strict";
@@ -94476,7 +94622,7 @@
 
 
 /***/ },
-/* 676 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -96754,12 +96900,12 @@
 
 
 /***/ },
-/* 677 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(666)
+		__webpack_require__(652),
+		__webpack_require__(669)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, rcssNum ) {
 
 	"use strict";
@@ -96831,7 +96977,7 @@
 
 
 /***/ },
-/* 678 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -96863,15 +97009,15 @@
 
 
 /***/ },
-/* 679 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Initialize a jQuery object
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(680),
-		__webpack_require__(681)
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(683),
+		__webpack_require__(684)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, rsingleTag ) {
 
 	"use strict";
@@ -96996,7 +97142,7 @@
 
 
 /***/ },
-/* 680 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -97008,14 +97154,14 @@
 
 
 /***/ },
-/* 681 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(656),
-		__webpack_require__(682),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(659),
+		__webpack_require__(685),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, indexOf, rneedsContext ) {
 
 	"use strict";
@@ -97120,12 +97266,12 @@
 
 
 /***/ },
-/* 682 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 		"use strict";
 
@@ -97134,14 +97280,14 @@
 
 
 /***/ },
-/* 683 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(684),
-		__webpack_require__(685)
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(687),
+		__webpack_require__(688)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document ) {
 
 	"use strict";
@@ -97235,11 +97381,11 @@
 
 
 /***/ },
-/* 684 */
+/* 687 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -97254,13 +97400,13 @@
 
 
 /***/ },
-/* 685 */
+/* 688 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(653),
-		__webpack_require__(686)
+		__webpack_require__(652),
+		__webpack_require__(656),
+		__webpack_require__(689)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, slice ) {
 
 	"use strict";
@@ -97649,12 +97795,12 @@
 
 
 /***/ },
-/* 686 */
+/* 689 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(687)
+		__webpack_require__(652),
+		__webpack_require__(690)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, rnothtmlwhite ) {
 
 	"use strict";
@@ -97889,7 +98035,7 @@
 
 
 /***/ },
-/* 687 */
+/* 690 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -97903,18 +98049,18 @@
 
 
 /***/ },
-/* 688 */
+/* 691 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(656),
-		__webpack_require__(689),
-		__webpack_require__(690),
+		__webpack_require__(652),
+		__webpack_require__(659),
+		__webpack_require__(692),
+		__webpack_require__(693),
+		__webpack_require__(685),
 		__webpack_require__(682),
-		__webpack_require__(679),
-		__webpack_require__(681),
-		__webpack_require__(674)
+		__webpack_require__(684),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, indexOf, dir, siblings, rneedsContext ) {
 
 	"use strict";
@@ -98087,11 +98233,11 @@
 
 
 /***/ },
-/* 689 */
+/* 692 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -98115,7 +98261,7 @@
 
 
 /***/ },
-/* 690 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -98138,12 +98284,12 @@
 
 
 /***/ },
-/* 691 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(685)
+		__webpack_require__(652),
+		__webpack_require__(688)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -98165,14 +98311,14 @@
 
 
 /***/ },
-/* 692 */
+/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(664),
-		__webpack_require__(693),
-		__webpack_require__(696)
+		__webpack_require__(652),
+		__webpack_require__(667),
+		__webpack_require__(696),
+		__webpack_require__(699)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, access, dataPriv, dataUser ) {
 
 	"use strict";
@@ -98350,11 +98496,11 @@
 
 
 /***/ },
-/* 693 */
+/* 696 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(694)
+		__webpack_require__(697)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( Data ) {
 		"use strict";
 
@@ -98363,13 +98509,13 @@
 
 
 /***/ },
-/* 694 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(687),
-		__webpack_require__(695)
+		__webpack_require__(652),
+		__webpack_require__(690),
+		__webpack_require__(698)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, rnothtmlwhite, acceptData ) {
 
 	"use strict";
@@ -98530,7 +98676,7 @@
 
 
 /***/ },
-/* 695 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -98555,11 +98701,11 @@
 
 
 /***/ },
-/* 696 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(694)
+		__webpack_require__(697)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( Data ) {
 		"use strict";
 
@@ -98568,14 +98714,14 @@
 
 
 /***/ },
-/* 697 */
+/* 700 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(693),
-		__webpack_require__(685),
-		__webpack_require__(686)
+		__webpack_require__(652),
+		__webpack_require__(696),
+		__webpack_require__(688),
+		__webpack_require__(689)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, dataPriv ) {
 
 	"use strict";
@@ -98719,13 +98865,13 @@
 
 
 /***/ },
-/* 698 */
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(697),
-		__webpack_require__(699) // Delay is optional because of this dependency
+		__webpack_require__(652),
+		__webpack_require__(700),
+		__webpack_require__(702) // Delay is optional because of this dependency
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -98749,28 +98895,28 @@
 
 
 /***/ },
-/* 699 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(666),
-		__webpack_require__(687),
+		__webpack_require__(652),
+		__webpack_require__(660),
 		__webpack_require__(669),
-		__webpack_require__(701),
-		__webpack_require__(648),
-		__webpack_require__(677),
-		__webpack_require__(693),
-		__webpack_require__(700),
+		__webpack_require__(690),
+		__webpack_require__(672),
+		__webpack_require__(704),
+		__webpack_require__(651),
+		__webpack_require__(680),
+		__webpack_require__(696),
+		__webpack_require__(703),
 
-		__webpack_require__(679),
-		__webpack_require__(697),
-		__webpack_require__(685),
+		__webpack_require__(682),
+		__webpack_require__(700),
 		__webpack_require__(688),
-		__webpack_require__(702),
-		__webpack_require__(647),
-		__webpack_require__(712)
+		__webpack_require__(691),
+		__webpack_require__(705),
+		__webpack_require__(650),
+		__webpack_require__(715)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, rcssNum, rnothtmlwhite, cssExpand, isHiddenWithinTree, swap,
 		adjustCSS, dataPriv, showHide ) {
 
@@ -99448,13 +99594,13 @@
 
 
 /***/ },
-/* 700 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(693),
-		__webpack_require__(701)
+		__webpack_require__(652),
+		__webpack_require__(696),
+		__webpack_require__(704)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, dataPriv, isHiddenWithinTree ) {
 
 	"use strict";
@@ -99559,12 +99705,12 @@
 
 
 /***/ },
-/* 701 */
+/* 704 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(677)
 
 		// css is assumed
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
@@ -99599,32 +99745,32 @@
 
 
 /***/ },
-/* 702 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(654),
-		__webpack_require__(655),
-		__webpack_require__(664),
-		__webpack_require__(709),
-		__webpack_require__(704),
-		__webpack_require__(705),
-		__webpack_require__(706),
+		__webpack_require__(652),
+		__webpack_require__(657),
+		__webpack_require__(658),
+		__webpack_require__(667),
+		__webpack_require__(712),
 		__webpack_require__(707),
 		__webpack_require__(708),
-		__webpack_require__(703),
+		__webpack_require__(709),
 		__webpack_require__(710),
+		__webpack_require__(711),
+		__webpack_require__(706),
+		__webpack_require__(713),
 
-		__webpack_require__(693),
 		__webpack_require__(696),
-		__webpack_require__(695),
-		__webpack_require__(663),
+		__webpack_require__(699),
+		__webpack_require__(698),
+		__webpack_require__(666),
 
-		__webpack_require__(679),
-		__webpack_require__(688),
-		__webpack_require__(674),
-		__webpack_require__(711)
+		__webpack_require__(682),
+		__webpack_require__(691),
+		__webpack_require__(677),
+		__webpack_require__(714)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, concat, push, access,
 		rcheckableType, rtagName, rscriptType,
 		wrapMap, getAll, setGlobalEval, buildFragment, support,
@@ -100091,16 +100237,16 @@
 
 
 /***/ },
-/* 703 */
+/* 706 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(704),
-		__webpack_require__(705),
-		__webpack_require__(706),
+		__webpack_require__(652),
 		__webpack_require__(707),
-		__webpack_require__(708)
+		__webpack_require__(708),
+		__webpack_require__(709),
+		__webpack_require__(710),
+		__webpack_require__(711)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, rtagName, rscriptType, wrapMap, getAll, setGlobalEval ) {
 
 	"use strict";
@@ -100201,7 +100347,7 @@
 
 
 /***/ },
-/* 704 */
+/* 707 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -100212,7 +100358,7 @@
 
 
 /***/ },
-/* 705 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -100223,7 +100369,7 @@
 
 
 /***/ },
-/* 706 */
+/* 709 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -100258,11 +100404,11 @@
 
 
 /***/ },
-/* 707 */
+/* 710 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -100295,11 +100441,11 @@
 
 
 /***/ },
-/* 708 */
+/* 711 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(693)
+		__webpack_require__(696)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( dataPriv ) {
 
 	"use strict";
@@ -100323,7 +100469,7 @@
 
 
 /***/ },
-/* 709 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -100334,12 +100480,12 @@
 
 
 /***/ },
-/* 710 */
+/* 713 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(657),
-		__webpack_require__(662)
+		__webpack_require__(660),
+		__webpack_require__(665)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( document, support ) {
 
 	"use strict";
@@ -100375,19 +100521,19 @@
 
 
 /***/ },
-/* 711 */
+/* 714 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(673),
-		__webpack_require__(687),
-		__webpack_require__(653),
-		__webpack_require__(693),
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(676),
+		__webpack_require__(690),
+		__webpack_require__(656),
+		__webpack_require__(696),
 
-		__webpack_require__(679),
-		__webpack_require__(674)
+		__webpack_require__(682),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, documentElement, rnothtmlwhite, slice, dataPriv ) {
 
 	"use strict";
@@ -101126,12 +101272,12 @@
 
 
 /***/ },
-/* 712 */
+/* 715 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(647)
+		__webpack_require__(652),
+		__webpack_require__(650)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -101255,15 +101401,15 @@
 
 
 /***/ },
-/* 713 */
+/* 716 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(714),
-		__webpack_require__(716),
+		__webpack_require__(652),
 		__webpack_require__(717),
-		__webpack_require__(719)
+		__webpack_require__(719),
+		__webpack_require__(720),
+		__webpack_require__(722)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -101274,15 +101420,15 @@
 
 
 /***/ },
-/* 714 */
+/* 717 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(664),
-		__webpack_require__(715),
-		__webpack_require__(687),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(667),
+		__webpack_require__(718),
+		__webpack_require__(690),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, access, support, rnothtmlwhite ) {
 
 	"use strict";
@@ -101420,12 +101566,12 @@
 
 
 /***/ },
-/* 715 */
+/* 718 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(657),
-		__webpack_require__(662)
+		__webpack_require__(660),
+		__webpack_require__(665)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( document, support ) {
 
 	"use strict";
@@ -101459,14 +101605,14 @@
 
 
 /***/ },
-/* 716 */
+/* 719 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(664),
-		__webpack_require__(715),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(667),
+		__webpack_require__(718),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, access, support ) {
 
 	"use strict";
@@ -101608,15 +101754,15 @@
 
 
 /***/ },
-/* 717 */
+/* 720 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(718),
-		__webpack_require__(687),
-		__webpack_require__(693),
-		__webpack_require__(679)
+		__webpack_require__(652),
+		__webpack_require__(721),
+		__webpack_require__(690),
+		__webpack_require__(696),
+		__webpack_require__(682)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, stripAndCollapse, rnothtmlwhite, dataPriv ) {
 
 	"use strict";
@@ -101788,11 +101934,11 @@
 
 
 /***/ },
-/* 718 */
+/* 721 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(687)
+		__webpack_require__(690)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( rnothtmlwhite ) {
 		"use strict";
 
@@ -101808,14 +101954,14 @@
 
 
 /***/ },
-/* 719 */
+/* 722 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
+		__webpack_require__(652),
+		__webpack_require__(721),
 		__webpack_require__(718),
-		__webpack_require__(715),
-		__webpack_require__(679)
+		__webpack_require__(682)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, stripAndCollapse, support ) {
 
 	"use strict";
@@ -102002,14 +102148,14 @@
 
 
 /***/ },
-/* 720 */
+/* 723 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
+		__webpack_require__(652),
 
-		__webpack_require__(711),
-		__webpack_require__(721)
+		__webpack_require__(714),
+		__webpack_require__(724)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -102037,17 +102183,17 @@
 
 
 /***/ },
-/* 721 */
+/* 724 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(693),
-		__webpack_require__(695),
-		__webpack_require__(659),
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(696),
+		__webpack_require__(698),
+		__webpack_require__(662),
 
-		__webpack_require__(711)
+		__webpack_require__(714)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, dataPriv, acceptData, hasOwn ) {
 
 	"use strict";
@@ -102228,16 +102374,16 @@
 
 
 /***/ },
-/* 722 */
+/* 725 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(693),
-		__webpack_require__(723),
+		__webpack_require__(652),
+		__webpack_require__(696),
+		__webpack_require__(726),
 
-		__webpack_require__(711),
-		__webpack_require__(721)
+		__webpack_require__(714),
+		__webpack_require__(724)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, dataPriv, support ) {
 
 	"use strict";
@@ -102289,11 +102435,11 @@
 
 
 /***/ },
-/* 723 */
+/* 726 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(662)
+		__webpack_require__(665)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( support ) {
 
 	"use strict";
@@ -102306,11 +102452,11 @@
 
 
 /***/ },
-/* 724 */
+/* 727 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(725)
+		__webpack_require__(728)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -102335,22 +102481,22 @@
 
 
 /***/ },
-/* 725 */
+/* 728 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(687),
-		__webpack_require__(726),
-		__webpack_require__(727),
-		__webpack_require__(728),
-
-		__webpack_require__(679),
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(690),
 		__webpack_require__(729),
-		__webpack_require__(721),
-		__webpack_require__(685),
-		__webpack_require__(730) // jQuery.param
+		__webpack_require__(730),
+		__webpack_require__(731),
+
+		__webpack_require__(682),
+		__webpack_require__(732),
+		__webpack_require__(724),
+		__webpack_require__(688),
+		__webpack_require__(733) // jQuery.param
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, rnothtmlwhite, location, nonce, rquery ) {
 
 	"use strict";
@@ -103196,7 +103342,7 @@
 
 
 /***/ },
-/* 726 */
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -103207,11 +103353,11 @@
 
 
 /***/ },
-/* 727 */
+/* 730 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 		"use strict";
 
@@ -103220,7 +103366,7 @@
 
 
 /***/ },
-/* 728 */
+/* 731 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
@@ -103231,11 +103377,11 @@
 
 
 /***/ },
-/* 729 */
+/* 732 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -103267,15 +103413,15 @@
 
 
 /***/ },
-/* 730 */
+/* 733 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(709),
-		__webpack_require__(679),
-		__webpack_require__(688), // filter
-		__webpack_require__(716)
+		__webpack_require__(652),
+		__webpack_require__(712),
+		__webpack_require__(682),
+		__webpack_require__(691), // filter
+		__webpack_require__(719)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, rcheckableType ) {
 
 	"use strict";
@@ -103403,14 +103549,14 @@
 
 
 /***/ },
-/* 731 */
+/* 734 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(679),
-		__webpack_require__(702), // clone
-		__webpack_require__(688) // parent, contents
+		__webpack_require__(652),
+		__webpack_require__(682),
+		__webpack_require__(705), // clone
+		__webpack_require__(691) // parent, contents
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -103486,12 +103632,12 @@
 
 
 /***/ },
-/* 732 */
+/* 735 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -103507,13 +103653,13 @@
 
 
 /***/ },
-/* 733 */
+/* 736 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(662),
-		__webpack_require__(725)
+		__webpack_require__(652),
+		__webpack_require__(665),
+		__webpack_require__(728)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, support ) {
 
 	"use strict";
@@ -103682,13 +103828,13 @@
 
 
 /***/ },
-/* 734 */
+/* 737 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(725)
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(728)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document ) {
 
 	"use strict";
@@ -103765,14 +103911,14 @@
 
 
 /***/ },
-/* 735 */
+/* 738 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(727),
-		__webpack_require__(728),
-		__webpack_require__(725)
+		__webpack_require__(652),
+		__webpack_require__(730),
+		__webpack_require__(731),
+		__webpack_require__(728)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, nonce, rquery ) {
 
 	"use strict";
@@ -103873,17 +104019,17 @@
 
 
 /***/ },
-/* 736 */
+/* 739 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(718),
-		__webpack_require__(737),
-		__webpack_require__(725),
-		__webpack_require__(688),
-		__webpack_require__(702),
-		__webpack_require__(674)
+		__webpack_require__(652),
+		__webpack_require__(721),
+		__webpack_require__(740),
+		__webpack_require__(728),
+		__webpack_require__(691),
+		__webpack_require__(705),
+		__webpack_require__(677)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, stripAndCollapse ) {
 
 	"use strict";
@@ -103955,17 +104101,17 @@
 
 
 /***/ },
-/* 737 */
+/* 740 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(657),
-		__webpack_require__(680),
-		__webpack_require__(703),
+		__webpack_require__(652),
+		__webpack_require__(660),
+		__webpack_require__(683),
+		__webpack_require__(706),
 
 		// This is the only module that needs core/support
-		__webpack_require__(738)
+		__webpack_require__(741)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, document, rsingleTag, buildFragment, support ) {
 
 	"use strict";
@@ -104026,12 +104172,12 @@
 
 
 /***/ },
-/* 738 */
+/* 741 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(657),
-		__webpack_require__(662)
+		__webpack_require__(660),
+		__webpack_require__(665)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( document, support ) {
 
 	"use strict";
@@ -104052,12 +104198,12 @@
 
 
 /***/ },
-/* 739 */
+/* 742 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(711)
+		__webpack_require__(652),
+		__webpack_require__(714)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -104080,13 +104226,13 @@
 
 
 /***/ },
-/* 740 */
+/* 743 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(674),
-		__webpack_require__(699)
+		__webpack_require__(652),
+		__webpack_require__(677),
+		__webpack_require__(702)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -104101,22 +104247,22 @@
 
 
 /***/ },
-/* 741 */
+/* 744 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(664),
-		__webpack_require__(657),
-		__webpack_require__(673),
-		__webpack_require__(668),
+		__webpack_require__(652),
+		__webpack_require__(667),
+		__webpack_require__(660),
+		__webpack_require__(676),
 		__webpack_require__(671),
-		__webpack_require__(678),
-		__webpack_require__(672),
+		__webpack_require__(674),
+		__webpack_require__(681),
+		__webpack_require__(675),
 
-		__webpack_require__(679),
-		__webpack_require__(647),
-		__webpack_require__(674) // contains
+		__webpack_require__(682),
+		__webpack_require__(650),
+		__webpack_require__(677) // contains
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, access, document, documentElement, rnumnonpx, curCSS, addGetHookIf, support ) {
 
 	"use strict";
@@ -104339,13 +104485,13 @@
 
 
 /***/ },
-/* 742 */
+/* 745 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649),
-		__webpack_require__(664),
-		__webpack_require__(647)
+		__webpack_require__(652),
+		__webpack_require__(667),
+		__webpack_require__(650)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, access ) {
 
 	"use strict";
@@ -104401,11 +104547,11 @@
 
 
 /***/ },
-/* 743 */
+/* 746 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -104437,11 +104583,11 @@
 
 
 /***/ },
-/* 744 */
+/* 747 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery ) {
 
 	"use strict";
@@ -104469,11 +104615,11 @@
 
 
 /***/ },
-/* 745 */
+/* 748 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-		__webpack_require__(649)
+		__webpack_require__(652)
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function( jQuery, noGlobal ) {
 
 	"use strict";
@@ -104507,10 +104653,10 @@
 
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(646)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(649)))
 
 /***/ },
-/* 746 */
+/* 749 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -104527,7 +104673,7 @@
 
 	var _reactDom = __webpack_require__(34);
 
-	__webpack_require__(747);
+	__webpack_require__(750);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -104577,13 +104723,13 @@
 	exports.default = HightItemTitle;
 
 /***/ },
-/* 747 */
+/* 750 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(748);
+	var content = __webpack_require__(751);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -104603,7 +104749,7 @@
 	}
 
 /***/ },
-/* 748 */
+/* 751 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -104611,13 +104757,13 @@
 
 
 	// module
-	exports.push([module.id, ".hight_title_box{\n\theight: 40px;\n\tline-height: 40px;\n\twidth: 100%;\n\tbackground-color: #fff;\n}\n\n.hight_title_box >div{\n\tdisplay: inline-block;\n} \n\n.hight_title_box .per_num{\n\tpadding:3px 10px;\n\tbackground-color: #e20000;\n\tcolor:#fff;\n\tfont-weight: bold;\n\tborder-radius: 8px;\n\tfont-size: 18px;\n\tmargin:0px 10px;\n  height: 20px;\n  line-height: 20px;\n  vertical-align: middle;\n}\n\n.hight_title_box .title_name{\n\tcolor:#e20000;\n\tfont-size: 18px;\n}", ""]);
+	exports.push([module.id, ".hight_title_box{\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\twidth: 100%;\r\n\tbackground-color: #fff;\r\n}\r\n\r\n.hight_title_box >div{\r\n\tdisplay: inline-block;\r\n} \r\n\r\n.hight_title_box .per_num{\r\n\tpadding:3px 10px;\r\n\tbackground-color: #e20000;\r\n\tcolor:#fff;\r\n\tfont-weight: bold;\r\n\tborder-radius: 8px;\r\n\tfont-size: 18px;\r\n\tmargin:0px 10px;\r\n  height: 20px;\r\n  line-height: 20px;\r\n  vertical-align: middle;\r\n}\r\n\r\n.hight_title_box .title_name{\r\n\tcolor:#e20000;\r\n\tfont-size: 18px;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 749 */
+/* 752 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -104634,7 +104780,7 @@
 
 	var _reactDom = __webpack_require__(34);
 
-	__webpack_require__(750);
+	__webpack_require__(753);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -104678,13 +104824,13 @@
 	exports.default = LowItemTitle;
 
 /***/ },
-/* 750 */
+/* 753 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(751);
+	var content = __webpack_require__(754);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -104704,7 +104850,7 @@
 	}
 
 /***/ },
-/* 751 */
+/* 754 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -104712,13 +104858,13 @@
 
 
 	// module
-	exports.push([module.id, ".low_title_box{\n\theight: 40px;\n\tline-height: 40px;\n\tbackground-color: #fff;\n\twidth:100%;\n}\n\n.low_title_box .title_name{\n\tcolor:#d4902f;\n\tfont-size: 18px;\n\tmargin-left: 10px;\n}", ""]);
+	exports.push([module.id, ".low_title_box{\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\tbackground-color: #fff;\r\n\twidth:100%;\r\n}\r\n\r\n.low_title_box .title_name{\r\n\tcolor:#d4902f;\r\n\tfont-size: 18px;\r\n\tmargin-left: 10px;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 752 */
+/* 755 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -104735,7 +104881,7 @@
 
 	var _reactDom = __webpack_require__(34);
 
-	__webpack_require__(753);
+	__webpack_require__(756);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -104783,12 +104929,12 @@
 					_react2.default.createElement(
 						'div',
 						{ onClick: this.navClick, value: 'movies', className: 'nav_item active_item' },
-						'\u5F71\u89C6\u521B\u65B0'
+						'影视创新'
 					),
 					_react2.default.createElement(
 						'div',
 						{ onClick: this.navClick, value: 'fundation', className: 'nav_item' },
-						'\u8BC1\u5238\u6295\u8D44'
+						'证券投资'
 					)
 				);
 			}
@@ -104800,13 +104946,13 @@
 	exports.default = steadyTitle;
 
 /***/ },
-/* 753 */
+/* 756 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(754);
+	var content = __webpack_require__(757);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -104826,7 +104972,7 @@
 	}
 
 /***/ },
-/* 754 */
+/* 757 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -104834,13 +104980,13 @@
 
 
 	// module
-	exports.push([module.id, ".steady_title_box{\n\theight: 40px;\n\tbackground-color: #fff;\n\tline-height: 40px;\n\tdisplay: flex;\n\tjustify-content: space-around;\n}\n\n.steady_title_box .nav_item{\n\twidth:45%;\n\tcolor:#333;\n\t\ttext-align: center;\n}\n\n.steady_title_box .active_item{\n\tcolor:#d4902f;\n\tborder-bottom: 1px solid #d4902f;\n}", ""]);
+	exports.push([module.id, ".steady_title_box{\r\n\theight: 40px;\r\n\tbackground-color: #fff;\r\n\tline-height: 40px;\r\n\tdisplay: flex;\r\n\tjustify-content: space-around;\r\n}\r\n\r\n.steady_title_box .nav_item{\r\n\twidth:45%;\r\n\tcolor:#333;\r\n\t\ttext-align: center;\r\n}\r\n\r\n.steady_title_box .active_item{\r\n\tcolor:#d4902f;\r\n\tborder-bottom: 1px solid #d4902f;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 755 */
+/* 758 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -104857,7 +105003,7 @@
 
 	var _reactDom = __webpack_require__(34);
 
-	__webpack_require__(756);
+	__webpack_require__(759);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -104893,7 +105039,7 @@
 					_react2.default.createElement(
 						'h3',
 						{ className: 'item_title' },
-						'\u8D22\u5BCC\u5BB6-\u51EF\u6B4C3\u53F7\u6587\u5316\u5F71\u89C6\u57FA\u91D1'
+						'财富家-凯歌3号文化影视基金'
 					),
 					_react2.default.createElement(
 						'div',
@@ -104901,26 +105047,26 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'\u9884\u671F\u6536\u76CA:\u6D6E\u52A8'
+							'预期收益:浮动'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'\u524D\u7AEF\u4F63\u91D1:',
+							'前端佣金:',
 							_react2.default.createElement(
 								'span',
 								{ className: 'red_word' },
-								'\u5F85\u5B9A'
+								'待定'
 							)
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'\u540E\u7AEF\u4F63\u91D1:',
+							'后端佣金:',
 							_react2.default.createElement(
 								'span',
 								{ className: 'red_word' },
-								'\u65E0'
+								'无'
 							)
 						)
 					),
@@ -104930,17 +105076,17 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'\u8D77\u6295:100\u4E07'
+							'起投:100万'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'\u5C01\u95ED\u671F:12\u4E2A\u6708'
+							'封闭期:12个月'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'\u672C\u671F\u52DF\u96C6:5000\u4E07'
+							'本期募集:5000万'
 						)
 					),
 					_react2.default.createElement(
@@ -104967,13 +105113,13 @@
 	exports.default = FundItem;
 
 /***/ },
-/* 756 */
+/* 759 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(757);
+	var content = __webpack_require__(760);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -104993,7 +105139,7 @@
 	}
 
 /***/ },
-/* 757 */
+/* 760 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(238)();
@@ -105001,40 +105147,34 @@
 
 
 	// module
-	exports.push([module.id, ".fund_item_box{\n\twidth:96%;\n\tmargin:10px 2%;\n\tborder-radius: 5px;\n\tbackground-color: #fff;\n\tpadding:5px;\n\tbox-sizing: border-box;\n}\n\n.item_title{\n\tfont-size: 18px;\n\tborder-bottom: 1px solid #eee;\n  padding: 5px 0px;\n}\n\n.data_content{\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tline-height: 30px;\n}\n.data_content:nth-of-type(2){\n  border-bottom: 1px dashed #eee;\n}\n\n.data_content .data_item{\n\tmin-width:20%;\n\ttext-align: left;\n\tfont-size: 14px;\n}\n\n.red_word{\n\tcolor:#e20000;\n}\n\n.fund_item_box .bottom_bar{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n  margin-top: 5px;\n}\n.fund_item_box .bottom_bar > div{\n\tdisplay: inline-block;\n\tmargin-right: 10px;\n\tvertical-align: middle;\n\tcolor:#777;\n  height: 20px;\n  line-height: 20px;\n}\n\n.fund_item_box .bottom_bar .collect_count:before{\n\tcontent:\"\";\n\twidth:16px;\n\theight:16px;\n\tdisplay: inline-block;\n\tbackground:url(" + __webpack_require__(758) + ") 0px 0px no-repeat;\n\tbackground-size: 90% 90%;\n  vertical-align: middle;\n  margin-right: 3px;\n}\n\n.fund_item_box .bottom_bar .read_count:before{\n\tcontent:\"\";\n\twidth:22px;\n\theight:16px;\n\tdisplay: inline-block;\n\tbackground:url(" + __webpack_require__(759) + ") 0px 0px no-repeat;\n\tbackground-size: 90% 90%;\n  vertical-align: middle;\n  margin-right: 3px;\n}\n", ""]);
+	exports.push([module.id, ".fund_item_box{\r\n\twidth:96%;\r\n\tmargin:10px 2%;\r\n\tborder-radius: 5px;\r\n\tbackground-color: #fff;\r\n\tpadding:5px;\r\n\tbox-sizing: border-box;\r\n}\r\n\r\n.item_title{\r\n\tfont-size: 18px;\r\n\tborder-bottom: 1px solid #eee;\r\n  padding: 5px 0px;\r\n}\r\n\r\n.data_content{\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\tline-height: 30px;\r\n}\r\n.data_content:nth-of-type(2){\r\n  border-bottom: 1px dashed #eee;\r\n}\r\n\r\n.data_content .data_item{\r\n\tmin-width:20%;\r\n\ttext-align: left;\r\n\tfont-size: 14px;\r\n}\r\n\r\n.red_word{\r\n\tcolor:#e20000;\r\n}\r\n\r\n.fund_item_box .bottom_bar{\r\n\tdisplay: flex;\r\n\tjustify-content: flex-end;\r\n  margin-top: 5px;\r\n}\r\n.fund_item_box .bottom_bar > div{\r\n\tdisplay: inline-block;\r\n\tmargin-right: 10px;\r\n\tvertical-align: middle;\r\n\tcolor:#777;\r\n  height: 20px;\r\n  line-height: 20px;\r\n}\r\n\r\n.fund_item_box .bottom_bar .collect_count:before{\r\n\tcontent:\"\";\r\n\twidth:16px;\r\n\theight:16px;\r\n\tdisplay: inline-block;\r\n\tbackground:url(" + __webpack_require__(761) + ") 0px 0px no-repeat;\r\n\tbackground-size: 90% 90%;\r\n  vertical-align: middle;\r\n  margin-right: 3px;\r\n}\r\n\r\n.fund_item_box .bottom_bar .read_count:before{\r\n\tcontent:\"\";\r\n\twidth:22px;\r\n\theight:16px;\r\n\tdisplay: inline-block;\r\n\tbackground:url(" + __webpack_require__(762) + ") 0px 0px no-repeat;\r\n\tbackground-size: 90% 90%;\r\n  vertical-align: middle;\r\n  margin-right: 3px;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 758 */
+/* 761 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d021dda228adb1251cd2d092a1e34f37.png";
 
 /***/ },
-/* 759 */
+/* 762 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "909f74c883587cde532be047bd291a67.png";
 
 /***/ },
-/* 760 */
+/* 763 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "37f3297cf53cbdd81979eac04c7def67.png";
+	module.exports = __webpack_require__.p + "b306f0d85135e92663e891647604c2ee.png";
 
 /***/ },
-/* 761 */
-/***/ function(module, exports) {
+/* 764 */
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAh1BMVEUAAABprP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP//9gBprP9ur/h9t92tzoyLvcXB2Gvd5jrr7SLz8BT48wx4tOWjyZy71XPW4kZysfCTwbiz0ITJ3Fzj6DCFutGexqXP3lHXN63qAAAAFnRSTlMAlaTEJc9RGwm3XEDx3a+ce3Q5ZTGI4QR8rAAAARNJREFUKM990tdywjAURdErV2zTIdrujRYg//99MWUYO7ayXvfoPNyR9PneZr0J9zJpr1zelt6oOkugOadper8BdjjMCuL0ql+qPAFr1ssWtJXuyU/Yfi/HP3qovOH6n/FTof+qM4JX3sJRj1UJ6tkDUj2lAKfLHk2tJ7VYXV9y0NNKmMmMuNIGZzzZkmmTA0o2pMZeYIsiN/aKuVh8ayP4t9fMRXEw9pKF7GiN/UggDomxX1iLuFxNPSESUbTGefvx84jL6Z6xls6KzHBdV55c0qn1GO/zgS7j259YyVsE93qY8xhLPqI5Tf/M1zNd7vEDSC7Fc6TMM1iEMrSz6TRJEtNRMxmJvmweFqtQTHzHGb78BeohQipmRohAAAAAAElFTkSuQmCC"
-
-/***/ },
-/* 762 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAw1BMVEUAAABprP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP//9gAALdRprP9vsPb58we/129+t9vd5jmiyZ+rzZDK3Vvr7SLh3xnz8BUMNsojSbd7teKKvciPv75GZZmwz4idqVGps0fW4kbj6C/Iyy53s+iEudEdRLyUwbctUK9VcI1heoO10X5rgntziHS6wDnT1CTy7Aucxag2WKeJmWJEL/1vAAAAF3RSTlMAkyTOnqVVwbf23610bGFEOzEZC31M7D2piSAAAAFoSURBVCjPfZPndoMwDEYFZI9m13yMhAxI0uy9277/U5VihULg9P7DV7IkH0FRmp1qpZJrUCoNRQNTziWsWgaw2Tsz53MLIP8SUS3CcFZCMrJsINuK6AzQG4kIloF8M9RZGH0RZ7CF9gxQYHTFK+YEBW4cWIokozGUwBfghIfD9d0UTBdQfd3Bho/Mb0/Xdfc05IAeMr4vw+Lcgy5xF9wj4HtATvbw9JCbDJgiR3VM5MdV/8OTFS0oVOHuHq4eYcEdaqRw+Zse5SRHxDtlIZ9uHvMfsibwrzdRDO9fx/yVByzRG3oiYBf16+BoiQKpsKWfJ8vP0CbSwHtxDPWOX9hGnUh5FjAvrL9YL5H/3TwYAyG5Xw6ud1wIZoK2XK6pSMOCRgEaZim6a4CXuA6c03SGmBrQM+O6byBLIbUixtENXu3B2YxaAOxzN7hkYE2B0hvFqebhM7ZtAz5KixLU+ActZTg3BVVV45k/RmtK8mJhmMwAAAAASUVORK5CYII="
+	module.exports = __webpack_require__.p + "9816ef476b8ee0f08a29a357f8d2009d.png";
 
 /***/ }
 /******/ ]);

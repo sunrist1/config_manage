@@ -1,6 +1,5 @@
 .echarts_content{
 	background-color: #fff;
-	padding-top: 20px;
 	height: 100%;
 }
 
@@ -11,8 +10,48 @@
 }
 
 .echarts_bar{
-	width:90%;
+	width:65%;
 	display: block;
-	margin:10px auto;
+	margin:0px auto;
 	height: 250px;
+	color:#fff;
+}
+
+.echarts_box{
+	background:url(../images/result_top_bgimg.png) 0px 0px no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.line_box{
+	position: absolute;
+	top:15px;
+	left:15px;
+	color: #fff;
+	font-size:12px;
+}
+
+.line_box>div{
+	margin-bottom: 5px;
+}
+.line_box .line{
+	display: inline-block;
+	height: 5px;
+	width:30px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.line_box div:nth-of-type(1) .line{
+	background-color: #A100F7;
+}
+.line_box div:nth-of-type(2) .line{
+	background-color: #F6FF00;
+}
+.line_box div:nth-of-type(3) .line{
+	background-color: #00F0FF;
+}
+
+.content_box{
+	background: url(../images/blue_bg_img.png) 0px 0px no-repeat;
+	background-size: 100% 100%;
 }
