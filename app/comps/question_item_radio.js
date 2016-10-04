@@ -33,6 +33,7 @@ export default class QuestionRadio extends React.Component{
 									type="radio" 
 									value={item.value}
 								/>
+								<label className="input_icon"></label>
 								<label htmlFor={"q"+item.nameFor+"-"+item.value}>{item.name}</label>
 							</p>)
 		})

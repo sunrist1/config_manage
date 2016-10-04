@@ -16062,7 +16062,8 @@
 	  if (x === y) {
 	    // Steps 1-5, 7-10
 	    // Steps 6.b-6.e: +0 != -0
-	    return x !== 0 || 1 / x === 1 / y;
+	    // Added the nonzero y check to make Flow happy, but it is redundant
+	    return x !== 0 || y !== 0 || 1 / x === 1 / y;
 	  } else {
 	    // Step 6.a: NaN == NaN
 	    return x !== x && y !== y;
@@ -27178,27 +27179,27 @@
 						_react2.default.createElement(
 							'p',
 							null,
-							'1、请投资者认真阅读问卷内容，了解评分规则，并确认所填写内容表达真实。'
+							'1\u3001\u8BF7\u6295\u8D44\u8005\u8BA4\u771F\u9605\u8BFB\u95EE\u5377\u5185\u5BB9\uFF0C\u4E86\u89E3\u8BC4\u5206\u89C4\u5219\uFF0C\u5E76\u786E\u8BA4\u6240\u586B\u5199\u5185\u5BB9\u8868\u8FBE\u771F\u5B9E\u3002'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'2、亿基金向客户履行风险承受能力评估等适当性职责， 并不能取代您自己的投资判断，也不会降低金融产品或 金融服务的固有风险。无t论投资者是否根据调查结果进行投资，均属投资者的独立行为，相应的风险亦由投资者独立承担。同事，与金融产品或金融服务相关的钩子风险、履属责任以及费用等将由您自行承担。'
+							'2\u3001\u4EBF\u57FA\u91D1\u5411\u5BA2\u6237\u5C65\u884C\u98CE\u9669\u627F\u53D7\u80FD\u529B\u8BC4\u4F30\u7B49\u9002\u5F53\u6027\u804C\u8D23\uFF0C \u5E76\u4E0D\u80FD\u53D6\u4EE3\u60A8\u81EA\u5DF1\u7684\u6295\u8D44\u5224\u65AD\uFF0C\u4E5F\u4E0D\u4F1A\u964D\u4F4E\u91D1\u878D\u4EA7\u54C1\u6216 \u91D1\u878D\u670D\u52A1\u7684\u56FA\u6709\u98CE\u9669\u3002\u65E0t\u8BBA\u6295\u8D44\u8005\u662F\u5426\u6839\u636E\u8C03\u67E5\u7ED3\u679C\u8FDB\u884C\u6295\u8D44\uFF0C\u5747\u5C5E\u6295\u8D44\u8005\u7684\u72EC\u7ACB\u884C\u4E3A\uFF0C\u76F8\u5E94\u7684\u98CE\u9669\u4EA6\u7531\u6295\u8D44\u8005\u72EC\u7ACB\u627F\u62C5\u3002\u540C\u4E8B\uFF0C\u4E0E\u91D1\u878D\u4EA7\u54C1\u6216\u91D1\u878D\u670D\u52A1\u76F8\u5173\u7684\u94A9\u5B50\u98CE\u9669\u3001\u5C65\u5C5E\u8D23\u4EFB\u4EE5\u53CA\u8D39\u7528\u7B49\u5C06\u7531\u60A8\u81EA\u884C\u627F\u62C5\u3002'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'3、亿基金根据您提供的信息对您进行风险承受能力评 估，开展适当性工作。您应当如实提供相关信息及证明 材料，并对所提供的信息和证明材料，并对所提供的信息和证明材料的真实性、准确性、有效性、完整性负责，亿基金不承担任何责任或由此而造成的损失。'
+							'3\u3001\u4EBF\u57FA\u91D1\u6839\u636E\u60A8\u63D0\u4F9B\u7684\u4FE1\u606F\u5BF9\u60A8\u8FDB\u884C\u98CE\u9669\u627F\u53D7\u80FD\u529B\u8BC4 \u4F30\uFF0C\u5F00\u5C55\u9002\u5F53\u6027\u5DE5\u4F5C\u3002\u60A8\u5E94\u5F53\u5982\u5B9E\u63D0\u4F9B\u76F8\u5173\u4FE1\u606F\u53CA\u8BC1\u660E \u6750\u6599\uFF0C\u5E76\u5BF9\u6240\u63D0\u4F9B\u7684\u4FE1\u606F\u548C\u8BC1\u660E\u6750\u6599\uFF0C\u5E76\u5BF9\u6240\u63D0\u4F9B\u7684\u4FE1\u606F\u548C\u8BC1\u660E\u6750\u6599\u7684\u771F\u5B9E\u6027\u3001\u51C6\u786E\u6027\u3001\u6709\u6548\u6027\u3001\u5B8C\u6574\u6027\u8D1F\u8D23\uFF0C\u4EBF\u57FA\u91D1\u4E0D\u627F\u62C5\u4EFB\u4F55\u8D23\u4EFB\u6216\u7531\u6B64\u800C\u9020\u6210\u7684\u635F\u5931\u3002'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'4、亿基金提醒您：当您的各项状况、信息发生重大变 化时，应当及时告知本公司，以便本公司及时更新您的 重大变化信息。本公司建议：此时需对您所投资的金融产品几时进行重新审视，以确保您的投资决定与您可承受的投资风险程度等实际情况一致。'
+							'4\u3001\u4EBF\u57FA\u91D1\u63D0\u9192\u60A8\uFF1A\u5F53\u60A8\u7684\u5404\u9879\u72B6\u51B5\u3001\u4FE1\u606F\u53D1\u751F\u91CD\u5927\u53D8 \u5316\u65F6\uFF0C\u5E94\u5F53\u53CA\u65F6\u544A\u77E5\u672C\u516C\u53F8\uFF0C\u4EE5\u4FBF\u672C\u516C\u53F8\u53CA\u65F6\u66F4\u65B0\u60A8\u7684 \u91CD\u5927\u53D8\u5316\u4FE1\u606F\u3002\u672C\u516C\u53F8\u5EFA\u8BAE\uFF1A\u6B64\u65F6\u9700\u5BF9\u60A8\u6240\u6295\u8D44\u7684\u91D1\u878D\u4EA7\u54C1\u51E0\u65F6\u8FDB\u884C\u91CD\u65B0\u5BA1\u89C6\uFF0C\u4EE5\u786E\u4FDD\u60A8\u7684\u6295\u8D44\u51B3\u5B9A\u4E0E\u60A8\u53EF\u627F\u53D7\u7684\u6295\u8D44\u98CE\u9669\u7A0B\u5EA6\u7B49\u5B9E\u9645\u60C5\u51B5\u4E00\u81F4\u3002'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
-							'5、本问卷共设计了13道问题。'
+							'5\u3001\u672C\u95EE\u5377\u5171\u8BBE\u8BA1\u4E8613\u9053\u95EE\u9898\u3002'
 						)
 					),
 					_react2.default.createElement(
@@ -27250,7 +27251,7 @@
 
 
 	// module
-	exports.push([module.id, "*{\r\n\tpadding:0px;\r\n\tmargin:0px;\r\n}\r\n\r\n.notice_content{\r\n\tfont-size: 16px;\r\n\tmin-height: 100%;\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\tpadding:20px 10px 100px;\r\n}\r\n\r\n.notice_content .title{\r\n\twidth:35%;\r\n\tdisplay: block;\r\n\tmargin:0px auto 20px;\r\n}\r\n\r\n.notice_content .notice_box{\r\n\tpadding:10px;\r\n\tborder:1px dashed #fff;\r\n\tborder-radius: 12px;\r\n}\r\n\r\n.notice_content .notice_box > p{\r\n\tcolor:#fff;\r\n\tline-height:18px;\r\n\tmargin-bottom: 15px;\r\n\tfont-size: 12px;\r\n}\r\n\r\n.startBtn{\r\n\tbackground:url(" + __webpack_require__(240) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n\twidth:120px;\r\n\theight: 42px;\r\n\tborder:none;\r\n\tdisplay: block;\r\n\tmargin:10px auto;\r\n}\r\n\r\n.linkBtn{\r\n\tdisplay: inline-block;\r\n\twidth:100px;\r\n\theight: 100%;\r\n}", ""]);
+	exports.push([module.id, "*{\n\tpadding:0px;\n\tmargin:0px;\n}\n\n.notice_content{\n\tfont-size: 16px;\n\tmin-height: 100%;\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\n\tbackground-size:100% 100%;\n\tpadding:20px 10px 100px;\n}\n\n.notice_content .title{\n\twidth:35%;\n\tdisplay: block;\n\tmargin:0px auto 20px;\n}\n\n.notice_content .notice_box{\n\tpadding:10px;\n\tborder:1px dashed #fff;\n\tborder-radius: 12px;\n}\n\n.notice_content .notice_box > p{\n\tcolor:#fff;\n\tline-height:18px;\n\tmargin-bottom: 15px;\n\tfont-size: 12px;\n}\n\n.startBtn{\n\tbackground:url(" + __webpack_require__(240) + ") 0px 0px no-repeat;\n\tbackground-size:100% 100%;\n\twidth:120px;\n\theight: 42px;\n\tborder:none;\n\tdisplay: block;\n\tmargin:10px auto;\n}\n\n.linkBtn{\n\tdisplay: inline-block;\n\twidth:100px;\n\theight: 100%;\n}", ""]);
 
 	// exports
 
@@ -27730,17 +27731,9 @@
 				var btnContent = null;
 
 				if (4 == this.state.count) {
-					btnContent = _react2.default.createElement(
-						_reactRouter.Link,
-						{ className: 'linkBtn', to: "/echarts_page/" + this.state.resultArr },
-						'下一步'
-					);
+					btnContent = _react2.default.createElement(_reactRouter.Link, { className: 'linkBtn', to: "/echarts_page/" + this.state.resultArr });
 				} else {
-					btnContent = _react2.default.createElement(
-						'span',
-						{ onClick: this.nextStep },
-						'下一步'
-					);
+					btnContent = _react2.default.createElement('span', { onClick: this.nextStep });
 				}
 
 				var list = [],
@@ -27874,6 +27867,7 @@
 							type: 'radio',
 							value: item.value
 						}),
+						_react2.default.createElement('label', { className: 'input_icon' }),
 						_react2.default.createElement(
 							'label',
 							{ htmlFor: "q" + item.nameFor + "-" + item.value },
@@ -27898,7 +27892,7 @@
 						'h3',
 						null,
 						this.props.rank,
-						'、',
+						'\u3001',
 						this.props.question.question
 					),
 					newArr
@@ -27946,7 +27940,7 @@
 
 
 	// module
-	exports.push([module.id, ".question_item{\r\n\tmargin:5px 0px 0px;\r\n\tpadding:10px 10px 0px;\r\n}\r\n\r\n.question_item h2{\r\n\tcolor:#fbf506;\r\n\tline-height: 30px;\r\n\tfont-size: 22px;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.question_item h3{\r\n\tfont-size: 14px;\r\n\tcolor:#fff;\r\n  line-height: 30px;\r\n}\r\n\r\n.question_item p{\r\n\tline-height: 20px;\r\n\tpadding:5px 2px;\r\n\tfont-size: 15px;\r\n}\r\n\r\n.question_item p input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tdisplay: inline-block;\r\n\tmargin-right: 2%;\r\n\tmargin-left: 5%;\r\n\tvertical-align: top;\r\n}\r\n\r\n.question_item p label{\r\n\tvertical-align: top;\r\n\tdisplay: inline-block;\r\n\twidth:80%;\r\n\tcolor:#fff;\r\n}", ""]);
+	exports.push([module.id, ".question_item{\n\tmargin:5px 0px 0px;\n\tpadding:10px 10px 0px;\n}\n\n.question_item h2{\n\tcolor:#fbf506;\n\tline-height: 30px;\n\tfont-size: 22px;\n\tmargin-bottom: 15px;\n}\n\n.question_item h3{\n\tfont-size: 14px;\n\tcolor:#fff;\n  line-height: 30px;\n}\n\n.question_item p{\n\tline-height: 20px;\n\tpadding:5px 2px;\n\tfont-size: 15px;\n}\n\n.question_item p input{\n\twidth:18px;\n\theight: 18px;\n\tdisplay: inline-block;\n\tmargin-right: 2%;\n\tmargin-left: 5%;\n\tvertical-align: top;\n\tdisplay: none;\n}\n\n.question_item p > label:nth-of-type(2){\n\tvertical-align: top;\n\tdisplay: inline-block;\n\twidth:80%;\n\tcolor:#fff;\n}\n\n.question_item p .input_icon{\n\tbackground:url(" + __webpack_require__(761) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n\tdisplay: inline-block;\n\twidth:20px;\n\theight: 20px;\n\tmargin-right: 5px;\n}\n\n.question_item p input:checked+.input_icon{\n\tbackground:url(" + __webpack_require__(762) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n}\n\n.question_item .notice_word{\n\tcolor:yellow;\n\tfont-size: 12px;\n}", ""]);
 
 	// exports
 
@@ -28030,6 +28024,7 @@
 							type: 'checkbox',
 							value: item.value
 						}),
+						_react2.default.createElement('label', { className: 'input_icon' }),
 						_react2.default.createElement(
 							'label',
 							{ htmlFor: "q" + item.nameFor + "-" + item.value },
@@ -28049,10 +28044,15 @@
 						'h3',
 						null,
 						this.props.rank,
-						'、(多选)',
+						'\u3001(\u591A\u9009)',
 						this.props.question.question
 					),
-					newArr
+					newArr,
+					_react2.default.createElement(
+						'p',
+						{ className: 'notice_word' },
+						'(\u6CE8\uFF1A\u672C\u9898\u53EF\u591A\u9009\uFF0C\u4F46\u8BC4\u5206\u4EE5\u5176\u4E2D\u6700\u9AD8\u5206\u503C\u9009\u9879\u4E3A\u51C6)'
+					)
 				);
 			}
 		}]);
@@ -28483,7 +28483,7 @@
 
 
 	// module
-	exports.push([module.id, "body{\r\n\tbackground-color: #f0f0f0;\r\n}\r\n.question_page_content{\r\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\r\n\tbackground-size: 100% 100%;\r\n\tpadding-bottom: 50px;\r\n}\r\n\r\n.submit_btn{\r\n\theight: 80px;\r\n\tline-height: 80px;\r\n\tmargin-top:15px;\r\n\ttext-align: center;\r\n}\r\n\r\n.submit_btn button{\r\n\tdisplay: inline-block;\r\n\tborder:none;\r\n\theight: 36px;\r\n\tline-height: 36px;\r\n\twidth:70%;\r\n\tborder-radius: 10px;\r\n\tfont-size: 16px;\r\n\tbackground-color: #d4902f;\r\n\tcolor:#fff;\r\n}", ""]);
+	exports.push([module.id, "body{\n\tbackground-color: #f0f0f0;\n}\n.question_page_content{\n\tbackground:url(" + __webpack_require__(239) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n\tpadding-bottom: 50px;\n}\n\n.submit_btn{\n\theight: 80px;\n\tline-height: 80px;\n\tmargin-top:15px;\n\ttext-align: center;\n}\n\n.submit_btn button{\n\tdisplay: inline-block;\n\tborder:none;\n\theight: 36px;\n\tline-height: 60px;\n\twidth:120px;\n\tborder-radius: 10px;\n\tfont-size: 16px;\n\tcolor:#fff;\n\tbackground:url(" + __webpack_require__(760) + ") 0px 0px no-repeat;\n\tbackground-size: 100% 100%;\n}\n\n.submit_btn button >a,\n.submit_btn button >span{\n\tdisplay: inline-block;\n\twidth:100%;\n\theight: 100%;\n\tfont-size: 0px;\n}", ""]);
 
 	// exports
 
@@ -28602,7 +28602,7 @@
 					_react2.default.createElement(
 						'h2',
 						{ className: 'echarts_title' },
-						'资产配置得分分析图'
+						'\u8D44\u4EA7\u914D\u7F6E\u5F97\u5206\u5206\u6790\u56FE'
 					),
 					_react2.default.createElement(_echartsForReact2.default, {
 						className: 'echarts_bar',
@@ -28617,7 +28617,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ className: 'linkBtn', to: "/assets_select/" + this.state.resultSum },
-								'下一步'
+								'\u4E0B\u4E00\u6B65'
 							)
 						)
 					)
@@ -92419,7 +92419,7 @@
 
 
 	// module
-	exports.push([module.id, ".echarts_content{\r\n\tbackground-color: #fff;\r\n\tpadding-top: 20px;\r\n\theight: 100%;\r\n}\r\n\r\n.echarts_title{\r\n\twidth:100%;\r\n\ttext-align: center;\r\n\tfont-size:20px;\r\n}\r\n\r\n.echarts_bar{\r\n\twidth:90%;\r\n\tdisplay: block;\r\n\tmargin:10px auto;\r\n\theight: 250px;\r\n}", ""]);
+	exports.push([module.id, ".echarts_content{\n\tbackground-color: #fff;\n\tpadding-top: 20px;\n\theight: 100%;\n}\n\n.echarts_title{\n\twidth:100%;\n\ttext-align: center;\n\tfont-size:20px;\n}\n\n.echarts_bar{\n\twidth:90%;\n\tdisplay: block;\n\tmargin:10px auto;\n\theight: 250px;\n}", ""]);
 
 	// exports
 
@@ -92518,12 +92518,12 @@
 						_react2.default.createElement(
 							'h2',
 							{ className: 'title_1' },
-							'防守型配置策略'
+							'\u9632\u5B88\u578B\u914D\u7F6E\u7B56\u7565'
 						),
 						_react2.default.createElement(
 							'h3',
 							{ className: 'title_2' },
-							'推荐投资低风险等级产品'
+							'\u63A8\u8350\u6295\u8D44\u4F4E\u98CE\u9669\u7B49\u7EA7\u4EA7\u54C1'
 						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_baoshou2.default })
 					);
@@ -92534,12 +92534,12 @@
 						_react2.default.createElement(
 							'h2',
 							{ className: 'title_1' },
-							'稳健性配置策略'
+							'\u7A33\u5065\u6027\u914D\u7F6E\u7B56\u7565'
 						),
 						_react2.default.createElement(
 							'h3',
 							{ className: 'title_2' },
-							'适合投资中、低风险等级产品'
+							'\u9002\u5408\u6295\u8D44\u4E2D\u3001\u4F4E\u98CE\u9669\u7B49\u7EA7\u4EA7\u54C1'
 						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_wenjian2.default })
 					);
@@ -92550,12 +92550,12 @@
 						_react2.default.createElement(
 							'h2',
 							{ className: 'title_1' },
-							'积极性配置策略'
+							'\u79EF\u6781\u6027\u914D\u7F6E\u7B56\u7565'
 						),
 						_react2.default.createElement(
 							'h3',
 							{ className: 'title_2' },
-							'适合投资高、中、低风险等级产品'
+							'\u9002\u5408\u6295\u8D44\u9AD8\u3001\u4E2D\u3001\u4F4E\u98CE\u9669\u7B49\u7EA7\u4EA7\u54C1'
 						),
 						_react2.default.createElement('img', { className: 'type_img', src: _type_jiji2.default })
 					);
@@ -92598,7 +92598,7 @@
 						_react2.default.createElement(
 							'h3',
 							null,
-							'请选择您可投资资产：'
+							'\u8BF7\u9009\u62E9\u60A8\u53EF\u6295\u8D44\u8D44\u4EA7\uFF1A'
 						),
 						_react2.default.createElement(
 							'div',
@@ -92608,7 +92608,7 @@
 							_react2.default.createElement(
 								'label',
 								{ htmlFor: 'value1' },
-								'100万—1000万'
+								'100\u4E07\u20141000\u4E07'
 							)
 						),
 						_react2.default.createElement(
@@ -92619,7 +92619,7 @@
 							_react2.default.createElement(
 								'label',
 								{ htmlFor: 'value2' },
-								'1000万以上'
+								'1000\u4E07\u4EE5\u4E0A'
 							)
 						)
 					),
@@ -92629,7 +92629,7 @@
 						_react2.default.createElement(
 							_reactRouter.Link,
 							{ className: 'linkBtn', to: "/result/" + this.state.selectedValue + "/" + this.state.sum },
-							'下一步'
+							'\u4E0B\u4E00\u6B65'
 						)
 					)
 				);
@@ -92694,7 +92694,7 @@
 
 
 	// module
-	exports.push([module.id, ".select_box{\r\n\tbackground-color: #fff;\r\n\theight: 100%;\r\n\tdisplay: block;\r\n}\r\n.top_box{\r\n\twidth:100%;\r\n\theight: auto;\r\n\ttext-align: center;\r\n\tpadding-top:20px;\r\n}\r\n\r\n.title_1{\r\n\tfont-size: 20px;\r\n\twidth:100%;\r\n}\r\n\r\n.title_2{\r\n\tfont-size: 16px;\r\n\twidth:100%;\r\n\tmargin-top:10px;\r\n\tcolor:#d4902f;\r\n}\r\n\r\n.type_img{\r\n\twidth: 50%;\r\n\tdisplay: inline-block;\r\n\tmargin:15px auto;\r\n}\r\n\r\n.selectAssetBox{\r\n\tpadding:10px;\r\n\twidth:98%;\r\n\tmargin:10px 1%;\r\n\tborder-radius: 8px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: #f0f0f0;\r\n}\r\n\r\n.selectAssetBox h3{\r\n\tline-height: 30px;\r\n\tfont-size: 16px;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.selectAssetBox .item_group{\r\n\tdisplay: inline-block;\r\n\twidth:50%;\r\n\tfont-size:0px;\r\n  text-align: center;\r\n}\r\n.selectAssetBox .item_group input{\r\n\twidth:18px;\r\n\theight: 18px;\r\n\tvertical-align: middle;\r\n\tmargin-right: 5px;\r\n\tdisplay: none;\r\n}\r\n\r\n.selectAssetBox .item_group label:nth-of-type(1){\r\n\twidth:20px;\r\n\theight: 20px;\r\n\tdisplay: inline-block;\r\n\tbackground-color: #aaa;\r\n\tvertical-align: middle;\r\n\tborder-radius: 3px;\r\n\tmargin-right: 3px;\r\n}\r\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\r\n\tbackground: url(" + __webpack_require__(644) + ") 0px 0px no-repeat;\r\n\tbackground-size:100% 100%;\r\n}\r\n.selectAssetBox .item_group label:nth-of-type(2){\r\n\tfont-size: 16px;\r\n\tvertical-align: middle;\r\n\tfont-size: 16px;\r\n}\r\n\r\n.nextStepBtn{\r\n\twidth:90%;\r\n\tdisplay: block;\r\n\tmargin:20px auto;\r\n\theight: 36px;\r\n\tborder:none;\r\n\tborder-radius: 8px;\r\n\tbackground-color: #d4902f;\r\n}", ""]);
+	exports.push([module.id, ".select_box{\n\tbackground-color: #fff;\n\theight: 100%;\n\tdisplay: block;\n}\n.top_box{\n\twidth:100%;\n\theight: auto;\n\ttext-align: center;\n\tpadding-top:20px;\n}\n\n.title_1{\n\tfont-size: 20px;\n\twidth:100%;\n}\n\n.title_2{\n\tfont-size: 16px;\n\twidth:100%;\n\tmargin-top:10px;\n\tcolor:#d4902f;\n}\n\n.type_img{\n\twidth: 50%;\n\tdisplay: inline-block;\n\tmargin:15px auto;\n}\n\n.selectAssetBox{\n\tpadding:10px;\n\twidth:98%;\n\tmargin:10px 1%;\n\tborder-radius: 8px;\n\tbox-sizing: border-box;\n\tbackground-color: #f0f0f0;\n}\n\n.selectAssetBox h3{\n\tline-height: 30px;\n\tfont-size: 16px;\n\tborder-bottom: 1px solid #ddd;\n\tmargin-bottom: 10px;\n}\n\n.selectAssetBox .item_group{\n\tdisplay: inline-block;\n\twidth:50%;\n\tfont-size:0px;\n  text-align: center;\n}\n.selectAssetBox .item_group input{\n\twidth:18px;\n\theight: 18px;\n\tvertical-align: middle;\n\tmargin-right: 5px;\n\tdisplay: none;\n}\n\n.selectAssetBox .item_group label:nth-of-type(1){\n\twidth:20px;\n\theight: 20px;\n\tdisplay: inline-block;\n\tbackground-color: #aaa;\n\tvertical-align: middle;\n\tborder-radius: 3px;\n\tmargin-right: 3px;\n}\n.selectAssetBox .item_group input:checked+label:nth-of-type(1){\n\tbackground: url(" + __webpack_require__(644) + ") 0px 0px no-repeat;\n\tbackground-size:100% 100%;\n}\n.selectAssetBox .item_group label:nth-of-type(2){\n\tfont-size: 16px;\n\tvertical-align: middle;\n\tfont-size: 16px;\n}\n\n.nextStepBtn{\n\twidth:90%;\n\tdisplay: block;\n\tmargin:20px auto;\n\theight: 36px;\n\tborder:none;\n\tborder-radius: 8px;\n\tbackground-color: #d4902f;\n}", ""]);
 
 	// exports
 
@@ -92882,7 +92882,7 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(_hight_item_title2.default, { per: type, title: '固定收益类' }),
+					_react2.default.createElement(_hight_item_title2.default, { per: type, title: '\u56FA\u5B9A\u6536\u76CA\u7C7B' }),
 					_react2.default.createElement(_fund_item2.default, null),
 					_react2.default.createElement(_fund_item2.default, null)
 				);
@@ -92905,7 +92905,7 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					_react2.default.createElement(_low_item_title2.default, { title: '固定收益类' }),
+					_react2.default.createElement(_low_item_title2.default, { title: '\u56FA\u5B9A\u6536\u76CA\u7C7B' }),
 					_react2.default.createElement(_fund_item2.default, null),
 					_react2.default.createElement(_fund_item2.default, null)
 				);
@@ -104611,7 +104611,7 @@
 
 
 	// module
-	exports.push([module.id, ".hight_title_box{\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\twidth: 100%;\r\n\tbackground-color: #fff;\r\n}\r\n\r\n.hight_title_box >div{\r\n\tdisplay: inline-block;\r\n} \r\n\r\n.hight_title_box .per_num{\r\n\tpadding:3px 10px;\r\n\tbackground-color: #e20000;\r\n\tcolor:#fff;\r\n\tfont-weight: bold;\r\n\tborder-radius: 8px;\r\n\tfont-size: 18px;\r\n\tmargin:0px 10px;\r\n  height: 20px;\r\n  line-height: 20px;\r\n  vertical-align: middle;\r\n}\r\n\r\n.hight_title_box .title_name{\r\n\tcolor:#e20000;\r\n\tfont-size: 18px;\r\n}", ""]);
+	exports.push([module.id, ".hight_title_box{\n\theight: 40px;\n\tline-height: 40px;\n\twidth: 100%;\n\tbackground-color: #fff;\n}\n\n.hight_title_box >div{\n\tdisplay: inline-block;\n} \n\n.hight_title_box .per_num{\n\tpadding:3px 10px;\n\tbackground-color: #e20000;\n\tcolor:#fff;\n\tfont-weight: bold;\n\tborder-radius: 8px;\n\tfont-size: 18px;\n\tmargin:0px 10px;\n  height: 20px;\n  line-height: 20px;\n  vertical-align: middle;\n}\n\n.hight_title_box .title_name{\n\tcolor:#e20000;\n\tfont-size: 18px;\n}", ""]);
 
 	// exports
 
@@ -104712,7 +104712,7 @@
 
 
 	// module
-	exports.push([module.id, ".low_title_box{\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\tbackground-color: #fff;\r\n\twidth:100%;\r\n}\r\n\r\n.low_title_box .title_name{\r\n\tcolor:#d4902f;\r\n\tfont-size: 18px;\r\n\tmargin-left: 10px;\r\n}", ""]);
+	exports.push([module.id, ".low_title_box{\n\theight: 40px;\n\tline-height: 40px;\n\tbackground-color: #fff;\n\twidth:100%;\n}\n\n.low_title_box .title_name{\n\tcolor:#d4902f;\n\tfont-size: 18px;\n\tmargin-left: 10px;\n}", ""]);
 
 	// exports
 
@@ -104783,12 +104783,12 @@
 					_react2.default.createElement(
 						'div',
 						{ onClick: this.navClick, value: 'movies', className: 'nav_item active_item' },
-						'影视创新'
+						'\u5F71\u89C6\u521B\u65B0'
 					),
 					_react2.default.createElement(
 						'div',
 						{ onClick: this.navClick, value: 'fundation', className: 'nav_item' },
-						'证券投资'
+						'\u8BC1\u5238\u6295\u8D44'
 					)
 				);
 			}
@@ -104834,7 +104834,7 @@
 
 
 	// module
-	exports.push([module.id, ".steady_title_box{\r\n\theight: 40px;\r\n\tbackground-color: #fff;\r\n\tline-height: 40px;\r\n\tdisplay: flex;\r\n\tjustify-content: space-around;\r\n}\r\n\r\n.steady_title_box .nav_item{\r\n\twidth:45%;\r\n\tcolor:#333;\r\n\t\ttext-align: center;\r\n}\r\n\r\n.steady_title_box .active_item{\r\n\tcolor:#d4902f;\r\n\tborder-bottom: 1px solid #d4902f;\r\n}", ""]);
+	exports.push([module.id, ".steady_title_box{\n\theight: 40px;\n\tbackground-color: #fff;\n\tline-height: 40px;\n\tdisplay: flex;\n\tjustify-content: space-around;\n}\n\n.steady_title_box .nav_item{\n\twidth:45%;\n\tcolor:#333;\n\t\ttext-align: center;\n}\n\n.steady_title_box .active_item{\n\tcolor:#d4902f;\n\tborder-bottom: 1px solid #d4902f;\n}", ""]);
 
 	// exports
 
@@ -104893,7 +104893,7 @@
 					_react2.default.createElement(
 						'h3',
 						{ className: 'item_title' },
-						'财富家-凯歌3号文化影视基金'
+						'\u8D22\u5BCC\u5BB6-\u51EF\u6B4C3\u53F7\u6587\u5316\u5F71\u89C6\u57FA\u91D1'
 					),
 					_react2.default.createElement(
 						'div',
@@ -104901,26 +104901,26 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'预期收益:浮动'
+							'\u9884\u671F\u6536\u76CA:\u6D6E\u52A8'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'前端佣金:',
+							'\u524D\u7AEF\u4F63\u91D1:',
 							_react2.default.createElement(
 								'span',
 								{ className: 'red_word' },
-								'待定'
+								'\u5F85\u5B9A'
 							)
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'后端佣金:',
+							'\u540E\u7AEF\u4F63\u91D1:',
 							_react2.default.createElement(
 								'span',
 								{ className: 'red_word' },
-								'无'
+								'\u65E0'
 							)
 						)
 					),
@@ -104930,17 +104930,17 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'起投:100万'
+							'\u8D77\u6295:100\u4E07'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'封闭期:12个月'
+							'\u5C01\u95ED\u671F:12\u4E2A\u6708'
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'data_item' },
-							'本期募集:5000万'
+							'\u672C\u671F\u52DF\u96C6:5000\u4E07'
 						)
 					),
 					_react2.default.createElement(
@@ -105001,7 +105001,7 @@
 
 
 	// module
-	exports.push([module.id, ".fund_item_box{\r\n\twidth:96%;\r\n\tmargin:10px 2%;\r\n\tborder-radius: 5px;\r\n\tbackground-color: #fff;\r\n\tpadding:5px;\r\n\tbox-sizing: border-box;\r\n}\r\n\r\n.item_title{\r\n\tfont-size: 18px;\r\n\tborder-bottom: 1px solid #eee;\r\n  padding: 5px 0px;\r\n}\r\n\r\n.data_content{\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\tline-height: 30px;\r\n}\r\n.data_content:nth-of-type(2){\r\n  border-bottom: 1px dashed #eee;\r\n}\r\n\r\n.data_content .data_item{\r\n\tmin-width:20%;\r\n\ttext-align: left;\r\n\tfont-size: 14px;\r\n}\r\n\r\n.red_word{\r\n\tcolor:#e20000;\r\n}\r\n\r\n.fund_item_box .bottom_bar{\r\n\tdisplay: flex;\r\n\tjustify-content: flex-end;\r\n  margin-top: 5px;\r\n}\r\n.fund_item_box .bottom_bar > div{\r\n\tdisplay: inline-block;\r\n\tmargin-right: 10px;\r\n\tvertical-align: middle;\r\n\tcolor:#777;\r\n  height: 20px;\r\n  line-height: 20px;\r\n}\r\n\r\n.fund_item_box .bottom_bar .collect_count:before{\r\n\tcontent:\"\";\r\n\twidth:16px;\r\n\theight:16px;\r\n\tdisplay: inline-block;\r\n\tbackground:url(" + __webpack_require__(758) + ") 0px 0px no-repeat;\r\n\tbackground-size: 90% 90%;\r\n  vertical-align: middle;\r\n  margin-right: 3px;\r\n}\r\n\r\n.fund_item_box .bottom_bar .read_count:before{\r\n\tcontent:\"\";\r\n\twidth:22px;\r\n\theight:16px;\r\n\tdisplay: inline-block;\r\n\tbackground:url(" + __webpack_require__(759) + ") 0px 0px no-repeat;\r\n\tbackground-size: 90% 90%;\r\n  vertical-align: middle;\r\n  margin-right: 3px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".fund_item_box{\n\twidth:96%;\n\tmargin:10px 2%;\n\tborder-radius: 5px;\n\tbackground-color: #fff;\n\tpadding:5px;\n\tbox-sizing: border-box;\n}\n\n.item_title{\n\tfont-size: 18px;\n\tborder-bottom: 1px solid #eee;\n  padding: 5px 0px;\n}\n\n.data_content{\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tline-height: 30px;\n}\n.data_content:nth-of-type(2){\n  border-bottom: 1px dashed #eee;\n}\n\n.data_content .data_item{\n\tmin-width:20%;\n\ttext-align: left;\n\tfont-size: 14px;\n}\n\n.red_word{\n\tcolor:#e20000;\n}\n\n.fund_item_box .bottom_bar{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n  margin-top: 5px;\n}\n.fund_item_box .bottom_bar > div{\n\tdisplay: inline-block;\n\tmargin-right: 10px;\n\tvertical-align: middle;\n\tcolor:#777;\n  height: 20px;\n  line-height: 20px;\n}\n\n.fund_item_box .bottom_bar .collect_count:before{\n\tcontent:\"\";\n\twidth:16px;\n\theight:16px;\n\tdisplay: inline-block;\n\tbackground:url(" + __webpack_require__(758) + ") 0px 0px no-repeat;\n\tbackground-size: 90% 90%;\n  vertical-align: middle;\n  margin-right: 3px;\n}\n\n.fund_item_box .bottom_bar .read_count:before{\n\tcontent:\"\";\n\twidth:22px;\n\theight:16px;\n\tdisplay: inline-block;\n\tbackground:url(" + __webpack_require__(759) + ") 0px 0px no-repeat;\n\tbackground-size: 90% 90%;\n  vertical-align: middle;\n  margin-right: 3px;\n}\n", ""]);
 
 	// exports
 
@@ -105017,6 +105017,24 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "909f74c883587cde532be047bd291a67.png";
+
+/***/ },
+/* 760 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "37f3297cf53cbdd81979eac04c7def67.png";
+
+/***/ },
+/* 761 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAh1BMVEUAAABprP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP//9gBprP9ur/h9t92tzoyLvcXB2Gvd5jrr7SLz8BT48wx4tOWjyZy71XPW4kZysfCTwbiz0ITJ3Fzj6DCFutGexqXP3lHXN63qAAAAFnRSTlMAlaTEJc9RGwm3XEDx3a+ce3Q5ZTGI4QR8rAAAARNJREFUKM990tdywjAURdErV2zTIdrujRYg//99MWUYO7ayXvfoPNyR9PneZr0J9zJpr1zelt6oOkugOadper8BdjjMCuL0ql+qPAFr1ssWtJXuyU/Yfi/HP3qovOH6n/FTof+qM4JX3sJRj1UJ6tkDUj2lAKfLHk2tJ7VYXV9y0NNKmMmMuNIGZzzZkmmTA0o2pMZeYIsiN/aKuVh8ayP4t9fMRXEw9pKF7GiN/UggDomxX1iLuFxNPSESUbTGefvx84jL6Z6xls6KzHBdV55c0qn1GO/zgS7j259YyVsE93qY8xhLPqI5Tf/M1zNd7vEDSC7Fc6TMM1iEMrSz6TRJEtNRMxmJvmweFqtQTHzHGb78BeohQipmRohAAAAAAElFTkSuQmCC"
+
+/***/ },
+/* 762 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAw1BMVEUAAABprP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP9prP//9gAALdRprP9vsPb58we/129+t9vd5jmiyZ+rzZDK3Vvr7SLh3xnz8BUMNsojSbd7teKKvciPv75GZZmwz4idqVGps0fW4kbj6C/Iyy53s+iEudEdRLyUwbctUK9VcI1heoO10X5rgntziHS6wDnT1CTy7Aucxag2WKeJmWJEL/1vAAAAF3RSTlMAkyTOnqVVwbf23610bGFEOzEZC31M7D2piSAAAAFoSURBVCjPfZPndoMwDEYFZI9m13yMhAxI0uy9277/U5VihULg9P7DV7IkH0FRmp1qpZJrUCoNRQNTziWsWgaw2Tsz53MLIP8SUS3CcFZCMrJsINuK6AzQG4kIloF8M9RZGH0RZ7CF9gxQYHTFK+YEBW4cWIokozGUwBfghIfD9d0UTBdQfd3Bho/Mb0/Xdfc05IAeMr4vw+Lcgy5xF9wj4HtATvbw9JCbDJgiR3VM5MdV/8OTFS0oVOHuHq4eYcEdaqRw+Zse5SRHxDtlIZ9uHvMfsibwrzdRDO9fx/yVByzRG3oiYBf16+BoiQKpsKWfJ8vP0CbSwHtxDPWOX9hGnUh5FjAvrL9YL5H/3TwYAyG5Xw6ud1wIZoK2XK6pSMOCRgEaZim6a4CXuA6c03SGmBrQM+O6byBLIbUixtENXu3B2YxaAOxzN7hkYE2B0hvFqebhM7ZtAz5KixLU+ActZTg3BVVV45k/RmtK8mJhmMwAAAAASUVORK5CYII="
 
 /***/ }
 /******/ ]);

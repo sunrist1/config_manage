@@ -99,9 +99,9 @@ export default class QuestionsPage extends React.Component{
 		let btnContent =null; 
 
 		if(4==this.state.count){
-			btnContent = <Link className="linkBtn" to={"/echarts_page/"+this.state.resultArr}>下一步</Link>;
+			btnContent = <Link className="linkBtn" to={"/echarts_page/"+this.state.resultArr}></Link>;
 		}else{
-			btnContent = <span onClick={this.nextStep}>下一步</span>;
+			btnContent = <span onClick={this.nextStep}></span>;
 		}
 
 		let list = [],

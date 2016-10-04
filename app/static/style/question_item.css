@@ -29,11 +29,31 @@
 	margin-right: 2%;
 	margin-left: 5%;
 	vertical-align: top;
+	display: none;
 }
 
-.question_item p label{
+.question_item p > label:nth-of-type(2){
 	vertical-align: top;
 	display: inline-block;
 	width:80%;
 	color:#fff;
+}
+
+.question_item p .input_icon{
+	background:url(../images/select_icon.png) 0px 0px no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.question_item p input:checked+.input_icon{
+	background:url(../images/select_icon_checked.png) 0px 0px no-repeat;
+	background-size: 100% 100%;
+}
+
+.question_item .notice_word{
+	color:yellow;
+	font-size: 12px;
 }

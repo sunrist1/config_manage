@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --host 192.168.1.233 --port 8080",
+    "start": "webpack-dev-server --port 8080 --host 192.168.0.233",
+    "watch": "webpack --watch",
     "build": "webpack -p"
   },
   "keywords": [],
@@ -26,6 +27,7 @@
     "jquery": "^3.1.1",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
   }
 }
