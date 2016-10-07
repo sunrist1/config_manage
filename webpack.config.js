@@ -2,7 +2,10 @@ var path = require('path');
 var webpack = require("webpack");
 
 module.exports = {
-	entry:path.resolve(__dirname,'app/app.js'),
+	entry:{
+		bundle:path.resolve(__dirname,'app/app.js'),
+		vendor: ['react']
+	},
 	output:{
 		path:path.resolve(__dirname,'build'),
 		filename:'bundle.js'
@@ -41,6 +44,12 @@ module.exports = {
       $:"jquery",
       jQuery:"jquery",
       "window.jQuery":"jquery"
+    }),
+    new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js'),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
     })
   ]
 }

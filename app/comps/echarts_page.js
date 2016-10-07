@@ -58,6 +58,7 @@ export default class EchartsPage extends React.Component{
 	        splitArea: {
             show: false
 	        },
+	        radius: '65%',
 	        indicator: [
 	           { name: '财务状况', max: 10},
 	           { name: '其他信息', max: 10},
@@ -66,6 +67,12 @@ export default class EchartsPage extends React.Component{
 	           { name: '投资经验', max: 10},
 	           { name: '投资知识', max: 10}
 	        ],
+	        name: {
+            textStyle: {
+                color: 'rgb(255, 255, 255)',
+                fontSize:12
+            }
+	        },
 	        axisLine: {
 	        	show:false,
             lineStyle: {
@@ -82,7 +89,6 @@ export default class EchartsPage extends React.Component{
 		    {
 	        name: '预算 vs 开销（Budget vs spending）',
 	        type: 'radar',
-	        // areaStyle: {normal: {}},
 	        data : [
 	            {
                 value : _this.state.resultArr,
@@ -146,7 +152,7 @@ export default class EchartsPage extends React.Component{
 						<div><span className="line"></span>稳健型</div>
 					</div>
 					<ReactEcharts 
-						className="echarts_bar"
+						className="echarts_bar_radar"
 						option={this.getOption()}
 					/>
 				</div>
@@ -161,12 +167,10 @@ export default class EchartsPage extends React.Component{
 						<p>{p1}</p>
 						<p>{p2}</p>
 					</div>
-					<img src={typeImgSrc} />
-				</div>
+					<img className="result_type_icon" src={typeImgSrc} />
 
-				<div className="submit_btn">
-					<button>
-						<Link className="linkBtn" to={"/assets_select/"+this.state.resultSum}>下一步</Link>
+					<button className="echart_submit_btn">
+						<Link className="linkBtn" to={"/result/"+this.state.resultSum}></Link>
 					</button>
 				</div>
 			</div>

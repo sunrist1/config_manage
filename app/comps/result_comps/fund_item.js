@@ -16,7 +16,7 @@ export default class FundItem extends React.Component{
 
 	render(){
 		return(
-			<div className="fund_item_box">
+			<a href="http://lcs.daliuliang.com.cn/mobile/privatefund/detail/0%7CYZ00001.html" className="fund_item_box">
 				<h3 className="item_title">财富家-凯歌3号文化影视基金</h3>
 				<div className="data_content">
 					<div className="data_item">预期收益:浮动</div>
@@ -32,7 +32,7 @@ export default class FundItem extends React.Component{
 					<div className="collect_count">1</div>
 					<div className="read_count">2588</div>
 				</div>
-			</div>
+			</a>
 		)
 	}
 }

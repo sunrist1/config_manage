@@ -1,10 +1,14 @@
 .fund_item_box{
-	width:96%;
-	margin:10px 2%;
+	width:94%;
+	margin:10px 3%;
 	border-radius: 5px;
 	background-color: #fff;
-	padding:5px;
+	padding:10px;
 	box-sizing: border-box;
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+  color: #333;
 }
 
 .item_title{

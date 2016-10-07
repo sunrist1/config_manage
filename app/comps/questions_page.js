@@ -2,6 +2,9 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Link} from 'react-router';
 
+// 引入弹窗
+import Alert from 'react-s-alert';
+
 // 引入components
 import QuestionRadio from './question_item_radio.js'
 import QuestionCheckbox from './question_item_checkbox.js'
@@ -11,6 +14,7 @@ import ListData from '../questions.json'
 
 // css
 import '../static/style/question_page.css'
+import 'react-s-alert/dist/s-alert-default.css';
 
 export default class QuestionsPage extends React.Component{
 	constructor(props){
@@ -64,28 +68,34 @@ export default class QuestionsPage extends React.Component{
 	}
 
 	// 下一步
-	nextStep(){
+	nextStep(e){
 		let count = this.state.count,
 				anwserList = this.state.anwserList;
 		if(1==count){
 			if(undefined==anwserList[0] || undefined==anwserList[1] || undefined==anwserList[2]){
-				alert("请回答所有问题。")
+				e.preventDefault();
+				Alert.warning('请回答所有问题。');
+        // alert("请回答所有问题。")
 				return;
 			}
 		}else if(2==count){
 			if(undefined==anwserList[3] || undefined==anwserList[4] || undefined==anwserList[5]){
-				alert("请回答所有问题。")
+				Alert.warning('请回答所有问题。');
 				return;
 			}
 		}else if(3==count){
 			if(undefined==anwserList[6] || undefined==anwserList[7] || undefined==anwserList[8] || undefined==anwserList[9]){
-				alert("请回答所有问题。")
+				Alert.warning('请回答所有问题。');
 				return;
 			}
 		}else{
-			if(undefined==resultArr[10] || undefined==resultArr[11] || undefined==resultArr[12]){
-				alert("请回答所有问题。")
+			if(undefined==anwserList[10] || undefined==anwserList[11] || undefined==anwserList[12]){
+				Alert.warning('请回答所有问题。');
 				return;
+			}else{
+				this.setState({
+					selectAll:true
+				})
 			}
 		}
 
@@ -100,7 +110,7 @@ export default class QuestionsPage extends React.Component{
 		let _this = this;
 		let btnContent =null; 
 
-		if(4==this.state.count){
+		if(this.state.selectAll){
 			btnContent = <Link className="linkBtn" to={"/echarts_page/"+this.state.resultArr}></Link>;
 		}else{
 			btnContent = <span onClick={this.nextStep}></span>;
@@ -160,6 +170,7 @@ export default class QuestionsPage extends React.Component{
 						{btnContent}
 					</button>
 				</div>
+				<Alert stack={{limit: 1}} />
 			</div>
 		)
 	}
