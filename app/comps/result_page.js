@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import $ from 'jquery'
+// import $ from 'jquery'
+
 // 引入组件
 // import HightItemTitle from './result_comps/hight_item_title.js'
 // import LowItemTitle from './result_comps/low_item_title.js'
@@ -15,6 +16,8 @@ import '../static/style/result_page.css'
 
 // 引入百分比json
 import ResultPer from '../result_per.json'
+// 引入推荐基金列表json
+import ResultFunds from '../result_fund.json'
 
 // 引入table图片   table都懒得自己写了，直接图片来，我都佩服自己
 import baoshouTableImg from '../static/images/baoshou_table.png'
@@ -40,122 +43,68 @@ export default class ResultPage extends React.Component{
 	}
 
 // 改变要展示的推荐基金列表，只用于100w－1000w的稳健型下
-	// changeShow(val){
-	// 	this.setState({
-	// 		showType:val
-	// 	})
+/*	changeShow(val){
+		this.setState({
+			showType:val
+		})
 
-	// 	console.log(this.state.showType)
-	// }
+		console.log(this.state.showType)
+	}*/
 
-	// 判断并展示推荐的基金列表
-	// componentDidMount(){
-	// 	let sum = this.props.params.result_sum;
-	// 	if(0<=sum&&sum<50){
-	// 		this.setState({
-	// 			resultType:0
-	// 		})
-	// 	}else if(50<=sum&&sum<90){
-	// 		this.setState({
-	// 			resultType:1
-	// 		})
-	// 	}else{
-	// 		this.setState({
-	// 			resultType:2
-	// 		})
-	// 	}
+/*	getFundData(fundId){
+		let now = new Date(),
+				url = "http://192.168.1.233:3333/lcs",
+				// url = "http://lcs.daliuliang.com.cn/mobile/api/appService",
+				device = 3,
+				deviceId = "0E37A8FF-6882-4413-9C34-8F5B94E16D99";
 
-	// 	this.setState({
-	// 		asset:this.props.params.asset
-	// 	})
+		let postData = {
+	    "code":"getFundList",
+	    "data":{
+        "fundCodes":"000005,000006"
+	    }
+		};
 
-	// 	this.getFundData('YZ00001')
-	// }
-
-	// getFundData(fundId){
-	// 	let now = new Date(),
-	// 			url = "http://192.168.1.233:3333/lcs",
-	// 			// url = "http://lcs.daliuliang.com.cn/mobile/api/appService",
-	// 			device = 3,
-	// 			deviceId = "0E37A8FF-6882-4413-9C34-8F5B94E16D99";
-
-	// 	let postData = {
-	//     "code":"getFundList",
-	//     "data":{
- //        "fundCodes":"000005,000006"
-	//     }
-	// 	};
-
-	// 	console.log($)
-	// 	$.ajax({  
- //      url:url,  
- //      type:"POST",
- //      dataType:'json',  
- //      data:postData,  
- //      // jsonp:'callback',  
- //      success:function(result) {  
- //        console.log(result)  
- //      },  
- //      timeout:3000  
- //    });  
-	// }
+		console.log($)
+		$.ajax({  
+      url:url,  
+      type:"POST",
+      dataType:'json',  
+      data:postData,  
+      // jsonp:'callback',  
+      success:function(result) {  
+        console.log(result)  
+      },  
+      timeout:3000  
+    });  
+	}*/
 
 	// 渲染该显示的dom的函数
-	// showRender(){
-	// 	let resultType = this.state.resultType
+/*	showRender(){
+		let resultType = this.state.resultType
 
-	// 	console.log(resultType)
-	// 	if(1==this.state.asset){
-	// 		// 客户可配置资产为100万到1000万
+		console.log(resultType)
+		if(1==this.state.asset){
+			// 客户可配置资产为100万到1000万
 
-	// 		if(0==resultType){
-	// 			return this.lowRender(0);  //保守型
-	// 		}else if(1==resultType){
-	// 			return this.lowRender(1); //稳健性
-	// 		}else{
-	// 			return this.lowRender(2);  // 进取型
-	// 		}
-	// 	}else if(2==this.state.asset){
-	// 		if(0==resultType){
-	// 			return this.hightRender(0); //保守型
-	// 		}else if(1==resultType){
-	// 			return this.hightRender(1);  //稳健性
-	// 		}else{
-	// 			return this.hightRender(2);  // 进取型
-	// 		}
-	// 	}
-	// }
+			if(0==resultType){
+				return this.lowRender(0);  //保守型
+			}else if(1==resultType){
+				return this.lowRender(1); //稳健性
+			}else{
+				return this.lowRender(2);  // 进取型
+			}
+		}else if(2==this.state.asset){
+			if(0==resultType){
+				return this.hightRender(0); //保守型
+			}else if(1==resultType){
+				return this.hightRender(1);  //稳健性
+			}else{
+				return this.hightRender(2);  // 进取型
+			}
+		}
+	}*/
 
-	// 资产为1000万以上的render
-	// hightRender(type){
-	// 	return(
-	// 		<div>
-	// 			<HightItemTitle per={type} title="固定收益类"/>
-	// 			<FundItem />
-	// 			<FundItem />
-	// 		</div>
-	// 	)
-	// }
-
-	// 资产为100万到1000万的render
-	// lowRender(type){
-	// 	if(1==type){
-	// 		return(
-	// 			<div>
-	// 				<SteadyTitle handle={this.changeShow}/>
-	// 				<FundItem />
-	// 				<FundItem />
-	// 			</div>
-	// 		)
-	// 	}
-	// 	return(
-	// 		<div>
-	// 			<LowItemTitle title="固定收益类" />
-	// 			<FundItem />
-	// 			<FundItem />
-	// 		</div>
-	// 	)
-	// }
 
 
 // echart options
@@ -236,6 +185,7 @@ export default class ResultPage extends React.Component{
 
 	render(){
 		let resultTable = null,
+				recommendFunds = null,
 				tableImg = null,
 				// tableHtml = null,
 				sumType = this.props.params.result_sum;
@@ -251,10 +201,13 @@ export default class ResultPage extends React.Component{
 			// 							</tr>
 			// 						</tbody></table>
 			tableImg = baoshouTableImg;
+			recommendFunds = ResultFunds.fundList.baoshou;
 		}else if(50<=sumType&&sumType<90){
 			tableImg = wenjianTableImg;
+			recommendFunds = ResultFunds.fundList.wenjian;
 		}else{
 			tableImg = jinquTableImg;
+			recommendFunds = ResultFunds.fundList.jinqu;
 		}
 
 		return(
@@ -272,8 +225,11 @@ export default class ResultPage extends React.Component{
 
 				<div className="fund_box">
 					<h3>产品推荐</h3>
-					<FundItem />
-					<FundItem />
+					{
+						recommendFunds.map(function(item,index){
+				  		return <FundItem key={index} item={item} />
+				  	})
+					}
 				</div>
 			</div>
 		)

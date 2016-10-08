@@ -49,7 +49,6 @@ export default class QuestionCheckbox extends React.Component{
 				<h2>{this.props.title}</h2>
 				<h3>{this.props.rank}、(多选){this.props.question.question}</h3>
 				{newArr}
-				<p className="notice_word">(注：本题可多选，但评分以其中最高分值选项为准)</p>
 			</div>
 		)
 	}
