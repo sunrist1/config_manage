@@ -52,4 +52,4 @@ export default class QuestionCheckbox extends React.Component{
 			</div>
 		)
 	}
-}
+} 

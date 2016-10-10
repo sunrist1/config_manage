@@ -42,14 +42,6 @@ export default class ResultPage extends React.Component{
 		// this.getFundData = this.getFundData.bind(this)
 	}
 
-// 改变要展示的推荐基金列表，只用于100w－1000w的稳健型下
-/*	changeShow(val){
-		this.setState({
-			showType:val
-		})
-
-		console.log(this.state.showType)
-	}*/
 
 /*	getFundData(fundId){
 		let now = new Date(),
@@ -191,15 +183,6 @@ export default class ResultPage extends React.Component{
 				sumType = this.props.params.result_sum;
 
 		if(0<=sumType&&sumType<50){
-			// tableHtml =<table><tbody>
-			// 							<tr>
-			// 								<th>资产类别</th>
-			// 								<th>二级市场</th>
-			// 								<th>中长期股权</th>
-			// 								<th>海外投资、影视文化基金</th>
-			// 								<th>现金管理</th>
-			// 							</tr>
-			// 						</tbody></table>
 			tableImg = baoshouTableImg;
 			recommendFunds = ResultFunds.fundList.baoshou;
 		}else if(50<=sumType&&sumType<90){

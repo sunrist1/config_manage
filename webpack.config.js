@@ -8,6 +8,7 @@ module.exports = {
 	},
 	output:{
 		path:path.resolve(__dirname,'build'),
+		// path:'../config_manage_server/views',
 		filename:'bundle.js'
 	},
 	resolve: {
