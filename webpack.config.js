@@ -8,13 +8,17 @@ module.exports = {
 	},
 	output:{
 		path:path.resolve(__dirname,'build'),
-		// path:'../config_manage_server/views',
+		// path:'../config_manager/public/page',
 		filename:'bundle.js'
 	},
 	resolve: {
     alias: {
-      jquery: "jquery/src/jquery"
+      jquery: "jquery/src/jquery",
     }
+  },
+	externals: {
+    'react': 'window.React',
+    'react-dom':'window.ReactDOM'
   },
 	module:{
 		loaders:[

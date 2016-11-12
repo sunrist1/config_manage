@@ -9,7 +9,6 @@ import EchartPage from './comps/echarts_page.js';  // 选择结果额 echarts展
 // import AssetsPage from './comps/assets_page.js';  // 可投资资产选择
 import ResultPage from './comps/result_page.js';  // 得出结果页面
 
-
 render(
 	(
 		<Router history={hashHistory}>

@@ -6,7 +6,7 @@ html,body{
 	background:url(../images/blue_bg_img.png) 0px 0px no-repeat;
 	background-size: 100% 100%;
 	padding-bottom: 100px;
-	height: 100%;
+	min-height: 100%;
 }
 
 .echarts_bar{
